@@ -5,12 +5,27 @@
   "status": true,
   "json": {
     "Main": {
-      "logo": {
+      "image": {
         "type": "Image",
         "config": {
-          "label": "Logo",
+          "label": "Image",
           "constraint": {},
           "thumbnails": []
+        }
+      },
+      "primaryButtonText": {
+        "type": "Text",
+        "config": {
+          "label": "Primary Button Text",
+          "placeholder": ""
+        }
+      },
+      "primaryButtonLink": {
+        "type": "Link",
+        "config": {
+          "label": "Primary Button Link",
+          "placeholder": "",
+          "select": null
         }
       },
       "slices": {

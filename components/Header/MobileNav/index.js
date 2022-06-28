@@ -1,48 +1,51 @@
-import { Fragment } from "react"
+import { Fragment, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { SliceZone } from "@prismicio/react"
+import { PrismicLink, SliceZone } from "@prismicio/react"
 import { components } from "../../../slices"
 import styles from "./styles.module.scss"
-import { MenuIcon, XIcon } from "@heroicons/react/solid"
-import { Popover } from "@headlessui/react"
+import { MenuAlt3Icon } from "@heroicons/react/outline"
 
-export const MobileNav = ({ slices, image }) => {
+export const MobileNav = ({ slices, image, primaryButton }) => {
+  const [open, setOpen] = useState(false)
+
+  const handleMenuState = () => {
+    setOpen(!open)
+  }
+
   return (
-    <div className={styles.container}>
+    <div className={styles.flexWrapper}>
       <Link href="/">
         <div className={styles.image}>
-          <Image
-            src={image.src}
-            alt={image.alt}
-            width={image.width}
-            height={image.height}
-          />
+          {image?.src && (
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={image.width}
+              height={image.height}
+            />
+          )}
         </div>
       </Link>
 
-      <Popover>
-        {({ open }) => (
-          <Fragment>
-            <Popover.Button className={styles.button}>
-              <MenuIcon />
-            </Popover.Button>
+      <button
+        className={`${styles.button} ${open && styles.open}`}
+        onClick={handleMenuState}
+        aria-label="Open menu"
+      >
+        <MenuAlt3Icon />
+      </button>
 
-            {open && (
-              <nav className={styles.nav}>
-                <div className={styles.menuButtonContainer}>
-                  <button className={styles.button}>
-                    <XIcon />
-                  </button>
-                </div>
-                <ul className={styles.navList}>
-                  <SliceZone slices={slices} components={components} />
-                </ul>
-              </nav>
-            )}
-          </Fragment>
-        )}
-      </Popover>
+      <nav className={`${styles.nav} ${open && styles.open}`}>
+        <ul className={styles.navList}>
+          <SliceZone slices={slices} components={components} />
+          <li>
+            <PrismicLink field={primaryButton.link}>
+              {primaryButton.text}
+            </PrismicLink>
+          </li>
+        </ul>
+      </nav>
     </div>
   )
 }

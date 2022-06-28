@@ -3,11 +3,11 @@ import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Seo } from "../Seo"
 
-export const Layout = ({ seo, header, footer, children }) => (
+export const Layout = ({ seo, header, footer, socials, children }) => (
   <Fragment>
     <Seo {...seo} />
-    <Header {...header?.data} />
+    <Header {...header?.data} {...socials?.data} />
     <main>{children}</main>
-    <Footer {...footer?.data} />
+    <Footer {...footer?.data} {...socials?.data} />
   </Fragment>
 )
