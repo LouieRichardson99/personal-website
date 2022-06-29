@@ -5,6 +5,15 @@
   "status": true,
   "json": {
     "Main": {
+      "legalPageLinks": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Legal Page Links",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,hyperlink"
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

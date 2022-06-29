@@ -12,13 +12,25 @@
 }
 
 .image {
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2rem;
+  height: 2rem;
   z-index: 100;
 
   & img {
     border-radius: 100%;
   }
+
+  @include mq("small") {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+.nameFlex {
+  display: flex;
+  align-items: center;
+  color: $color-white;
+  gap: 0.75rem;
 }
 
 .button {
@@ -31,7 +43,7 @@
   color: $color-white;
   z-index: 100;
   width: 2.5rem;
-  transition: 0.4s;
+  transition: 400ms;
 
   &.open {
     color: $color-shark;
@@ -49,11 +61,21 @@
   width: auto;
   height: auto;
   text-align: center;
-  transition: 0.4s;
+  transition: 400ms;
+  z-index: 10;
+
+  & a {
+    color: transparent;
+    transition: 400ms;
+  }
 
   &.open {
     visibility: visible;
     background-color: $color-white;
+
+    & a {
+      color: $color-shark;
+    }
   }
 }
 
@@ -66,7 +88,6 @@
   gap: 2rem;
 
   & a {
-    color: $color-shark;
     font-size: 1.25rem;
   }
 }

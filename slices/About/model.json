@@ -1,85 +1,62 @@
 {
-  "id": "hero",
+  "id": "about",
   "type": "SharedSlice",
-  "name": "Hero",
-  "description": "Hero",
+  "name": "About",
+  "description": "About",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Hero",
+      "description": "About",
       "primary": {
-        "availability": {
-          "type": "Boolean",
-          "config": {
-            "label": "Availability",
-            "placeholder_false": "Busy",
-            "placeholder_true": "Available",
-            "default_value": true
-          }
-        },
-        "eyebrow": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Eyebrow",
-            "placeholder": "",
-            "allowTargetBlank": false,
-            "single": "paragraph"
-          }
-        },
         "title": {
           "type": "StructuredText",
           "config": {
             "label": "Title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading1,strong"
+            "single": "strong,heading2"
           }
         },
-        "primaryButtonText": {
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subtitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,em,strong,list-item,o-list-item,hyperlink"
+          }
+        },
+        "buttonText": {
           "type": "Text",
           "config": {
-            "label": "Primary Button Text",
+            "label": "Button Text",
             "placeholder": ""
           }
         },
-        "primaryButtonLink": {
+        "buttonLink": {
           "type": "Link",
           "config": {
-            "label": "Primary Button Link",
+            "label": "Button Link",
             "placeholder": "",
             "select": null
           }
         },
-        "primaryButtonIcon": {
+        "buttonIcon": {
           "type": "Image",
           "config": {
-            "label": "Primary Button Icon",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "secondaryButtonText": {
-          "type": "Text",
-          "config": {
-            "label": "Secondary Button Text",
-            "placeholder": ""
-          }
-        },
-        "secondaryButtonLink": {
-          "type": "Link",
-          "config": {
-            "label": "Secondary Button Link",
-            "placeholder": "",
-            "select": null
-          }
-        },
-        "secondaryButtonIcon": {
-          "type": "Image",
-          "config": {
-            "label": "Secondary Button Icon",
+            "label": "Button Icon",
             "constraint": {},
             "thumbnails": []
           }
@@ -93,7 +70,24 @@
           }
         }
       },
-      "items": {},
+      "items": {
+        "socialLink": {
+          "type": "Link",
+          "config": {
+            "label": "Social Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "socialIcon": {
+          "type": "Image",
+          "config": {
+            "label": "Social Icon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]

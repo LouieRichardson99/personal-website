@@ -15,6 +15,12 @@
             },
             "call_to_action": {
               "type": "SharedSlice"
+            },
+            "about": {
+              "type": "SharedSlice"
+            },
+            "services": {
+              "type": "SharedSlice"
             }
           }
         }

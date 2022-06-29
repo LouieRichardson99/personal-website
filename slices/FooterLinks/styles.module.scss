@@ -1,9 +1,25 @@
+@use "../../sass/abstracts/" as *;
+
 .navItemsTitle {
   margin-bottom: 0.75rem;
+  color: $color-white;
+
+  & h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
 }
 
 .navItems {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.3rem;
+}
+
+.navItem {
+  color: $color-white;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

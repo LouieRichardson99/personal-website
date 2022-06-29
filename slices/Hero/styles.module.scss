@@ -1,0 +1,117 @@
+@use "../../sass/abstracts/" as *;
+
+.section {
+  margin: 5rem auto;
+
+  @include mq("large") {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: 7rem auto;
+  }
+}
+
+.availability {
+  font-size: 0.875rem;
+  margin-bottom: 0.2rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+    border-radius: 100px;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  &::after {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+    border-radius: 100px;
+    left: 0;
+    position: absolute;
+  }
+
+  &.available {
+    color: $color-lima;
+
+    &::before {
+      background-color: $color-lima;
+    }
+
+    &::after {
+      background-color: $color-lima;
+    }
+  }
+
+  &.busy {
+    color: $color-medium-carmine;
+
+    &::before {
+      background-color: $color-medium-carmine;
+    }
+
+    &::after {
+      background-color: $color-medium-carmine;
+    }
+  }
+
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+}
+
+.eyebrow {
+  font-size: var(--fs-400);
+  color: $color-white;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  color: $color-white;
+  position: relative;
+  max-width: 40rem;
+
+  @include mq("large") {
+    max-width: none;
+  }
+}
+
+.buttonsFlex {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  @include mq("x-small") {
+    & a {
+      min-width: 12rem;
+      width: max-content;
+    }
+  }
+
+  @include mq("small") {
+    flex-direction: row;
+  }
+}
+
+.image {
+  display: none;
+
+  @include mq("large") {
+    display: block;
+    width: 35rem;
+  }
+}

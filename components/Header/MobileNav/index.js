@@ -16,15 +16,18 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
   return (
     <div className={styles.flexWrapper}>
       <Link href="/">
-        <div className={styles.image}>
-          {image?.src && (
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={image.width}
-              height={image.height}
-            />
-          )}
+        <div className={styles.nameFlex}>
+          <div className={styles.image}>
+            {image?.src && (
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+              />
+            )}
+          </div>
+          <h4>Louie Richardson</h4>
         </div>
       </Link>
 

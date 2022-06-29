@@ -3,6 +3,104 @@
     "header": {},
     "socials": {
       "socialMedia": {}
+    },
+    "homepage": {},
+    "footer": {
+      "legalPageLinks": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "slices": {
+    "Hero": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "eyebrow": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "About": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "subtitle": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
+      }
+    },
+    "Services": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {
+          "serviceName": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "serviceDescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "CallToAction": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   }
 }

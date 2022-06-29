@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+
+.section-title {
+  margin-bottom: 1.5rem;
+  color: $color-white;
+
+  &.dark {
+    color: $color-shark;
+  }
+
+  & h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    display: flex;
+
+    & strong {
+      color: $color-medium-carmine;
+    }
+
+    &::before {
+      content: "";
+      width: 0.35rem;
+      height: auto;
+      display: block;
+      background-color: $color-medium-carmine;
+      margin-right: 0.75rem;
+    }
+
+    @include mq("medium") {
+      font-size: 2rem;
+    }
+  }
+}

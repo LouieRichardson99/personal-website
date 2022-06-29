@@ -17,7 +17,7 @@
             "label": "Title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading3,strong"
           }
         },
         "link": {
@@ -33,6 +33,14 @@
           "config": {
             "label": "Link Text",
             "placeholder": ""
+          }
+        },
+        "linkIcon": {
+          "type": "Image",
+          "config": {
+            "label": "Link Icon",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       },

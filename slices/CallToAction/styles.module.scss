@@ -1,0 +1,46 @@
+@use "../../sass/abstracts/" as *;
+
+.section {
+  background-color: $color-white;
+  padding: 1.5rem 0;
+
+  @include mq("medium") {
+    padding: 2rem 0;
+  }
+}
+
+.flexWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @include mq("small") {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.title {
+  & h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-shark;
+
+    & strong {
+      color: $color-medium-carmine;
+    }
+
+    @include mq("medium") {
+      font-size: 3rem;
+    }
+  }
+}
+
+.primaryButton {
+  height: max-content;
+
+  @include mq("x-small") {
+    width: max-content;
+  }
+}

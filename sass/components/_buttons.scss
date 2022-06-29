@@ -1,0 +1,47 @@
+@use "../abstracts/" as *;
+
+.button {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 1rem;
+  }
+
+  &.primary {
+    background-color: $color-medium-carmine;
+    color: $color-white;
+    transition: 200ms;
+
+    & a {
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: $color-burnt-umber;
+    }
+  }
+
+  &.secondary {
+    border: 1px solid $color-white;
+    color: $color-white;
+    transition: 200ms;
+
+    & a {
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-shark;
+
+      & img {
+        filter: invert(11%) sepia(8%) saturate(989%) hue-rotate(187deg)
+          brightness(0) contrast(99%);
+      }
+    }
+  }
+}

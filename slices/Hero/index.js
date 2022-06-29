@@ -1,14 +1,53 @@
-import { PrismicLink, PrismicRichText } from "@prismicio/react"
+import { PrismicImage, PrismicLink, PrismicRichText } from "@prismicio/react"
+import styles from "./styles.module.scss"
 
 const Hero = ({
   slice: {
-    primary: { title, description, link, linkText },
+    primary: {
+      availability,
+      eyebrow,
+      title,
+      primaryButtonText,
+      primaryButtonLink,
+      primaryButtonIcon,
+      secondaryButtonText,
+      secondaryButtonLink,
+      secondaryButtonIcon,
+      image,
+    },
   },
 }) => (
-  <section className="container">
-    <PrismicRichText field={title} />
-    <PrismicRichText field={description} />
-    <PrismicLink field={link}>{linkText}</PrismicLink>
+  <section className={`container ${styles.section}`}>
+    <div>
+      {availability ? (
+        <p className={`${styles.availability} ${styles.available}`}>
+          Available For Hire
+        </p>
+      ) : (
+        <p className={`${styles.availability} ${styles.busy}`}>
+          Currently Booked Up!
+        </p>
+      )}
+      <div className={styles.eyebrow}>
+        <PrismicRichText field={eyebrow} />
+      </div>
+      <div className={styles.title}>
+        <PrismicRichText field={title} />
+      </div>
+      <div className={styles.buttonsFlex}>
+        <PrismicLink className="button primary" field={primaryButtonLink}>
+          {primaryButtonText}
+          <PrismicImage field={primaryButtonIcon} />
+        </PrismicLink>
+        <PrismicLink className="button secondary" field={secondaryButtonLink}>
+          {secondaryButtonText}
+          <PrismicImage field={secondaryButtonIcon} />
+        </PrismicLink>
+      </div>
+    </div>
+    <div>
+      <PrismicImage field={image} className={styles.image} />
+    </div>
   </section>
 )
 

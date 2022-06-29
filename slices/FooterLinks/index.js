@@ -8,7 +8,7 @@ const FooterLinks = ({ slice: { items, primary } }) => (
     </div>
     <div className={styles.navItems}>
       {items.map(({ link, linkText }, index) => (
-        <PrismicLink key={index} field={link}>
+        <PrismicLink className={styles.navItem} key={index} field={link}>
           {linkText}
         </PrismicLink>
       ))}

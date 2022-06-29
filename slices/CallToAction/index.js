@@ -1,13 +1,25 @@
-import { PrismicLink, PrismicRichText } from "@prismicio/react"
+import { PrismicImage, PrismicLink, PrismicRichText } from "@prismicio/react"
+import styles from "./styles.module.scss"
 
 const CallToAction = ({
   slice: {
-    primary: { title, link, linkText },
+    primary: { title, link, linkText, linkIcon },
   },
 }) => (
-  <section className="container">
-    <PrismicRichText field={title} />
-    <PrismicLink field={link}>{linkText}</PrismicLink>
+  <section className={styles.section}>
+    <div className={`container ${styles.flexWrapper}`}>
+      <div className={styles.title}>
+        <PrismicRichText field={title} />
+      </div>
+
+      <PrismicLink
+        field={link}
+        className={`button primary ${styles.primaryButton}`}
+      >
+        {linkText}
+        <PrismicImage field={linkIcon} />
+      </PrismicLink>
+    </div>
   </section>
 )
 

@@ -7,16 +7,25 @@
     "primary": {
       "title": [
         {
-          "type": "heading2",
-          "text": "Extend out-of-the-box communities",
+          "type": "heading3",
+          "text": "Maximize visionary convergence",
           "spans": []
         }
       ],
       "link": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "https://prismic.io"
       },
-      "linkText": "empower synergistic web-readiness"
+      "linkText": "productize leading-edge experiences",
+      "linkIcon": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+      }
     }
   }
 ]

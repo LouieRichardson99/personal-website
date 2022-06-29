@@ -31,12 +31,12 @@ export const DesktopNav = ({ slices, image, primaryButton, phoneNumber }) => (
       {phoneNumber && (
         <a
           className={styles.phoneIcon}
-          href={`tel:${phoneNumber.replace(" ", "")}`}
+          href={`tel:${phoneNumber.replaceAll(" ", "")}`}
         >
           <PhoneIcon />
         </a>
       )}
-      <PrismicLink className={styles.primaryButton} field={primaryButton.link}>
+      <PrismicLink className="button primary" field={primaryButton.link}>
         {primaryButton.text}
       </PrismicLink>
     </div>
