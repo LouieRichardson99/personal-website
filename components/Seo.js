@@ -9,7 +9,7 @@ export const Seo = ({
   author,
   lang,
 }) => {
-  const absoluteUrl = `https://example.com/${url ? url : ""}` // Todo: Change to website url
+  const absoluteUrl = `https://louierichardson.com/${url ? url : ""}`
 
   return (
     <Head>
@@ -23,7 +23,7 @@ export const Seo = ({
         <meta name="og:description" content={metaDescription} />
       )}
       <meta name="og:type" content={article ? "article" : "website"} />
-      {metaImage && <meta name="og:image" content={metaImage} />}
+      {metaImage && <meta name="og:image" content={metaImage.url} />}
       {metaImage && <meta name="og:image:alt" content={metaTitle} />}
       <meta name="og:url" content={absoluteUrl} />
       <meta name="twitter:card" content="summary_large_image" />
@@ -32,7 +32,7 @@ export const Seo = ({
       {metaDescription && (
         <meta name="twitter:description" content={metaDescription} />
       )}
-      {metaImage && <meta name="twitter:image" content={metaImage} />}
+      {metaImage && <meta name="twitter:image" content={metaImage.url} />}
       {metaImage && <meta name="twitter:image:alt" content={metaTitle} />}
       {/* Todo: Change favicon */}
       <link rel="icon" href="/favicon.ico" />

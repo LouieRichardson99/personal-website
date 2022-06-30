@@ -2,7 +2,8 @@
   "_latest": "0.3.8",
   "apiEndpoint": "https://louie.prismic.io/api/v2",
   "libraries": [
-    "@/slices"
+    "@/slices",
+    "@/slices/blog"
   ],
   "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
 }

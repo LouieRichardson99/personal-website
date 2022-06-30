@@ -1,0 +1,24 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "quote",
+    "items": [],
+    "primary": {
+      "quote": [
+        {
+          "type": "paragraph",
+          "text": "Duis do eiusmod laborum ad cillum.",
+          "spans": []
+        }
+      ],
+      "quotee": [
+        {
+          "type": "paragraph",
+          "text": "Aliqua ullamco aute aute excepteur cillum amet do duis veniam sunt eu ut. Occaecat dolore adipisicing cillum do magna nostrud.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

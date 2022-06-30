@@ -5,22 +5,22 @@
     "slice_type": "hero",
     "items": [],
     "primary": {
-      "availability": false,
+      "availability": true,
       "eyebrow": [
         {
           "type": "paragraph",
-          "text": "Sunt voluptate est dolor culpa reprehenderit proident et exercitation aliqua culpa.",
+          "text": "Minim sint magna et deserunt duis.",
           "spans": []
         }
       ],
       "title": [
         {
           "type": "heading1",
-          "text": "Synergize bleeding-edge e-tailers",
+          "text": "Grow magnetic niches",
           "spans": []
         }
       ],
-      "primaryButtonText": "generate intuitive models",
+      "primaryButtonText": "embrace frictionless systems",
       "primaryButtonLink": {
         "link_type": "Web",
         "url": "https://slicemachine.dev"
@@ -32,9 +32,9 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
       },
-      "secondaryButtonText": "embrace innovative e-services",
+      "secondaryButtonText": "exploit B2B niches",
       "secondaryButtonLink": {
         "link_type": "Web",
         "url": "http://google.com"
@@ -46,7 +46,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
       },
       "image": {
         "dimensions": {
@@ -55,7 +55,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
       }
     }
   }

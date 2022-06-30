@@ -5,45 +5,24 @@
     "slice_type": "nav_links",
     "items": [
       {
-        "linkText": "maximize ubiquitous communities",
-        "link": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "linkText": "implement distributed architectures",
-        "link": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "linkText": "redefine 24/7 content",
-        "link": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
-        }
-      },
-      {
-        "linkText": "incubate mission-critical action-items",
-        "link": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "linkText": "incubate intuitive e-services",
-        "link": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "linkText": "whiteboard back-end partnerships",
+        "linkText": "optimize bricks-and-clicks channels",
         "link": {
           "link_type": "Web",
           "url": "https://prismic.io"
+        }
+      },
+      {
+        "linkText": "matrix impactful infomediaries",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "linkText": "streamline world-class technologies",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
         }
       }
     ],

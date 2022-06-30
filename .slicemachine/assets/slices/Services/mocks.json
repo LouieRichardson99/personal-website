@@ -12,19 +12,19 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
         },
         "serviceName": [
           {
             "type": "heading3",
-            "text": "Embrace impactful vortals",
+            "text": "Incubate magnetic portals",
             "spans": []
           }
         ],
         "serviceDescription": [
           {
             "type": "paragraph",
-            "text": "Culpa minim sunt anim labore mollit cupidatat id id nisi adipisicing velit duis consectetur ea. Aute occaecat magna magna in dolor nostrud Lorem proident tempor cillum culpa exercitation aute. Non esse veniam reprehenderit aliqua.",
+            "text": "Est deserunt exercitation qui ad nisi esse est ut quis aliqua exercitation deserunt consectetur. Velit ex nostrud ipsum aute aliquip aliqua veniam ad laborum ipsum dolore. Mollit cillum velit sit sunt esse labore aliqua sunt cillum adipisicing enim voluptate aliqua ipsum.",
             "spans": []
           }
         ]
@@ -37,19 +37,69 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
         },
         "serviceName": [
           {
             "type": "heading3",
-            "text": "Incubate granular paradigms",
+            "text": "Visualize strategic eyeballs",
             "spans": []
           }
         ],
         "serviceDescription": [
           {
             "type": "paragraph",
-            "text": "Non exercitation aute laboris ea nulla laboris nulla nisi elit tempor consectetur nostrud aute deserunt. Quis reprehenderit exercitation aute anim.",
+            "text": "Voluptate occaecat est laborum id quis labore ex dolor.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "serviceIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+        },
+        "serviceName": [
+          {
+            "type": "heading3",
+            "text": "Deliver cutting-edge systems",
+            "spans": []
+          }
+        ],
+        "serviceDescription": [
+          {
+            "type": "paragraph",
+            "text": "Ut ullamco ea laboris exercitation voluptate eiusmod non aliquip pariatur tempor elit est dolor. Labore aliquip adipisicing aute occaecat nulla.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "serviceIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+        },
+        "serviceName": [
+          {
+            "type": "heading3",
+            "text": "Repurpose B2C e-markets",
+            "spans": []
+          }
+        ],
+        "serviceDescription": [
+          {
+            "type": "paragraph",
+            "text": "Lorem minim culpa officia id adipisicing incididunt. Occaecat magna laboris voluptate officia labore cupidatat occaecat culpa excepteur.",
             "spans": []
           }
         ]
@@ -59,14 +109,14 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Recontextualize e-business technologies",
+          "text": "Synthesize turn-key deliverables",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Veniam nostrud laboris reprehenderit nulla quis.",
+          "text": "Voluptate sint aliqua fugiat culpa ut cillum adipisicing laboris ad. Lorem quis occaecat incididunt quis cupidatat reprehenderit dolore veniam aliqua do. Consectetur aliquip amet quis irure Lorem eiusmod nulla eiusmod consectetur aliqua incididunt irure consectetur proident exercitation.",
           "spans": []
         }
       ],
@@ -77,7 +127,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
       }
     }
   }

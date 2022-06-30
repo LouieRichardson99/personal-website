@@ -16,13 +16,13 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
         }
       },
       {
         "socialLink": {
           "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "http://twitter.com"
         },
         "socialIcon": {
           "dimensions": {
@@ -31,22 +31,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "socialLink": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        },
-        "socialIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
         }
       }
     ],
@@ -54,28 +39,28 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Enable back-end initiatives",
+          "text": "Strategize 24/7 e-services",
           "spans": []
         }
       ],
       "subtitle": [
         {
           "type": "paragraph",
-          "text": "Est veniam sunt eu mollit. Mollit non veniam fugiat labore dolor sunt id. Consequat veniam esse ut dolore amet pariatur qui qui reprehenderit cillum ut et id ex.",
+          "text": "Deserunt mollit non incididunt sint dolor et exercitation voluptate sit ea velit non labore excepteur sunt. Anim consequat esse sit ut ut enim anim mollit deserunt qui deserunt et tempor. Amet eiusmod mollit voluptate id elit dolore excepteur in exercitation veniam occaecat in.",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Elit amet anim aliquip commodo aute esse do non veniam incididunt. Occaecat magna irure deserunt esse id magna consectetur pariatur mollit ad commodo sit. Non dolore esse tempor incididunt dolore incididunt exercitation aliquip exercitation adipisicing consectetur occaecat ea.",
+          "text": "Velit eiusmod fugiat ullamco officia. Reprehenderit id nulla exercitation minim laborum irure labore eiusmod.",
           "spans": []
         }
       ],
-      "buttonText": "extend cutting-edge architectures",
+      "buttonText": "cultivate cross-media applications",
       "buttonLink": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "http://twitter.com"
       },
       "buttonIcon": {
         "dimensions": {
@@ -84,7 +69,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
       },
       "image": {
         "dimensions": {
@@ -93,7 +78,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
       }
     }
   }

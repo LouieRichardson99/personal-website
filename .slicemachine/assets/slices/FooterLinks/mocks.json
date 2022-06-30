@@ -7,51 +7,30 @@
       {
         "link": {
           "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "linkText": "engineer vertical deliverables"
+      },
+      {
+        "link": {
+          "link_type": "Web",
           "url": "https://prismic.io"
         },
-        "linkText": "strategize vertical mindshare"
-      },
-      {
-        "link": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        },
-        "linkText": "brand sexy e-markets"
-      },
-      {
-        "link": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
-        },
-        "linkText": "unleash ubiquitous networks"
+        "linkText": "morph open-source architectures"
       },
       {
         "link": {
           "link_type": "Web",
           "url": "http://google.com"
         },
-        "linkText": "reinvent wireless deliverables"
-      },
-      {
-        "link": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        },
-        "linkText": "disintermediate magnetic architectures"
-      },
-      {
-        "link": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        },
-        "linkText": "engage best-of-breed deliverables"
+        "linkText": "seize frictionless convergence"
       }
     ],
     "primary": {
       "sectionTitle": [
         {
           "type": "heading4",
-          "text": "Transition B2B communities",
+          "text": "Seize best-of-breed architectures",
           "spans": []
         }
       ]

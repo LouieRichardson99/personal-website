@@ -1,0 +1,36 @@
+{
+  "id": "author",
+  "label": "Author",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "name": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Name",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "hyperlink,paragraph"
+        }
+      },
+      "location": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Location",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em,hyperlink"
+        }
+      }
+    }
+  }
+}

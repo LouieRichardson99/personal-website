@@ -1,104 +1,76 @@
 {
-  "_cts": {
-    "header": {},
-    "socials": {
-      "socialMedia": {}
+  "slices": {
+    "Slice": {},
+    "Quote": {
+      "default": {
+        "primary": {
+          "quote": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "quotee": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     },
-    "homepage": {},
-    "footer": {
-      "legalPageLinks": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
+    "Blockquote": {}
+  },
+  "slices/blog": {
+    "Text": {
+      "default": {
+        "primary": {
+          "richText": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Image": {
+      "default": {
+        "primary": {
+          "imageAttribute": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Blockquote": {
+      "default": {
+        "primary": {
+          "author": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
         }
       }
     }
   },
-  "slices": {
-    "Hero": {
-      "default": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "eyebrow": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
+  "_cts": {
+    "blog-post": {
+      "imageAttribute": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
         }
-      }
-    },
-    "About": {
-      "default": {
-        "primary": {
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "subtitle": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        },
-        "items": {}
-      }
-    },
-    "Services": {
-      "default": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        },
-        "items": {
-          "serviceName": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "serviceDescription": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        }
-      }
-    },
-    "CallToAction": {
-      "default": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
         }
       }
     }
