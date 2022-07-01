@@ -16,7 +16,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
         }
       },
       {
@@ -31,7 +31,22 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "socialLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "socialIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
         }
       }
     ],
@@ -39,28 +54,28 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Strategize 24/7 e-services",
+          "text": "Benchmark intuitive e-services",
           "spans": []
         }
       ],
       "subtitle": [
         {
           "type": "paragraph",
-          "text": "Deserunt mollit non incididunt sint dolor et exercitation voluptate sit ea velit non labore excepteur sunt. Anim consequat esse sit ut ut enim anim mollit deserunt qui deserunt et tempor. Amet eiusmod mollit voluptate id elit dolore excepteur in exercitation veniam occaecat in.",
+          "text": "Velit sint mollit consequat cupidatat nisi sunt enim. Consectetur quis eiusmod do commodo.",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Velit eiusmod fugiat ullamco officia. Reprehenderit id nulla exercitation minim laborum irure labore eiusmod.",
+          "text": "Eu sint in deserunt nostrud tempor veniam. Aliqua adipisicing velit qui irure mollit mollit et elit est occaecat qui deserunt officia eu. Veniam aute commodo ex Lorem aute.",
           "spans": []
         }
       ],
-      "buttonText": "cultivate cross-media applications",
+      "buttonText": "target next-generation relationships",
       "buttonLink": {
         "link_type": "Web",
-        "url": "http://twitter.com"
+        "url": "https://prismic.io"
       },
       "buttonIcon": {
         "dimensions": {
@@ -69,7 +84,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
       },
       "image": {
         "dimensions": {
@@ -78,7 +93,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
       }
     }
   }

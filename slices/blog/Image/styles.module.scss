@@ -1,0 +1,14 @@
+@use "../../../sass/abstracts/" as *;
+
+.container {
+  margin: 3rem 0;
+}
+
+.imageCourtesy {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+
+  & a {
+    color: $color-white;
+  }
+}

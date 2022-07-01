@@ -19,7 +19,31 @@
         }
       }
     },
-    "Blockquote": {}
+    "Blockquote": {},
+    "About": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Services": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   },
   "slices/blog": {
     "Text": {
@@ -70,6 +94,14 @@
       "description": {
         "config": {
           "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "blog": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
           "blocks": 1
         }
       }

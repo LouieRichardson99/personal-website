@@ -1,20 +1,21 @@
 import { PrismicRichText } from "@prismicio/react"
+import styles from "./styles.module.scss"
 
 const Blockquote = ({
   slice: {
     primary: { quote, author },
   },
 }) => (
-  <figure>
+  <figure className={styles.container}>
     <blockquote>
-      <p>
-        &quot;
+      <p className={styles.quote}>
+        &ldquo;
         {quote}
-        &quot;
+        &rdquo;
       </p>
     </blockquote>
     <figcaption>
-      <div>
+      <div className={styles.author}>
         <span>-</span>
         <PrismicRichText field={author} />
       </div>

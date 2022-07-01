@@ -17,7 +17,7 @@
             "label": "Title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "strong,heading2"
+            "single": "heading2"
           }
         },
         "subtitle": {

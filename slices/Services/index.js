@@ -10,10 +10,10 @@ const Services = ({
   <section className={`container ${styles.section}`}>
     <div className={styles.flexWrapper}>
       <div>
-        <div className="section-title">
+        <div className="title">
           <PrismicRichText field={title} />
         </div>
-        <div className={styles.description}>
+        <div className={`${styles.description} flow`}>
           <PrismicRichText field={description} />
         </div>
       </div>
@@ -34,7 +34,7 @@ const Services = ({
                   <div className={styles.serviceName}>
                     <PrismicRichText field={serviceName} />
                   </div>
-                  <div className={styles.serviceDescription}>
+                  <div className={`${styles.serviceDescription} flow`}>
                     <PrismicRichText field={serviceDescription} />
                   </div>
                 </div>

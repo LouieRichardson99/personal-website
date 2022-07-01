@@ -2,6 +2,7 @@ import { PrismicRichText } from "@prismicio/react"
 import { createClient } from "../../prismicio"
 import { Layout } from "../../components/Layout"
 import { BlogFeed } from "../../components/BlogFeed"
+import styles from "./styles.module.scss"
 
 const BlogPage = ({ data, url, lang, posts, ...layout }) => {
   const seo = {
@@ -15,8 +16,14 @@ const BlogPage = ({ data, url, lang, posts, ...layout }) => {
 
   return (
     <Layout seo={seo} {...layout}>
-      <PrismicRichText field={data.title} />
-      <PrismicRichText field={data.subtitle} />
+      <section className={`container ${styles.section}`}>
+        <div className="title">
+          <PrismicRichText field={data.title} />
+        </div>
+        <div className={styles.blogPageSubtitle}>
+          <PrismicRichText field={data.subtitle} />
+        </div>
+      </section>
       <BlogFeed posts={posts} />
     </Layout>
   )

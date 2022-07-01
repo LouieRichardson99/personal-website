@@ -18,13 +18,13 @@ const About = ({
   <section className={styles.section}>
     <div className={`container ${styles.flexWrapper}`}>
       <div>
-        <div className="section-title dark">
+        <div className="title dark">
           <PrismicRichText field={title} />
         </div>
         <div className={styles.subtitle}>
           <PrismicRichText field={subtitle} />
         </div>
-        <div className={styles.description}>
+        <div className={`${styles.description} flow`}>
           <PrismicRichText field={description} />
         </div>
         <PrismicLink

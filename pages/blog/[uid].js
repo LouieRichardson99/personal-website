@@ -14,6 +14,7 @@ import { format } from "date-fns"
 import { LinkIcon } from "@heroicons/react/solid"
 import { TwitterIcon } from "../../components/icons/Twitter"
 import { FacebookIcon } from "../../components/icons/Facebook"
+import styles from "./styles.module.scss"
 
 const BlogPost = ({ data, url, lang, ...layout }) => {
   const [postUrl, setPostUrl] = useState(null)
@@ -26,8 +27,6 @@ const BlogPost = ({ data, url, lang, ...layout }) => {
     article: true,
     lang,
   }
-
-  console.log(data)
 
   const publishDate = format(
     new Date(layout.first_publication_date),
@@ -46,51 +45,59 @@ const BlogPost = ({ data, url, lang, ...layout }) => {
 
   return (
     <Layout seo={seo} {...layout}>
-      <article>
-        <header>
-          <PrismicRichText field={data?.title} />
-          <p>Published {publishDate}</p>
-          <PrismicImage field={data?.image} />
-          <div>
-            <div>
-              <p>Image courtesy of </p>
+      <article className={`container ${styles.article}`}>
+        <header className={styles.header}>
+          <div className="title">
+            <PrismicRichText field={data?.title} />
+          </div>
+          <p className={styles.publishDate}>Published {publishDate}</p>
+          <PrismicImage field={data?.image} className={styles.mainImage} />
+          <div className={styles.flexWrapper}>
+            <div className={styles.imageCourtesy}>
               <PrismicRichText field={data?.imageAttribute} />
             </div>
-            <div>
-              <button onClick={copyUrl}>
+            <div className={styles.socialShareFlex}>
+              <button onClick={copyUrl} className={styles.urlLinkButton}>
                 <LinkIcon />
               </button>
               <a
                 href={`https://twitter.com/share?url=${postUrl}&text=${data?.title[0].text}`}
+                className={styles.twitterLink}
               >
                 <TwitterIcon />
               </a>
-              <a href={`https://www.facebook.com/sharer.php?u=${postUrl}`}>
+              <a
+                href={`https://www.facebook.com/sharer.php?u=${postUrl}`}
+                className={styles.facebookLink}
+              >
                 <FacebookIcon />
               </a>
             </div>
           </div>
         </header>
-        <div>
+        <div className="article-container flow">
           <SliceZone slices={data?.slices1} components={articleComponents} />
         </div>
-        <div>
+        <div className={styles.articleFooterFlex}>
           <div>
             <p>
-              <span>Share: </span>
+              <span className={styles.bold}>Share: </span>
               <a
                 href={`https://twitter.com/share?url=${postUrl}&text=${data?.title[0].text}`}
               >
                 Discuss on Twitter
               </a>
-              <span>|</span>
+              <span className={styles.red}> | </span>
               <a href={`https://www.facebook.com/sharer.php?u=${postUrl}`}>
                 Share on Facebook
               </a>
             </p>
           </div>
-          <div>
-            <PrismicImage field={data?.author?.data?.image} />
+          <div className={styles.authorWrapper}>
+            <PrismicImage
+              field={data?.author?.data?.image}
+              className={styles.authorImage}
+            />
             <p>
               <PrismicText field={data?.author?.data?.name} /> -{" "}
               <PrismicText field={data?.author?.data?.location} />

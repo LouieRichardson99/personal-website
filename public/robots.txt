@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://louierichardson.com
+
+# Sitemaps
+Sitemap: https://louierichardson.com/sitemap.xml

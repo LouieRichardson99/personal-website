@@ -18,6 +18,7 @@
 
 .navItem {
   color: $color-white;
+  width: max-content;
 
   &:hover {
     text-decoration: underline;

@@ -3,6 +3,7 @@
 :root {
   --ff-body: "Inter", sans-serif;
 
+  --fs-xl: 1.75rem;
   --fs-800: 1.5rem;
   --fs-600: 1.25rem;
   --fs-500: 1.125rem;
@@ -11,10 +12,10 @@
 
 @include mq("large") {
   :root {
+    --fs-xl: 2rem;
     --fs-800: 1.75rem;
     --fs-600: 1.5rem;
     --fs-500: 1.25rem;
-    --fs-400: 1.125rem;
   }
 }
 
@@ -25,30 +26,63 @@ body {
 
 h1 {
   font-size: var(--fs-800);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: var(--fs-600);
-  font-weight: 500;
+  font-size: var(--fs-800);
+  font-weight: 700;
 }
 
 h3 {
-  font-size: var(--fs-500);
-  font-weight: 500;
+  font-size: var(--fs-600);
+  font-weight: 700;
 }
 
 h4 {
-  font-size: var(--fs-400);
-  font-weight: 500;
+  font-size: var(--fs-500);
+  font-weight: 700;
 }
 
 p {
-  margin: 1rem 0;
+  & a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: $color-white;
+
+  &.dark {
+    color: $color-shark;
+  }
+
+  & * {
+    position: relative;
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    display: flex;
+
+    &::before {
+      content: "";
+      width: 0.35rem;
+      height: auto;
+      display: block;
+      background-color: $color-medium-carmine;
+      margin-right: 0.75rem;
+      min-width: 0.35rem;
+    }
+  }
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
 }

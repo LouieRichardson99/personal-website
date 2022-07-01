@@ -25,7 +25,7 @@
                     "label": "Title",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "single": "strong,heading2"
+                    "single": "heading2"
                   }
                 },
                 "subtitle": {
@@ -118,7 +118,7 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
                 }
               },
               {
@@ -133,7 +133,22 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "socialLink": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "socialIcon": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
                 }
               }
             ],
@@ -141,28 +156,28 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Strategize 24/7 e-services",
+                  "text": "Benchmark intuitive e-services",
                   "spans": []
                 }
               ],
               "subtitle": [
                 {
                   "type": "paragraph",
-                  "text": "Deserunt mollit non incididunt sint dolor et exercitation voluptate sit ea velit non labore excepteur sunt. Anim consequat esse sit ut ut enim anim mollit deserunt qui deserunt et tempor. Amet eiusmod mollit voluptate id elit dolore excepteur in exercitation veniam occaecat in.",
+                  "text": "Velit sint mollit consequat cupidatat nisi sunt enim. Consectetur quis eiusmod do commodo.",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Velit eiusmod fugiat ullamco officia. Reprehenderit id nulla exercitation minim laborum irure labore eiusmod.",
+                  "text": "Eu sint in deserunt nostrud tempor veniam. Aliqua adipisicing velit qui irure mollit mollit et elit est occaecat qui deserunt officia eu. Veniam aute commodo ex Lorem aute.",
                   "spans": []
                 }
               ],
-              "buttonText": "cultivate cross-media applications",
+              "buttonText": "target next-generation relationships",
               "buttonLink": {
                 "link_type": "Web",
-                "url": "http://twitter.com"
+                "url": "https://prismic.io"
               },
               "buttonIcon": {
                 "dimensions": {
@@ -171,7 +186,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
               },
               "image": {
                 "dimensions": {
@@ -180,7 +195,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
               }
             }
           }
@@ -189,7 +204,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/About/default/preview.png",
+            "width": 800,
+            "height": 440
+          }
+        }
       },
       "call_to_action": {
         "library": "slices",
@@ -651,7 +672,7 @@
                     "label": "Title",
                     "placeholder": "",
                     "allowTargetBlank": false,
-                    "single": "strong,heading2"
+                    "single": "heading2"
                   }
                 },
                 "description": {
@@ -718,19 +739,19 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
                 },
                 "serviceName": [
                   {
                     "type": "heading3",
-                    "text": "Incubate magnetic portals",
+                    "text": "Leverage next-generation users",
                     "spans": []
                   }
                 ],
                 "serviceDescription": [
                   {
                     "type": "paragraph",
-                    "text": "Est deserunt exercitation qui ad nisi esse est ut quis aliqua exercitation deserunt consectetur. Velit ex nostrud ipsum aute aliquip aliqua veniam ad laborum ipsum dolore. Mollit cillum velit sit sunt esse labore aliqua sunt cillum adipisicing enim voluptate aliqua ipsum.",
+                    "text": "Irure est eiusmod voluptate quis ipsum voluptate veniam nulla elit deserunt enim sunt ea.",
                     "spans": []
                   }
                 ]
@@ -743,19 +764,19 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
                 },
                 "serviceName": [
                   {
                     "type": "heading3",
-                    "text": "Visualize strategic eyeballs",
+                    "text": "Target user-centric methodologies",
                     "spans": []
                   }
                 ],
                 "serviceDescription": [
                   {
                     "type": "paragraph",
-                    "text": "Voluptate occaecat est laborum id quis labore ex dolor.",
+                    "text": "Fugiat in ut irure in fugiat. Deserunt enim eu aliquip ex magna qui nostrud aliquip do nulla.",
                     "spans": []
                   }
                 ]
@@ -773,14 +794,14 @@
                 "serviceName": [
                   {
                     "type": "heading3",
-                    "text": "Deliver cutting-edge systems",
+                    "text": "Streamline visionary blockchains",
                     "spans": []
                   }
                 ],
                 "serviceDescription": [
                   {
                     "type": "paragraph",
-                    "text": "Ut ullamco ea laboris exercitation voluptate eiusmod non aliquip pariatur tempor elit est dolor. Labore aliquip adipisicing aute occaecat nulla.",
+                    "text": "Ipsum occaecat eiusmod voluptate. Veniam elit sint qui magna id quis laborum aliqua esse veniam esse voluptate ad.",
                     "spans": []
                   }
                 ]
@@ -793,19 +814,19 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
                 },
                 "serviceName": [
                   {
                     "type": "heading3",
-                    "text": "Repurpose B2C e-markets",
+                    "text": "Deploy 24/7 e-tailers",
                     "spans": []
                   }
                 ],
                 "serviceDescription": [
                   {
                     "type": "paragraph",
-                    "text": "Lorem minim culpa officia id adipisicing incididunt. Occaecat magna laboris voluptate officia labore cupidatat occaecat culpa excepteur.",
+                    "text": "Adipisicing culpa ullamco veniam aliqua sint ea elit ipsum. Adipisicing ad et reprehenderit tempor ipsum dolor ea culpa laboris sunt ipsum et. Excepteur ut nostrud nulla eu ut ullamco magna eu duis.",
                     "spans": []
                   }
                 ]
@@ -815,14 +836,14 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Synthesize turn-key deliverables",
+                  "text": "Drive impactful e-services",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Voluptate sint aliqua fugiat culpa ut cillum adipisicing laboris ad. Lorem quis occaecat incididunt quis cupidatat reprehenderit dolore veniam aliqua do. Consectetur aliquip amet quis irure Lorem eiusmod nulla eiusmod consectetur aliqua incididunt irure consectetur proident exercitation.",
+                  "text": "Veniam aliquip occaecat proident fugiat esse occaecat id dolor officia aliquip mollit nisi. Tempor labore Lorem qui aliqua sit ut id consectetur ea labore amet cupidatat pariatur esse aliquip. Ut nostrud minim adipisicing labore.",
                   "spans": []
                 }
               ],
@@ -833,7 +854,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
               }
             }
           }
@@ -842,7 +863,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/Services/default/preview.png",
+            "width": 800,
+            "height": 3272
+          }
+        }
       }
     }
   },
@@ -1021,7 +1048,7 @@
                     "label": "Rich Text",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
+                    "multi": "paragraph,preformatted,heading2,heading3,heading4,strong,em,hyperlink,image,embed,list-item,o-list-item"
                   }
                 }
               },
@@ -1040,7 +1067,7 @@
               "richText": [
                 {
                   "type": "paragraph",
-                  "text": "Dolore qui exercitation sint ex. Pariatur aliquip fugiat sint tempor deserunt mollit ea nostrud minim.",
+                  "text": "Qui et culpa veniam dolore ipsum exercitation id laborum.",
                   "spans": []
                 }
               ]
@@ -1051,13 +1078,7 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/blog/Text/default/preview.png",
-            "width": 800,
-            "height": 24
-          }
-        }
+        "screenshotPaths": {}
       }
     }
   }

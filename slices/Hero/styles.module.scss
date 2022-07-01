@@ -74,7 +74,7 @@
 }
 
 .eyebrow {
-  font-size: var(--fs-400);
+  font-size: 1.125rem;
   color: $color-white;
   margin-bottom: 0.5rem;
 }
@@ -82,10 +82,15 @@
 .title {
   color: $color-white;
   position: relative;
-  max-width: 40rem;
 
-  @include mq("large") {
-    max-width: none;
+  & h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+
+    @include mq("small") {
+      font-size: 1.6rem;
+    }
   }
 }
 

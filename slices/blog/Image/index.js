@@ -1,14 +1,14 @@
 import { PrismicImage, PrismicRichText } from "@prismicio/react"
+import styles from "./styles.module.scss"
 
 const Image = ({
   slice: {
     primary: { image, imageAttribute },
   },
 }) => (
-  <div>
+  <div className={styles.container}>
     <PrismicImage field={image} />
-    <div>
-      <p>Image courtesy of </p>
+    <div className={styles.imageCourtesy}>
       <PrismicRichText field={imageAttribute} />
     </div>
   </div>
