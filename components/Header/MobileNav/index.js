@@ -1,5 +1,5 @@
-import { Fragment, useState } from "react"
-import Link from "next/link"
+import { useState } from "react"
+
 import Image from "next/image"
 import { PrismicLink, SliceZone } from "@prismicio/react"
 import { components } from "../../../slices"
@@ -15,22 +15,19 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
 
   return (
     <div className={styles.flexWrapper}>
-      <Link href="/">
-        <div className={styles.nameFlex}>
-          <div className={styles.image}>
-            {image?.src && (
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={image.width}
-                height={image.height}
-              />
-            )}
-          </div>
-          <h4>Louie Richardson</h4>
+      <div className={styles.nameFlex}>
+        <div className={styles.image}>
+          {image?.src && (
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={image.width}
+              height={image.height}
+            />
+          )}
         </div>
-      </Link>
-
+        <h4>Louie Richardson</h4>
+      </div>
       <button
         className={`${styles.button} ${open && styles.open}`}
         onClick={handleMenuState}
