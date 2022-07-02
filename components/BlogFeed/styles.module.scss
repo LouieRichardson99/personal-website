@@ -1,0 +1,21 @@
+@use "../../sass/abstracts/" as *;
+
+.blogList {
+  list-style: none;
+  margin: 2rem auto;
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  @include mq("small") {
+    margin: 3rem auto 6rem auto;
+  }
+
+  @include mq("medium") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq("large") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

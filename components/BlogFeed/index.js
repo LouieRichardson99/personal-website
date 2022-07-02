@@ -1,10 +1,11 @@
 import { Fragment } from "react"
 import { BlogPostCard } from "../Card/BlogPost"
+import styles from "./styles.module.scss"
 
 export const BlogFeed = ({ posts }) => (
   <Fragment>
     {posts && (
-      <ul>
+      <ul className={`container ${styles.blogList}`}>
         {posts.map((post, index) => (
           <BlogPostCard
             key={index}

@@ -1,0 +1,54 @@
+@use "../../../sass/abstracts/" as *;
+
+.card {
+  &:hover {
+    & svg {
+      transform: translateX(0.5rem);
+    }
+  }
+}
+
+.image {
+  border-radius: 5px 5px 0 0;
+}
+
+.innerCardWrapper {
+  background-color: $color-white;
+  border-radius: 0 0 5px 5px;
+  padding: 1rem;
+  color: $color-shark;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.publishDate {
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.readPost {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  & svg {
+    color: $color-medium-carmine;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: 200ms;
+  }
+}
