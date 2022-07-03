@@ -1,21 +1,10 @@
-@use "../../sass/abstracts/" as *;
+@use "../abstracts/" as *;
 
 .section {
   margin-top: 3rem;
 
   @include mq("medium") {
     margin-top: 5rem;
-  }
-}
-
-.blogPageSubtitle {
-  & h2 {
-    font-size: 1.25rem;
-    font-weight: 500;
-
-    @include mq("small") {
-      font-size: 1.5rem;
-    }
   }
 }
 
@@ -74,12 +63,12 @@
   background: none;
   border: none;
   padding: 0;
-  height: 1.5rem;
+  height: 1.3rem;
   cursor: pointer;
 
   & svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
     color: $color-white;
     transition: 200ms;
 
@@ -91,11 +80,11 @@
 }
 
 .twitterLink {
-  height: 1.5rem;
+  height: 1.3rem;
 
   & svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
     color: $color-white;
     transition: 200ms;
 
@@ -107,11 +96,11 @@
 }
 
 .facebookLink {
-  height: 1.5rem;
+  height: 1.3rem;
 
   & svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
     color: $color-white;
     transition: 200ms;
 
@@ -141,9 +130,10 @@
   gap: 1rem;
   border-top: 1px solid $color-mine-shaft;
   padding: 2rem 0;
+  font-size: 0.875rem;
 
   & .bold {
-    font-weight: 700;
+    font-weight: 600;
   }
 
   & .red {

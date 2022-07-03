@@ -105,6 +105,20 @@
           "blocks": 1
         }
       }
+    },
+    "contact": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
     }
   }
 }

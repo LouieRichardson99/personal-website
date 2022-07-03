@@ -1,0 +1,45 @@
+@use "../../../sass/abstracts/" as *;
+
+.card {
+  background-color: $color-white;
+  border: 3px solid $color-medium-carmine;
+  min-width: max-content;
+  transition: all 200ms ease-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.flexWrapper {
+  display: flex;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: $color-medium-carmine;
+  color: $color-white;
+  padding: 0.4rem;
+  position: relative;
+  top: 0;
+  transform: translateY(-50%);
+  margin-left: 1rem;
+}
+
+.textWrapper {
+  padding: 0.75rem;
+}
+
+.methodNo {
+  font-weight: 300;
+  color: $color-dusty-gray;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.text {
+  color: $color-shark;
+  font-size: 1rem;
+  margin-right: 1rem;
+}

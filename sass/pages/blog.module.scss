@@ -1,0 +1,20 @@
+@use "../abstracts/" as *;
+
+.section {
+  margin-top: 3rem;
+
+  @include mq("medium") {
+    margin-top: 5rem;
+  }
+}
+
+.subtitle {
+  & h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    @include mq("small") {
+      font-size: 1.5rem;
+    }
+  }
+}

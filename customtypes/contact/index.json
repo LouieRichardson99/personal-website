@@ -13,6 +13,37 @@
           "allowTargetBlank": true,
           "single": "heading1"
         }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "strong,paragraph,hyperlink,list-item,em"
+        }
+      },
+      "calendlyLink": {
+        "type": "Link",
+        "config": {
+          "label": "Calendly Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "emailAddress": {
+        "type": "Text",
+        "config": {
+          "label": "Email Address",
+          "placeholder": ""
+        }
+      },
+      "phoneNumber": {
+        "type": "Text",
+        "config": {
+          "label": "Phone Number",
+          "placeholder": ""
+        }
       }
     },
     "SEO": {

@@ -1,0 +1,38 @@
+{
+  "id": "9413934e-ca64-4057-b46d-be1e4c2ae27e",
+  "uid": "sequi-consequatur-eum",
+  "type": "contact",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Innovate frictionless experiences",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Reprehenderit culpa dolor cupidatat sit duis duis labore amet qui dolore reprehenderit ad dolor excepteur velit. Quis aliquip do amet minim nulla ipsum ad id sint consectetur magna cupidatat laboris cupidatat pariatur. Ea exercitation ullamco deserunt.",
+        "spans": []
+      }
+    ],
+    "calendlyLink": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "emailAddress": "monetize robust eyeballs",
+    "phoneNumber": "transform open-source ROI",
+    "metaTitle": "synthesize leading-edge methodologies",
+    "metaDescription": "drive best-of-breed synergies",
+    "metaImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+    }
+  }
+}

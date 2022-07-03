@@ -14,7 +14,7 @@ import { format } from "date-fns"
 import { LinkIcon } from "@heroicons/react/solid"
 import { TwitterIcon } from "../../components/icons/Twitter"
 import { FacebookIcon } from "../../components/icons/Facebook"
-import styles from "./styles.module.scss"
+import styles from "../../sass/pages/blog-post.module.scss"
 
 const BlogPost = ({ data, url, lang, ...layout }) => {
   const [postUrl, setPostUrl] = useState(null)

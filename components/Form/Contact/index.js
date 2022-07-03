@@ -1,48 +1,42 @@
-import { useState } from "react"
-import { useForm } from "react-hook-form"
+import { useForm } from "@formspree/react"
 import { Input } from "../Input"
 import styles from "./styles.module.scss"
+import { ChevronRightIcon } from "@heroicons/react/solid"
 
 export const ContactForm = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false)
-  const { register, handleSubmit } = useForm()
-
-  const onSubmit = async (data) => {
-    // POST form data to API like Formspree
-    setIsSubmitted(true)
-  }
+  const [state, handleSubmit] = useForm("mnqwkakr")
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+    <form onSubmit={handleSubmit} className={styles.form}>
       <Input
         name="full_name"
         label="Full Name"
         type="text"
         autoComplete="name"
         required
-        register={register}
       />
+      <Input name="phone" label="Phone" type="tel" />
       <Input
         name="email"
         label="Email"
         type="email"
         autoComplete="email"
         required
-        placeholder="name@example.com"
-        register={register}
       />
-      <Input
-        name="message"
-        label="Message"
-        type="textarea"
-        required
-        placeholder="Enter message"
-        register={register}
-      />
-      {isSubmitted ? (
-        <p>Thank you for getting in touch.</p>
+      <Input name="message" label="Message" type="textarea" required />
+      {state.succeeded ? (
+        <p className={styles.success}>
+          Thank you for getting in touch. I will get back to you within 48
+          hours!
+        </p>
       ) : (
-        <button className={styles.button}>Submit</button>
+        <button
+          className={`button primary ${styles.formButton}`}
+          disabled={state.submitting}
+        >
+          Submit
+          <ChevronRightIcon />
+        </button>
       )}
     </form>
   )

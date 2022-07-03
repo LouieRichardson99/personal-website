@@ -1,3 +1,5 @@
+@use "../../sass/abstracts/" as *;
+
 .label {
   display: block;
   margin-bottom: 0.5rem;
@@ -5,14 +7,27 @@
 
 .input {
   width: 100%;
-  border-radius: 5px;
-  border: 1px solid #959595;
   padding: 0.5rem;
+  border: none;
+  color: $color-shark;
+
+  &:focus {
+    outline: $color-medium-carmine 2px solid;
+  }
+}
+
+.required {
+  color: $color-medium-carmine;
 }
 
 .textarea {
   width: 100%;
-  border-radius: 5px;
-  border: 1px solid #959595;
+  border: none;
   padding: 0.5rem;
+  color: $color-shark;
+  resize: vertical;
+
+  &:focus {
+    outline: $color-medium-carmine 2px solid;
+  }
 }

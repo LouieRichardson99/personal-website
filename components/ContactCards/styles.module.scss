@@ -1,0 +1,13 @@
+@use "../../sass/abstracts/" as *;
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+
+  @include mq("medium") {
+    gap: 2.25rem;
+  }
+}

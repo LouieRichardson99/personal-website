@@ -86,3 +86,11 @@ a:active {
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
+
+ul {
+  list-style-position: inside;
+
+  & ::marker {
+    color: $color-medium-carmine;
+  }
+}

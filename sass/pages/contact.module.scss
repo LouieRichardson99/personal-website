@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+.section {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-mine-shaft;
+
+  @include mq("medium") {
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
+    flex-direction: row;
+  }
+}
+
+.textWrapper {
+  max-width: 40rem;
+}
+
+.description {
+  margin-top: 2rem;
+}
+
+.formContainer {
+  margin: 4rem auto 4rem auto;
+  max-width: 50rem;
+
+  @include mq("medium") {
+    margin: 5rem auto 8rem auto;
+  }
+}

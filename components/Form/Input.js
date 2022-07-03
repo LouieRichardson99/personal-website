@@ -6,31 +6,32 @@ export const Input = ({
   type,
   required,
   placeholder,
-  register,
   autoComplete,
 }) => (
   <div>
     <label htmlFor={name} className={styles.label}>
       {label}
+      {required && <span className={styles.required}>*</span>}
     </label>
     {type === "textarea" ? (
       <textarea
         name={name}
         id={name}
         type={type}
-        {...register(name, { required })}
         placeholder={placeholder}
         autoComplete={autoComplete}
         className={styles.textarea}
+        required={required}
+        rows={5}
       />
     ) : (
       <input
         name={name}
         id={name}
         type={type}
-        {...register(name, { required })}
         placeholder={placeholder}
         className={styles.input}
+        required={required}
       />
     )}
   </div>
