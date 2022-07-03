@@ -4,16 +4,23 @@
   margin-top: 3rem;
   padding-bottom: 2rem;
   margin-bottom: 1rem;
+
+  @include mq("medium") {
+    margin-top: 5rem;
+
+    flex-direction: row;
+  }
+}
+
+.flexWrapper {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   justify-content: space-between;
   border-bottom: 1px solid $color-mine-shaft;
+  padding-bottom: 3rem;
 
   @include mq("medium") {
-    margin-top: 5rem;
-    padding-bottom: 4rem;
-    margin-bottom: 3rem;
     flex-direction: row;
   }
 }
@@ -27,10 +34,10 @@
 }
 
 .formContainer {
-  margin: 4rem auto 4rem auto;
+  margin: 2rem auto 4rem auto;
   max-width: 50rem;
 
   @include mq("medium") {
-    margin: 5rem auto 8rem auto;
+    margin: 3rem auto 8rem auto;
   }
 }

@@ -48,16 +48,18 @@ const Contact = ({ data, url, lang, ...layout }) => {
   return (
     <Layout seo={seo} {...layout}>
       <section className={`container ${styles.section}`}>
-        <div className={styles.textWrapper}>
-          <div className="title">
-            <PrismicRichText field={data?.title} />
+        <div className={styles.flexWrapper}>
+          <div className={styles.textWrapper}>
+            <div className="title">
+              <PrismicRichText field={data?.title} />
+            </div>
+            <div className={`${styles.description} flow`}>
+              <PrismicRichText field={data?.description} />
+            </div>
           </div>
-          <div className={`${styles.description} flow`}>
-            <PrismicRichText field={data?.description} />
+          <div>
+            <ContactCards contactMethods={contactMethods} />
           </div>
-        </div>
-        <div>
-          <ContactCards contactMethods={contactMethods} />
         </div>
       </section>
       <section className={`container ${styles.formContainer}`}>
