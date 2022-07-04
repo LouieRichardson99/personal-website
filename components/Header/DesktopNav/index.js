@@ -29,6 +29,7 @@ export const DesktopNav = ({ slices, image, primaryButton, phoneNumber }) => (
         <a
           className={styles.phoneIcon}
           href={`tel:${phoneNumber.replaceAll(" ", "")}`}
+          aria-label="Phone icon"
         >
           <PhoneIcon />
         </a>

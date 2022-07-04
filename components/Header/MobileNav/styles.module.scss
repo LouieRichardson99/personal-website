@@ -46,11 +46,17 @@
   cursor: pointer;
   color: $color-white;
   z-index: 100;
-  width: 2.5rem;
   transition: 400ms;
+  width: max-content;
+  padding: 0;
 
   &.open {
     color: $color-shark;
+  }
+
+  & svg {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
