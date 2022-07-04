@@ -15,7 +15,10 @@ const About = ({
     items,
   },
 }) => (
-  <section className={styles.section}>
+  <section
+    className={styles.section}
+    id={title[0].text.toLowerCase().replaceAll(" ", "-")}
+  >
     <div className={`container ${styles.flexWrapper}`}>
       <div>
         <div className="title dark">

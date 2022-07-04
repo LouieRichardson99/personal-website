@@ -7,7 +7,10 @@ const Services = ({
     items,
   },
 }) => (
-  <section className={`container ${styles.section}`}>
+  <section
+    className={`container ${styles.section}`}
+    id={title[0].text.toLowerCase().replaceAll(" ", "-")}
+  >
     <div className={styles.flexWrapper}>
       <div>
         <div className="title">

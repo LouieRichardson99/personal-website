@@ -34,8 +34,7 @@ export const Seo = ({
       )}
       {metaImage && <meta name="twitter:image" content={metaImage.url} />}
       {metaImage && <meta name="twitter:image:alt" content={metaTitle} />}
-      {/* Todo: Change favicon */}
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.png" />
     </Head>
   )
 }
