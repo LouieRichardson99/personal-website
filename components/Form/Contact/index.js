@@ -1,10 +1,32 @@
-import { useForm } from "@formspree/react"
+import { useState } from "react"
 import { Input } from "../Input"
 import styles from "./styles.module.scss"
 import { ChevronRightIcon } from "@heroicons/react/solid"
 
 export const ContactForm = () => {
-  const [state, handleSubmit] = useForm("mnqwkakr")
+  const [formResponse, setFormResponse] = useState(null)
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+
+    const data = new FormData(event.target)
+
+    fetch("https://formspree.io/f/mnqwkakr", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          setFormResponse("ok")
+        } else {
+          setFormResponse("err")
+        }
+      })
+      .catch(() => setFormResponse("err"))
+  }
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
@@ -24,16 +46,21 @@ export const ContactForm = () => {
         required
       />
       <Input name="message" label="Message" type="textarea" required />
-      {state.succeeded ? (
-        <p className={styles.success}>
+      {formResponse === "ok" && (
+        <p className={styles.responseMessage}>
           Thank you for getting in touch. I will get back to you within 48
           hours!
         </p>
-      ) : (
-        <button
-          className={`button primary ${styles.formButton}`}
-          disabled={state.submitting}
-        >
+      )}
+
+      {formResponse === "err" && (
+        <p className={styles.responseMessage}>
+          There seems to have been an error.. Please try again.
+        </p>
+      )}
+
+      {formResponse !== "ok" && (
+        <button className={`button primary ${styles.formButton}`}>
           Submit
           <ChevronRightIcon />
         </button>
