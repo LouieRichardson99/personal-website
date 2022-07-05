@@ -36,11 +36,15 @@
 }
 
 .image {
-  width: 18rem;
   margin: 2rem auto 0 auto;
+  width: 15rem;
 
   @include mq("medium") {
     margin: 0;
+  }
+
+  @include mq("large") {
+    width: 18rem;
   }
 }
 
@@ -50,9 +54,10 @@
   align-items: center;
   margin: 0.5rem 0 0 0.75rem;
 
-  & img {
-    width: 1.5rem;
+  & a {
     transition: 200ms;
+    width: 1.5rem;
+    height: 1.5rem;
 
     &:hover {
       position: relative;

@@ -1,9 +1,5 @@
-import {
-  PrismicImage,
-  PrismicLink,
-  PrismicRichText,
-  SliceZone,
-} from "@prismicio/react"
+import { PrismicLink, PrismicRichText, SliceZone } from "@prismicio/react"
+import { PrismicNextImage } from "@prismicio/next"
 import { components } from "../../slices"
 import styles from "./styles.module.scss"
 import { MailIcon, PhoneIcon } from "@heroicons/react/solid"
@@ -38,11 +34,11 @@ export const Footer = ({
             {email}
           </a>
         )}
-        <ul className={styles.socialsList}>
+        <ul className={styles.socialIcons}>
           {socialMedia.map(({ icon, link }, index) => (
             <li key={index}>
-              <PrismicLink field={link} className={styles.socialLink}>
-                <PrismicImage field={icon} />
+              <PrismicLink field={link}>
+                <PrismicNextImage field={icon} />
               </PrismicLink>
             </li>
           ))}

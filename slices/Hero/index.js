@@ -1,4 +1,5 @@
-import { PrismicImage, PrismicLink, PrismicRichText } from "@prismicio/react"
+import { PrismicNextImage } from "@prismicio/next"
+import { PrismicLink, PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 
 const Hero = ({
@@ -37,16 +38,16 @@ const Hero = ({
       <div className={styles.buttonsFlex}>
         <PrismicLink className="button primary" field={primaryButtonLink}>
           {primaryButtonText}
-          <PrismicImage field={primaryButtonIcon} />
+          <PrismicNextImage field={primaryButtonIcon} />
         </PrismicLink>
         <PrismicLink className="button secondary" field={secondaryButtonLink}>
           {secondaryButtonText}
-          <PrismicImage field={secondaryButtonIcon} />
+          <PrismicNextImage field={secondaryButtonIcon} />
         </PrismicLink>
       </div>
     </div>
-    <div>
-      <PrismicImage field={image} className={styles.image} />
+    <div className={styles.image}>
+      <PrismicNextImage field={image} layout="responsive" />
     </div>
   </section>
 )

@@ -1,10 +1,5 @@
 import { useEffect, useState } from "react"
-import {
-  PrismicImage,
-  PrismicRichText,
-  PrismicText,
-  SliceZone,
-} from "@prismicio/react"
+import { PrismicRichText, PrismicText, SliceZone } from "@prismicio/react"
 import * as prismicHelpers from "@prismicio/helpers"
 import { createClient, linkResolver } from "../../prismicio"
 import { Layout } from "../../components/Layout"
@@ -15,6 +10,7 @@ import { LinkIcon } from "@heroicons/react/solid"
 import { TwitterIcon } from "../../components/icons/Twitter"
 import { FacebookIcon } from "../../components/icons/Facebook"
 import styles from "../../sass/pages/blog-post.module.scss"
+import { PrismicNextImage } from "@prismicio/next"
 
 const BlogPost = ({ data, url, lang, ...layout }) => {
   const [postUrl, setPostUrl] = useState(null)
@@ -51,7 +47,9 @@ const BlogPost = ({ data, url, lang, ...layout }) => {
             <PrismicRichText field={data?.title} />
           </div>
           <p className={styles.publishDate}>Published {publishDate}</p>
-          <PrismicImage field={data?.image} className={styles.mainImage} />
+          <div className={styles.mainImage}>
+            <PrismicNextImage field={data?.image} />
+          </div>
           <div className={styles.flexWrapper}>
             <div className={styles.imageCourtesy}>
               <PrismicRichText field={data?.imageAttribute} />
@@ -94,10 +92,9 @@ const BlogPost = ({ data, url, lang, ...layout }) => {
             </p>
           </div>
           <div className={styles.authorWrapper}>
-            <PrismicImage
-              field={data?.author?.data?.image}
-              className={styles.authorImage}
-            />
+            <div className={styles.authorImage}>
+              <PrismicNextImage field={data?.author?.data?.image} />
+            </div>
             <p>
               <PrismicText field={data?.author?.data?.name} /> -{" "}
               <PrismicText field={data?.author?.data?.location} />

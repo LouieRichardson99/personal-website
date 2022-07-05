@@ -1,9 +1,5 @@
-import {
-  PrismicImage,
-  PrismicLink,
-  PrismicRichText,
-  PrismicText,
-} from "@prismicio/react"
+import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react"
+import { PrismicNextImage } from "@prismicio/next"
 import { format } from "date-fns"
 import { ArrowNarrowRightIcon } from "@heroicons/react/outline"
 import styles from "./styles.module.scss"
@@ -14,7 +10,11 @@ export const BlogPostCard = ({ image, title, date, description, link }) => {
   return (
     <li className={styles.card}>
       <PrismicLink document={link}>
-        <PrismicImage field={image} className={styles.image} />
+        <PrismicNextImage
+          field={image}
+          layout="responsive"
+          className={styles.image}
+        />
         <div className={styles.innerCardWrapper}>
           <h3 className={styles.title}>
             <PrismicText field={title} />

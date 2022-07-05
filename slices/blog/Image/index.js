@@ -1,4 +1,5 @@
-import { PrismicImage, PrismicRichText } from "@prismicio/react"
+import { PrismicNextImage } from "@prismicio/next"
+import { PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 
 const Image = ({
@@ -6,12 +7,12 @@ const Image = ({
     primary: { image, imageAttribute },
   },
 }) => (
-  <div className={styles.container}>
-    <PrismicImage field={image} />
-    <div className={styles.imageCourtesy}>
+  <figure className={styles.container}>
+    <PrismicNextImage field={image} />
+    <figcaption className={styles.imageCourtesy}>
       <PrismicRichText field={imageAttribute} />
-    </div>
-  </div>
+    </figcaption>
+  </figure>
 )
 
 export default Image

@@ -1,4 +1,5 @@
-import { PrismicImage, PrismicLink, PrismicRichText } from "@prismicio/react"
+import { PrismicNextImage } from "@prismicio/next"
+import { P, PrismicLink, PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 
 const About = ({
@@ -35,15 +36,17 @@ const About = ({
           field={buttonLink}
         >
           {buttonText}
-          <PrismicImage field={buttonIcon} />
+          <PrismicNextImage field={buttonIcon} />
         </PrismicLink>
       </div>
       <div>
-        <PrismicImage className={styles.image} field={image} />
+        <div className={styles.image}>
+          <PrismicNextImage field={image} layout="responsive" />
+        </div>
         <div className={styles.socialIcons}>
           {items.map(({ socialLink, socialIcon }, index) => (
             <PrismicLink key={index} field={socialLink}>
-              <PrismicImage field={socialIcon} />
+              <PrismicNextImage field={socialIcon} />
             </PrismicLink>
           ))}
         </div>

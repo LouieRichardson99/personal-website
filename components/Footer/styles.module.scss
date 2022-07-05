@@ -46,16 +46,14 @@
   }
 }
 
-.socialsList {
-  display: flex;
-  gap: 1rem;
+.socialIcons {
   list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
   margin-bottom: 2rem;
-}
 
-.socialLink {
-  & img {
-    width: 1.5rem;
+  & li {
     transition: 200ms;
 
     &:hover {

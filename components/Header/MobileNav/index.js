@@ -1,10 +1,9 @@
 import { useState } from "react"
-
-import Image from "next/image"
 import { PrismicLink, SliceZone } from "@prismicio/react"
 import { components } from "../../../slices"
 import styles from "./styles.module.scss"
 import { MenuAlt3Icon } from "@heroicons/react/outline"
+import { PrismicNextImage } from "@prismicio/next"
 
 export const MobileNav = ({ slices, image, primaryButton }) => {
   const [open, setOpen] = useState(false)
@@ -17,14 +16,7 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
     <div className={styles.flexWrapper}>
       <div className={styles.nameFlex}>
         <div className={styles.image}>
-          {image?.src && (
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={image.width}
-              height={image.height}
-            />
-          )}
+          <PrismicNextImage field={image} />
         </div>
         <h4>Louie Richardson</h4>
       </div>

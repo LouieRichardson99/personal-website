@@ -1,4 +1,5 @@
-import { PrismicImage, PrismicLink, PrismicRichText } from "@prismicio/react"
+import { PrismicNextImage } from "@prismicio/next"
+import { PrismicLink, PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 
 const CallToAction = ({
@@ -17,7 +18,7 @@ const CallToAction = ({
         className={`button primary ${styles.primaryButton}`}
       >
         {linkText}
-        <PrismicImage field={linkIcon} />
+        <PrismicNextImage field={linkIcon} />
       </PrismicLink>
     </div>
   </section>

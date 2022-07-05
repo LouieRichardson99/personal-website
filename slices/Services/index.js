@@ -1,5 +1,7 @@
-import { PrismicImage, PrismicRichText } from "@prismicio/react"
+import { PrismicNextImage } from "@prismicio/next"
+import { PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
+import * as prismicH from "@prismicio/helpers"
 
 const Services = ({
   slice: {
@@ -31,7 +33,7 @@ const Services = ({
                 }`}
               >
                 <div className={styles.serviceIcon}>
-                  <PrismicImage field={serviceIcon} />
+                  <PrismicNextImage field={serviceIcon} layout="fixed" />
                 </div>
                 <div>
                   <div className={styles.serviceName}>
@@ -47,8 +49,10 @@ const Services = ({
         </ul>
       </div>
     </div>
-    <div className={styles.image}>
-      <PrismicImage field={image} />
+    <div className={styles.imageFlex}>
+      <div className={styles.image}>
+        <PrismicNextImage field={image} />
+      </div>
     </div>
   </section>
 )
