@@ -1,7 +1,6 @@
 import { PrismicNextImage } from "@prismicio/next"
-import { PrismicRichText } from "@prismicio/react"
+import { PrismicImage, PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
-import * as prismicH from "@prismicio/helpers"
 
 const Services = ({
   slice: {
@@ -24,23 +23,28 @@ const Services = ({
       </div>
       <div>
         <ul className={styles.serviceList}>
-          {items.map(({ serviceName, serviceDescription }, index) => (
-            <li
-              key={index}
-              className={`${styles.serviceItem} ${
-                index + 1 !== items.length && styles.border
-              }`}
-            >
-              <div>
-                <div className={styles.serviceName}>
-                  <PrismicRichText field={serviceName} />
+          {items.map(
+            ({ serviceIcon, serviceName, serviceDescription }, index) => (
+              <li
+                key={index}
+                className={`${styles.serviceItem} ${
+                  index + 1 !== items.length && styles.border
+                }`}
+              >
+                <div className={styles.serviceIcon}>
+                  <PrismicImage field={serviceIcon} />
                 </div>
-                <div className={`${styles.serviceDescription} flow`}>
-                  <PrismicRichText field={serviceDescription} />
+                <div>
+                  <div className={styles.serviceName}>
+                    <PrismicRichText field={serviceName} />
+                  </div>
+                  <div className={`${styles.serviceDescription} flow`}>
+                    <PrismicRichText field={serviceDescription} />
+                  </div>
                 </div>
-              </div>
-            </li>
-          ))}
+              </li>
+            )
+          )}
         </ul>
       </div>
     </div>

@@ -41,7 +41,7 @@
 
   @include mq("large") {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 }
 
@@ -51,6 +51,28 @@
   & h3 {
     font-size: 1.5rem;
     font-weight: 500;
+  }
+}
+
+.serviceIcon {
+  background-color: $color-mine-shaft;
+  border-radius: 10px;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+
+  & img {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+
+  @include mq("large") {
+    margin-top: 0.5rem;
   }
 }
 
