@@ -10,11 +10,13 @@ export const BlogPostCard = ({ image, title, date, description, link }) => {
   return (
     <li className={styles.card}>
       <PrismicLink document={link}>
-        <PrismicNextImage
-          field={image}
-          layout="responsive"
-          className={styles.image}
-        />
+        <div className={styles.image}>
+          <PrismicNextImage
+            field={image}
+            layout="fill"
+            imgixParams={{ blur: 10 }}
+          />
+        </div>
         <div className={styles.innerCardWrapper}>
           <h3 className={styles.title}>
             <PrismicText field={title} />

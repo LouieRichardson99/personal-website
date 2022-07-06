@@ -47,7 +47,7 @@ const Hero = ({
       </div>
     </div>
     <div className={styles.image}>
-      <PrismicNextImage field={image} layout="responsive" />
+      <PrismicNextImage field={image} layout="responsive" priority={true} />
     </div>
   </section>
 )
