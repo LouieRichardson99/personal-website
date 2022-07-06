@@ -49,23 +49,8 @@
   margin-bottom: 0.5rem;
 
   & h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 500;
-  }
-}
-
-.serviceIcon {
-  background-color: $color-medium-carmine;
-  height: max-content;
-  width: max-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  margin-bottom: 0.75rem;
-
-  @include mq("large") {
-    margin-top: 0.5rem;
   }
 }
 

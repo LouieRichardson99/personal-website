@@ -24,28 +24,23 @@ const Services = ({
       </div>
       <div>
         <ul className={styles.serviceList}>
-          {items.map(
-            ({ serviceIcon, serviceName, serviceDescription }, index) => (
-              <li
-                key={index}
-                className={`${styles.serviceItem} ${
-                  index + 1 !== items.length && styles.border
-                }`}
-              >
-                <div className={styles.serviceIcon}>
-                  <PrismicNextImage field={serviceIcon} layout="fixed" />
+          {items.map(({ serviceName, serviceDescription }, index) => (
+            <li
+              key={index}
+              className={`${styles.serviceItem} ${
+                index + 1 !== items.length && styles.border
+              }`}
+            >
+              <div>
+                <div className={styles.serviceName}>
+                  <PrismicRichText field={serviceName} />
                 </div>
-                <div>
-                  <div className={styles.serviceName}>
-                    <PrismicRichText field={serviceName} />
-                  </div>
-                  <div className={`${styles.serviceDescription} flow`}>
-                    <PrismicRichText field={serviceDescription} />
-                  </div>
+                <div className={`${styles.serviceDescription} flow`}>
+                  <PrismicRichText field={serviceDescription} />
                 </div>
-              </li>
-            )
-          )}
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

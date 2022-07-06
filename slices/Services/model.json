@@ -39,14 +39,6 @@
         }
       },
       "items": {
-        "serviceIcon": {
-          "type": "Image",
-          "config": {
-            "label": "Service Icon",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
         "serviceName": {
           "type": "StructuredText",
           "config": {
