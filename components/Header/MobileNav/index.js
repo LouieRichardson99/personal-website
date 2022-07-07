@@ -16,7 +16,7 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
     <div className={styles.flexWrapper}>
       <div className={styles.nameFlex}>
         <div className={styles.image}>
-          <PrismicNextImage field={image} />
+          <PrismicNextImage field={image} loading="eager" />
         </div>
         <h4>Louie Richardson</h4>
       </div>
