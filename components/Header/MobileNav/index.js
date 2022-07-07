@@ -11,11 +11,17 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
 
   const handleMenuState = () => {
     setOpen(!open)
+
+    if (document.body.style.overflow === "hidden") {
+      document.body.style.overflow = "visible"
+    } else {
+      document.body.style.overflow = "hidden"
+    }
   }
 
   const animateMenu = {
-    open: { opacity: 1 },
-    closed: { opacity: 0 },
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "100%" },
   }
 
   return (
@@ -37,8 +43,10 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
       <motion.nav
         className={styles.nav}
         animate={open ? "open" : "closed"}
+        initial="closed"
         variants={animateMenu}
-        transition={{ duration: 0.1 }}
+        transition={{ type: "spring", duration: 0.1 }}
+        onClick={handleMenuState}
       >
         <ul className={styles.navList}>
           <SliceZone slices={slices} components={components} />
