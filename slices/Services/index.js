@@ -10,9 +10,10 @@ const Services = ({
   },
 }) => {
   const animateTitle = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
   }
+
   const animateList = {
     hidden: {
       opacity: 0,
@@ -22,6 +23,7 @@ const Services = ({
       transition: { staggerChildren: 0.2 },
     },
   }
+
   const animateItem = {
     hidden: { x: -10, opacity: 0 },
     visible: { x: 0, opacity: 1 },

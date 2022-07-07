@@ -21,7 +21,7 @@
 }
 
 .processCard {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 2rem 1rem;
   background-color: $color-mine-shaft;
   border-radius: 10px;
   max-width: 35rem;
@@ -64,5 +64,9 @@
 }
 
 .textWrapper {
-  padding: 0 1.5rem;
+  padding: 0 1rem;
+
+  @include mq("small") {
+    padding: 0 1.5rem;
+  }
 }
