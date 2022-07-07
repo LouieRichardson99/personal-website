@@ -38,13 +38,18 @@
 .image {
   margin: 2rem auto 0 auto;
   width: 15rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  & img {
+    border-radius: 5px;
+  }
 
   @include mq("medium") {
     margin: 0;
   }
 
   @include mq("large") {
-    width: 18rem;
+    width: 16rem;
   }
 }
 
@@ -52,7 +57,7 @@
   display: none;
   gap: 1.25rem;
   align-items: center;
-  margin: 0.5rem 0 0 0.75rem;
+  margin: 1rem 0 0 0.75rem;
 
   & a {
     transition: 200ms;
@@ -67,7 +72,7 @@
 
   @include mq("medium") {
     justify-content: flex-end;
-    margin: 0.5rem 0.5rem 0 0;
+    margin: 1rem 0.5rem 0 0;
     display: flex;
   }
 }

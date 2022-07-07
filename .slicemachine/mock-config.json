@@ -44,6 +44,38 @@
         },
         "items": {}
       }
+    },
+    "Process": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {
+          "processTitle": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "processDescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   },
   "slices/blog": {
@@ -120,6 +152,7 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "homepage": {}
   }
 }

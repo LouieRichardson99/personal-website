@@ -1,6 +1,8 @@
 @use "../../../sass/abstracts/" as *;
 
 .card {
+  box-shadow: $color-mine-shaft 0px 7px 29px 0px;
+
   &:hover {
     & svg {
       transform: translateX(0.5rem);
