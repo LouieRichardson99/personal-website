@@ -36,6 +36,37 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    background-image: url("../../components/assets/illustrations/dotted-background.svg");
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 20rem;
+    content: "";
+    z-index: -1;
+    bottom: -7.5rem;
+    right: -7.5rem;
+  }
+}
+
+.processCardContainer:nth-child(odd) {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    background-image: url("../../components/assets/illustrations/dotted-background.svg");
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 15rem;
+    content: "";
+    z-index: -1;
+    bottom: -2.5rem;
+    left: -2.5rem;
+  }
 }
 
 .processNumber {

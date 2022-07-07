@@ -14,13 +14,13 @@ const Process = ({
   }
 
   const animateCardLeft = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100, rotate: 10 },
+    visible: { opacity: 1, x: 0, rotate: 0 },
   }
 
   const animateCardRight = {
-    hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: 100, rotate: -10 },
+    visible: { opacity: 1, x: 0, rotate: 0 },
   }
 
   return (
@@ -50,7 +50,7 @@ const Process = ({
                 className={styles.processCard}
                 initial="hidden"
                 whileInView="visible"
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.6, type: "spring" }}
                 variants={
                   (index + 1) % 2 == 0 ? animateCardRight : animateCardLeft
                 }
