@@ -61,7 +61,6 @@
 }
 
 .nav {
-  visibility: hidden;
   position: fixed;
   left: 0;
   top: 0;
@@ -75,17 +74,7 @@
   z-index: 10;
 
   & a {
-    color: transparent;
-    transition: 400ms;
-  }
-
-  &.open {
-    visibility: visible;
-    background-color: $color-white;
-
-    & a {
-      color: $color-shark;
-    }
+    color: $color-shark;
   }
 }
 
@@ -96,6 +85,7 @@
   justify-content: center;
   min-height: 100vh;
   gap: 2rem;
+  background-color: $color-white;
 
   & a {
     font-size: 1.25rem;
