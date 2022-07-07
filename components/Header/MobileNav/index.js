@@ -1,10 +1,9 @@
 import { useState } from "react"
+import { PrismicNextImage } from "@prismicio/next"
 import { PrismicLink, SliceZone } from "@prismicio/react"
 import { components } from "../../../slices"
-import styles from "./styles.module.scss"
 import { MenuAlt3Icon } from "@heroicons/react/outline"
-import { PrismicNextImage } from "@prismicio/next"
-import { motion } from "framer-motion"
+import styles from "./styles.module.scss"
 
 export const MobileNav = ({ slices, image, primaryButton }) => {
   const [open, setOpen] = useState(false)
@@ -17,11 +16,6 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
     } else {
       document.body.style.overflow = "hidden"
     }
-  }
-
-  const animateMenu = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "100%" },
   }
 
   return (
@@ -40,12 +34,8 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
         <MenuAlt3Icon />
       </button>
 
-      <motion.nav
-        className={styles.nav}
-        animate={open ? "open" : "closed"}
-        initial="closed"
-        variants={animateMenu}
-        transition={{ type: "spring", duration: 0.1 }}
+      <nav
+        className={`${styles.nav} ${open && styles.open}`}
         onClick={handleMenuState}
       >
         <ul className={styles.navList}>
@@ -56,7 +46,7 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
             </PrismicLink>
           </li>
         </ul>
-      </motion.nav>
+      </nav>
     </div>
   )
 }
