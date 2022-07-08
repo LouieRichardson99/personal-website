@@ -22,8 +22,10 @@
       color: $color-white;
     }
 
-    &:hover {
-      background-color: $color-burnt-umber;
+    @media (hover) {
+      &:hover {
+        background-color: $color-burnt-umber;
+      }
     }
   }
 
@@ -36,13 +38,15 @@
       color: $color-white;
     }
 
-    &:hover {
-      background-color: $color-white;
-      color: $color-shark;
+    @media (hover) {
+      &:hover {
+        background-color: $color-white;
+        color: $color-shark;
 
-      & img {
-        filter: invert(11%) sepia(8%) saturate(989%) hue-rotate(187deg)
-          brightness(0) contrast(99%);
+        & img {
+          filter: invert(11%) sepia(8%) saturate(989%) hue-rotate(187deg)
+            brightness(0) contrast(99%);
+        }
       }
     }
   }

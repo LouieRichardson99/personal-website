@@ -1,7 +1,7 @@
 import { PrismicNextImage } from "@prismicio/next"
 import { PrismicLink, PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
-import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 const Hero = ({
   slice: {
@@ -19,13 +19,12 @@ const Hero = ({
     },
   },
 }) => {
-  const animateImage = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  }
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  })
 
   return (
-    <section className={`container ${styles.section}`}>
+    <section className={`container ${styles.section}`} ref={ref}>
       <div>
         {availability ? (
           <p className={`${styles.availability} ${styles.available}`}>
@@ -53,15 +52,9 @@ const Hero = ({
           </PrismicLink>
         </div>
       </div>
-      <motion.div
-        variants={animateImage}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className={styles.image}
-      >
+      <div className={`${styles.image} ${inView && styles.animate}`}>
         <PrismicNextImage field={image} layout="responsive" priority={true} />
-      </motion.div>
+      </div>
     </section>
   )
 }

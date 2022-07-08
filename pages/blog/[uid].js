@@ -5,12 +5,12 @@ import { createClient, linkResolver } from "../../prismicio"
 import { Layout } from "../../components/Layout"
 import { components } from "../../slices"
 import { components as articleComponents } from "../../slices/blog"
-import { format } from "date-fns"
 import { LinkIcon } from "@heroicons/react/solid"
 import { TwitterIcon } from "../../components/assets/icons/Twitter"
 import { FacebookIcon } from "../../components/assets/icons/Facebook"
 import styles from "../../sass/pages/blog-post.module.scss"
 import { PrismicNextImage } from "@prismicio/next"
+import { formatDate } from "../../components/utils/formatDate"
 
 const BlogPost = ({ data, url, lang, ...layout }) => {
   const [postUrl, setPostUrl] = useState(null)
@@ -23,11 +23,6 @@ const BlogPost = ({ data, url, lang, ...layout }) => {
     article: true,
     lang,
   }
-
-  const publishDate = format(
-    new Date(layout.first_publication_date),
-    "do MMMM y"
-  )
 
   useEffect(() => {
     if (window) {
@@ -46,7 +41,10 @@ const BlogPost = ({ data, url, lang, ...layout }) => {
           <div className="title">
             <PrismicRichText field={data?.title} />
           </div>
-          <p className={styles.publishDate}>Published {publishDate}</p>
+          <p className={styles.publishDate}>
+            Published{" "}
+            {formatDate(new Date(layout.first_publication_date).getTime())}
+          </p>
           <div className={styles.mainImage}>
             <PrismicNextImage field={data?.image} />
           </div>

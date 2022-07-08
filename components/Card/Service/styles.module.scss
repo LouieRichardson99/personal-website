@@ -1,0 +1,62 @@
+@use "../../../sass/abstracts/" as *;
+
+.item {
+  padding-bottom: 2rem;
+  color: $color-white;
+  opacity: 0;
+  transform: translateX(2rem);
+  transition: ease 400ms;
+
+  &.border {
+    border-bottom: 1px solid $color-mine-shaft;
+  }
+
+  @include mq("large") {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.name {
+  margin-bottom: 0.5rem;
+
+  & h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.icon {
+  background-color: $color-mine-shaft;
+  border-radius: 10px;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+
+  & img {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+
+  @include mq("large") {
+    margin-top: 0.5rem;
+  }
+
+  @media (hover) {
+    transition: 200ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

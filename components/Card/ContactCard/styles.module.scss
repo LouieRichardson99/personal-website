@@ -6,8 +6,10 @@
   min-width: max-content;
   transition: all 200ms ease-out;
 
-  &:hover {
-    transform: scale(1.05);
+  @media (hover) {
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
