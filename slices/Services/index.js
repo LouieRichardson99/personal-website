@@ -40,7 +40,7 @@ const Services = ({
     </div>
     <div className={styles.imageFlex}>
       <div className={styles.image}>
-        <PrismicNextImage field={image} />
+        <PrismicNextImage field={image} loading="lazy" />
       </div>
     </div>
   </section>

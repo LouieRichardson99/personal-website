@@ -16,7 +16,7 @@ export const ServiceCard = ({ icon, name, description, hasBorder }) => {
       ref={ref}
     >
       <div className={styles.icon}>
-        <PrismicImage field={icon} />
+        <PrismicImage field={icon} loading="lazy" />
       </div>
       <div>
         <div className={styles.name}>
