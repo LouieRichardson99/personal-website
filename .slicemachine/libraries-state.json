@@ -1111,18 +1111,7 @@
                   }
                 }
               },
-              "items": {
-                "caseStudy": {
-                  "type": "Link",
-                  "config": {
-                    "label": "Case Study",
-                    "select": "document",
-                    "customtypes": [
-                      "case-study"
-                    ]
-                  }
-                }
-              },
+              "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
@@ -1132,25 +1121,12 @@
             "variation": "default",
             "name": "Default",
             "slice_type": "work",
-            "items": [
-              {
-                "caseStudy": {
-                  "link_type": "Web",
-                  "url": "https://slicemachine.dev"
-                }
-              },
-              {
-                "caseStudy": {
-                  "link_type": "Web",
-                  "url": "https://slicemachine.dev"
-                }
-              }
-            ],
+            "items": [],
             "primary": {
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Cultivate clicks-and-mortar users",
+                  "text": "Enable proactive mindshare",
                   "spans": []
                 }
               ]
@@ -1161,13 +1137,7 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/Work/default/preview.png",
-            "width": 800,
-            "height": 66
-          }
-        }
+        "screenshotPaths": {}
       }
     }
   },

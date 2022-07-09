@@ -19,7 +19,7 @@ export const WorkFeed = ({ caseStudies }) => {
 
   return (
     <ul className={styles.list}>
-      {caseStudies.map(({ caseStudy: { data, ...caseStudy } }, index) => (
+      {caseStudies.map(({ data, ...caseStudy }, index) => (
         <li key={index} className={styles.caseStudy}>
           <div>
             <h4 className={styles.title}>

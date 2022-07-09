@@ -6,17 +6,19 @@ import { WorkFeed } from "../../components/WorkFeed"
 const Work = ({
   slice: {
     primary: { title },
-    items,
   },
-}) => (
-  <section className={styles.section}>
-    <div className="container">
-      <div className="title dark">
-        <PrismicRichText field={title} />
+  caseStudies,
+}) => {
+  return (
+    <section className={styles.section}>
+      <div className="container">
+        <div className="title dark">
+          <PrismicRichText field={title} />
+        </div>
+        <WorkFeed caseStudies={caseStudies} />
       </div>
-      <WorkFeed caseStudies={items} />
-    </div>
-  </section>
-)
+    </section>
+  )
+}
 
 export default Work

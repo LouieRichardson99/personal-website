@@ -1,10 +1,9 @@
 import { SliceZone } from "@prismicio/react"
 import { createClient } from "../prismicio"
 import { Layout } from "../components/Layout"
-import { components } from "../slices"
-import homepageQuery from "../graphQuery/homepageQuery"
+import { components, Work } from "../slices"
 
-const Homepage = ({ data, url, lang, ...layout }) => {
+const Homepage = ({ data, url, lang, caseStudies, ...layout }) => {
   const seo = {
     metaTitle: data?.metaTitle,
     metaDescription: data?.metaDescription,
@@ -16,7 +15,13 @@ const Homepage = ({ data, url, lang, ...layout }) => {
 
   return (
     <Layout seo={seo} {...layout}>
-      <SliceZone slices={data?.slices} components={components} />
+      <SliceZone
+        slices={data?.slices}
+        components={{
+          ...components,
+          work: (props) => <Work caseStudies={caseStudies} {...props} />,
+        }}
+      />
     </Layout>
   )
 }
@@ -24,13 +29,16 @@ const Homepage = ({ data, url, lang, ...layout }) => {
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData })
 
-  const page = await client.getSingle("homepage", { graphQuery: homepageQuery })
+  const page = await client.getSingle("homepage")
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")
   const socials = await client.getSingle("socials")
 
+  // Fetch all case-study custom type for "Work" slice
+  const caseStudies = await client.getAllByType("case-study")
+
   return {
-    props: { header, footer, socials, ...page },
+    props: { header, footer, socials, caseStudies, ...page },
   }
 }
 
