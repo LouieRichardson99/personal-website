@@ -1,6 +1,7 @@
 import { PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 import { ProcessCard } from "../../components/Card/ProcessCard"
+import formatID from "../../components/utils/formatID"
 
 const Process = ({
   slice: {
@@ -10,7 +11,7 @@ const Process = ({
 }) => (
   <section
     className={`container ${styles.section}`}
-    id={title[0].text.toLowerCase().replaceAll(" ", "-")}
+    id={formatID(title[0].text)}
   >
     <div>
       <div className="title">

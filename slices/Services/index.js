@@ -2,6 +2,7 @@ import { PrismicNextImage } from "@prismicio/next"
 import { PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 import { ServiceCard } from "../../components/Card/Service"
+import formatID from "../../components/utils/formatID"
 
 const Services = ({
   slice: {
@@ -11,7 +12,7 @@ const Services = ({
 }) => (
   <section
     className={`container ${styles.section}`}
-    id={title[0].text.toLowerCase().replaceAll(" ", "-")}
+    id={formatID(title[0].text)}
   >
     <div className={styles.flexWrapper}>
       <div>

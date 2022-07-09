@@ -1,6 +1,7 @@
 import { PrismicNextImage } from "@prismicio/next"
 import { PrismicLink, PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
+import formatID from "../../components/utils/formatID"
 
 const About = ({
   slice: {
@@ -16,10 +17,7 @@ const About = ({
     items,
   },
 }) => (
-  <section
-    className={styles.section}
-    id={title[0].text.toLowerCase().replaceAll(" ", "-")}
-  >
+  <section className={styles.section} id={formatID(title[0].text)}>
     <div className={`container ${styles.flexWrapper}`}>
       <div>
         <div className="title dark">

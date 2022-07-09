@@ -2,6 +2,7 @@ import React from "react"
 import { PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 import { WorkFeed } from "../../components/WorkFeed"
+import formatID from "../../components/utils/formatID"
 
 const Work = ({
   slice: {
@@ -10,7 +11,7 @@ const Work = ({
   caseStudies,
 }) => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id={formatID(title[0].text)}>
       <div className="container">
         <div className="title dark">
           <PrismicRichText field={title} />
