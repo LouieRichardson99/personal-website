@@ -1,0 +1,39 @@
+{
+  "id": "work",
+  "type": "SharedSlice",
+  "name": "Work",
+  "description": "Work",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Work",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "caseStudy": {
+          "type": "Link",
+          "config": {
+            "label": "Case Study",
+            "select": "document",
+            "customtypes": [
+              "case-study"
+            ]
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

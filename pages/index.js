@@ -2,6 +2,7 @@ import { SliceZone } from "@prismicio/react"
 import { createClient } from "../prismicio"
 import { Layout } from "../components/Layout"
 import { components } from "../slices"
+import homepageQuery from "../graphQuery/homepageQuery"
 
 const Homepage = ({ data, url, lang, ...layout }) => {
   const seo = {
@@ -23,7 +24,7 @@ const Homepage = ({ data, url, lang, ...layout }) => {
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData })
 
-  const page = await client.getSingle("homepage")
+  const page = await client.getSingle("homepage", { graphQuery: homepageQuery })
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")
   const socials = await client.getSingle("socials")

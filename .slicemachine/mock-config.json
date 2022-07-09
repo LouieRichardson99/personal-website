@@ -76,6 +76,19 @@
           }
         }
       }
+    },
+    "Work": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
+      }
     }
   },
   "slices/blog": {
@@ -153,6 +166,20 @@
         }
       }
     },
-    "homepage": {}
+    "homepage": {},
+    "case-study": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

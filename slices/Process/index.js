@@ -21,7 +21,7 @@ const Process = ({
           <PrismicRichText field={description} />
         </div>
       </div>
-      <div className={styles.processCardsWrapper}>
+      <ol className={styles.processCardsWrapper}>
         {items.map(
           ({ processNumber, processTitle, processDescription }, index) => (
             <ProcessCard
@@ -32,7 +32,7 @@ const Process = ({
             />
           )
         )}
-      </div>
+      </ol>
     </section>
   )
 }

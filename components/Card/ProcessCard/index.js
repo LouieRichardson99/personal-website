@@ -9,7 +9,7 @@ export const ProcessCard = ({ number, title, description }) => {
   })
 
   return (
-    <div className={styles.processCardContainer} ref={ref}>
+    <li className={styles.processCardContainer} ref={ref}>
       <div className={`${styles.processCard} ${inView && styles.animate}`}>
         <div className={styles.processNumber}>{number}</div>
         <div className={styles.textWrapper}>
@@ -21,6 +21,6 @@ export const ProcessCard = ({ number, title, description }) => {
           </div>
         </div>
       </div>
-    </div>
+    </li>
   )
 }

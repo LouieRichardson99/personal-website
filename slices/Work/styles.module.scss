@@ -1,0 +1,11 @@
+@use "../../sass/abstracts/" as *;
+
+.section {
+  background-color: $color-white;
+  color: $color-shark;
+  padding: 5rem 0;
+
+  @include mq("large") {
+    padding: 7rem 0;
+  }
+}

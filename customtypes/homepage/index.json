@@ -24,6 +24,9 @@
             },
             "process": {
               "type": "SharedSlice"
+            },
+            "work": {
+              "type": "SharedSlice"
             }
           }
         }
