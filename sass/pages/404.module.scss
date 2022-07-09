@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .section {
   margin: 10rem auto;
 }
@@ -8,5 +10,8 @@
 
 .link {
   cursor: pointer;
-  width: max-content;
+
+  @include mq("x-small") {
+    width: max-content;
+  }
 }

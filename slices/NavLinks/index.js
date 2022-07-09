@@ -2,6 +2,7 @@ import { Fragment } from "react"
 import { useRouter } from "next/router"
 import { PrismicLink } from "@prismicio/react"
 import styles from "./styles.module.scss"
+import Link from "next/link"
 
 const NavLinks = ({ slice: { items } }) => {
   const router = useRouter()
@@ -18,16 +19,28 @@ const NavLinks = ({ slice: { items } }) => {
 
   return (
     <Fragment>
-      {items.map(({ link, linkText }, index) => (
-        <li key={index}>
-          <PrismicLink
-            field={link}
-            className={getCurrentPathname(`/${link.slug}`)}
-          >
-            {linkText}
-          </PrismicLink>
-        </li>
-      ))}
+      {items.map(({ link, linkText }, index) => {
+        if (link.link_type === "Web") {
+          const anchor = link.url.replace("https://", "/")
+
+          return (
+            <li key={index}>
+              <Link href={anchor}>{linkText}</Link>
+            </li>
+          )
+        } else {
+          return (
+            <li key={index}>
+              <PrismicLink
+                field={link}
+                className={getCurrentPathname(`/${link.slug}`)}
+              >
+                {linkText}
+              </PrismicLink>
+            </li>
+          )
+        }
+      })}
     </Fragment>
   )
 }
