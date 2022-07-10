@@ -19,6 +19,11 @@ export default function Document() {
           defer
           src="https://static.cdn.prismic.io/prismic.js?new=true&repo=louie"
         />
+        <script
+          defer
+          data-domain="louierichardson.com"
+          src="https://plausible.io/js/plausible.js"
+        />
       </Head>
       <body>
         <Main />
