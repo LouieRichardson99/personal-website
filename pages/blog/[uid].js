@@ -11,6 +11,7 @@ import { FacebookIcon } from "../../components/assets/icons/Facebook"
 import styles from "../../sass/pages/blog-post.module.scss"
 import { PrismicNextImage } from "@prismicio/next"
 import { formatDate } from "../../components/utils/formatDate"
+import { ArticleFooter } from "../../components/ArticleFooter"
 
 const BlogPost = ({ data, url, lang, ...layout }) => {
   const [postUrl, setPostUrl] = useState(null)
@@ -74,31 +75,13 @@ const BlogPost = ({ data, url, lang, ...layout }) => {
         <div className="article-container flow">
           <SliceZone slices={data?.slices1} components={articleComponents} />
         </div>
-        <div className={styles.articleFooterFlex}>
-          <div>
-            <p>
-              <span className={styles.bold}>Share: </span>
-              <a
-                href={`https://twitter.com/share?url=${postUrl}&text=${data?.title[0].text}`}
-              >
-                Discuss on Twitter
-              </a>
-              <span className={styles.red}> | </span>
-              <a href={`https://www.facebook.com/sharer.php?u=${postUrl}`}>
-                Share on Facebook
-              </a>
-            </p>
-          </div>
-          <div className={styles.authorWrapper}>
-            <div className={styles.authorImage}>
-              <PrismicNextImage field={data?.author?.data?.image} />
-            </div>
-            <p>
-              <PrismicText field={data?.author?.data?.name} /> -{" "}
-              <PrismicText field={data?.author?.data?.location} />
-            </p>
-          </div>
-        </div>
+        <ArticleFooter
+          postUrl={postUrl}
+          title={data?.title[0].text}
+          authorImage={data?.author?.data?.image}
+          authorName={data?.author?.data?.name}
+          authorLocation={data?.author?.data?.location}
+        />
       </article>
 
       <SliceZone slices={data?.slices} components={components} />

@@ -1,12 +1,12 @@
 {
-  "id": "b8f7f920-a14e-46af-93c9-0249d981ed3c",
-  "uid": "aut-est-ea",
+  "id": "56ea7f75-e003-4811-9cff-1c2545c8d6bb",
+  "uid": "qui-labore-et",
   "type": "case-study",
   "data": {
     "title": [
       {
         "type": "heading1",
-        "text": "Redefine bricks-and-clicks channels",
+        "text": "Productize bricks-and-clicks technologies",
         "spans": []
       }
     ],
@@ -17,41 +17,51 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
     },
     "description": [
       {
         "type": "paragraph",
-        "text": "Dolor anim veniam ut dolore anim labore eiusmod. Nulla nisi ipsum quis voluptate ut. Lorem deserunt sunt est excepteur do nulla voluptate reprehenderit quis cupidatat ea labore voluptate.",
+        "text": "Mollit voluptate magna incididunt cupidatat nisi aliquip enim velit. Duis enim deserunt sit Lorem consequat exercitation cupidatat Lorem.",
         "spans": []
       }
     ],
     "websiteLink": {
       "link_type": "Web",
-      "url": "http://google.com"
+      "url": "http://twitter.com"
     },
     "tags": [
       {
-        "tag": "implement leading-edge initiatives"
+        "tag": "drive magnetic niches"
       },
       {
-        "tag": "generate 24/365 paradigms"
+        "tag": "facilitate sexy partnerships"
       },
       {
-        "tag": "syndicate extensible niches"
+        "tag": "generate wireless convergence"
       },
       {
-        "tag": "streamline interactive interfaces"
+        "tag": "monetize compelling models"
       },
       {
-        "tag": "drive robust users"
-      },
-      {
-        "tag": "brand distributed action-items"
+        "tag": "morph best-of-breed functionalities"
       }
     ],
-    "metaTitle": "integrate B2C web services",
-    "metaDescription": "leverage robust supply-chains",
+    "articleImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+    },
+    "author": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    },
+    "metaTitle": "enhance enterprise partnerships",
+    "metaDescription": "harness visionary deliverables",
     "metaImage": {
       "dimensions": {
         "width": 900,
@@ -59,7 +69,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
     }
   }
 }

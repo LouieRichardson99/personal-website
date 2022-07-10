@@ -23,9 +23,18 @@
           "type": "StructuredText",
           "config": {
             "label": "Image Attribute",
-            "placeholder": "John Doe via Unsplash",
+            "placeholder": "John Doe via Unsplash (Optional)",
             "allowTargetBlank": true,
             "single": "paragraph,strong,hyperlink"
+          }
+        },
+        "imageCaption": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Image Caption",
+            "placeholder": "(Optional)",
+            "allowTargetBlank": true,
+            "single": "paragraph,em,strong,hyperlink"
           }
         }
       },

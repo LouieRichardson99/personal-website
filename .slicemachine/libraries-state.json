@@ -1243,9 +1243,18 @@
                   "type": "StructuredText",
                   "config": {
                     "label": "Image Attribute",
-                    "placeholder": "John Doe via Unsplash",
+                    "placeholder": "John Doe via Unsplash (Optional)",
                     "allowTargetBlank": true,
                     "single": "paragraph,strong,hyperlink"
+                  }
+                },
+                "imageCaption": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Image Caption",
+                    "placeholder": "(Optional)",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,em,strong,hyperlink"
                   }
                 }
               },
@@ -1268,12 +1277,19 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
               },
               "imageAttribute": [
                 {
                   "type": "paragraph",
-                  "text": "Elit commodo labore Lorem aute eu mollit. Sint non consequat proident ea esse voluptate sit velit.",
+                  "text": "Elit exercitation duis nulla fugiat eiusmod aliqua enim reprehenderit.",
+                  "spans": []
+                }
+              ],
+              "imageCaption": [
+                {
+                  "type": "paragraph",
+                  "text": "Lorem consequat voluptate commodo cillum. Irure ullamco dolor ex.",
                   "spans": []
                 }
               ]
@@ -1284,13 +1300,7 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/blog/Image/default/preview.png",
-            "width": 800,
-            "height": 24
-          }
-        }
+        "screenshotPaths": {}
       },
       "text": {
         "library": "slices/blog",
@@ -1316,7 +1326,7 @@
                     "label": "Rich Text",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,preformatted,heading2,heading3,heading4,strong,em,hyperlink,image,embed,list-item,o-list-item"
+                    "multi": "paragraph,preformatted,heading2,heading3,heading4,strong,em,hyperlink,image,embed,list-item,o-list-item,heading5"
                   }
                 }
               },
@@ -1335,7 +1345,7 @@
               "richText": [
                 {
                   "type": "paragraph",
-                  "text": "Qui et culpa veniam dolore ipsum exercitation id laborum.",
+                  "text": "Qui amet aliqua voluptate ullamco ad incididunt nisi velit reprehenderit deserunt. Non fugiat amet velit proident ad aliqua. Mollit ullamco ullamco qui irure sunt do ad Lorem adipisicing mollit qui minim.",
                   "spans": []
                 }
               ]

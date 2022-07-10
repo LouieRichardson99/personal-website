@@ -44,6 +44,11 @@ h4 {
   font-weight: 700;
 }
 
+h5 {
+  font-size: var(--fs-400);
+  font-weight: 700;
+}
+
 p {
   & a {
     color: inherit;
@@ -92,5 +97,16 @@ ul {
 
   & ::marker {
     color: $color-medium-carmine;
+  }
+}
+
+ol {
+  list-style-position: inside;
+  padding: 0;
+
+  & ::marker {
+    color: $color-medium-carmine;
+    font-weight: 700;
+    font-size: var(--fs-500);
   }
 }

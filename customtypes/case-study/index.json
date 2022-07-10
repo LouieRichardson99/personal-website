@@ -74,6 +74,24 @@
       }
     },
     "Article": {
+      "articleImage": {
+        "type": "Image",
+        "config": {
+          "label": "Article Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "author": {
+        "type": "Link",
+        "config": {
+          "label": "Author",
+          "select": "document",
+          "customtypes": [
+            "author"
+          ]
+        }
+      },
       "slices1": {
         "type": "Slices",
         "fieldset": "Slice Zone",

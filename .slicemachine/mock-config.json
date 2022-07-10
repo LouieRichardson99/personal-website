@@ -112,6 +112,12 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "imageCaption": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         }
       }

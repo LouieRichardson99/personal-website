@@ -1,10 +1,18 @@
-import { SliceZone } from "@prismicio/react"
+import { useState, useEffect } from "react"
+import { PrismicLink, PrismicRichText, SliceZone } from "@prismicio/react"
 import * as prismicHelpers from "@prismicio/helpers"
 import { createClient, linkResolver } from "../../prismicio"
 import { Layout } from "../../components/Layout"
 import { components } from "../../slices"
+import styles from "../../sass/pages/case-study.module.scss"
+import { PrismicNextImage } from "@prismicio/next"
+import { components as articleComponents } from "../../slices/blog"
+import { ArticleFooter } from "../../components/ArticleFooter"
+import { ExternalLinkIcon } from "@heroicons/react/outline"
 
 const CaseStudy = ({ data, url, lang, ...layout }) => {
+  const [postUrl, setPostUrl] = useState(null)
+
   const seo = {
     metaTitle: data?.metaTitle,
     metaDescription: data?.metaDescription,
@@ -14,8 +22,49 @@ const CaseStudy = ({ data, url, lang, ...layout }) => {
     lang,
   }
 
+  useEffect(() => {
+    if (window) {
+      setPostUrl(window.location.href)
+    }
+  }, [])
+
   return (
     <Layout seo={seo} {...layout}>
+      <article className={`container ${styles.article}`}>
+        <header className={styles.header}>
+          <div className="title">
+            <PrismicRichText field={data?.title} />
+          </div>
+          <div className={styles.mainImage}>
+            <PrismicNextImage field={data?.articleImage} />
+          </div>
+          <div className={styles.flexWrapper}>
+            <div className={styles.websiteLink}>
+              <PrismicLink field={data.websiteLink}>
+                Visit Website
+                <ExternalLinkIcon />
+              </PrismicLink>
+            </div>
+            <div className={styles.tags}>
+              {data.tags.map(({ tag }, index) => (
+                <div key={index} className={styles.tag}>
+                  {tag}
+                </div>
+              ))}
+            </div>
+          </div>
+        </header>
+        <div className="article-container flow">
+          <SliceZone slices={data?.slices1} components={articleComponents} />
+        </div>
+        <ArticleFooter
+          postUrl={postUrl}
+          title={data?.title[0].text}
+          authorImage={data?.author?.data?.image}
+          authorName={data?.author?.data?.name}
+          authorLocation={data?.author?.data?.location}
+        />
+      </article>
       <SliceZone slices={data?.slices} components={components} />
     </Layout>
   )
@@ -33,14 +82,17 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData })
+  const fetchLinks = ["author.name", "author.image", "author.location"]
 
-  const page = await client.getByUID("case-study", params.uid)
+  const caseStudy = await client.getByUID("case-study", params.uid, {
+    fetchLinks,
+  })
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")
   const socials = await client.getSingle("socials")
 
   return {
-    props: { header, footer, socials, ...page },
+    props: { header, footer, socials, ...caseStudy },
   }
 }
 

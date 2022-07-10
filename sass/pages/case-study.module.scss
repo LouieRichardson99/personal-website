@@ -1,0 +1,77 @@
+@use "../abstracts/" as *;
+
+.article {
+  margin-top: 3rem;
+
+  @include mq("medium") {
+    margin-top: 5rem;
+  }
+}
+
+.header {
+  margin-bottom: 2rem;
+
+  @include mq("medium") {
+    margin-bottom: 4rem;
+  }
+}
+
+.mainImage {
+  & img {
+    border-radius: 5px;
+  }
+
+  margin: 2rem 0 0.5rem 0;
+}
+
+.flexWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.websiteLink {
+  & a {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    color: $color-white;
+    width: max-content;
+    font-size: 0.875rem;
+
+    & svg {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    @include mq("small") {
+      font-size: 1rem;
+
+      & svg {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag {
+  border: 1px solid $color-mine-shaft;
+  border-radius: 25px;
+  padding: 0.2rem 1rem;
+  font-size: 0.875rem;
+
+  @include mq("small") {
+    font-size: 1rem;
+  }
+}

@@ -4,7 +4,7 @@
   box-shadow: $color-mine-shaft 0px 7px 29px 0px;
   transform: translateY(0.5rem);
   opacity: 0;
-  transition: 200ms ease-in all;
+  transition: 300ms ease-in all;
 
   &.animate {
     transform: translateY(0);

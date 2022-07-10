@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useRouter } from "next/router"
 import { PrismicNextImage } from "@prismicio/next"
 import { PrismicLink, SliceZone } from "@prismicio/react"
 import { components } from "../../../slices"
@@ -7,6 +8,13 @@ import styles from "./styles.module.scss"
 
 export const MobileNav = ({ slices, image, primaryButton }) => {
   const [open, setOpen] = useState(false)
+  const router = useRouter()
+
+  const getCurrentPathname = (pathname) => {
+    if (router.asPath === pathname) {
+      return styles.active
+    }
+  }
 
   const handleMenuState = () => {
     setOpen(!open)
@@ -41,7 +49,10 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
         <ul className={styles.navList}>
           <SliceZone slices={slices} components={components} />
           <li>
-            <PrismicLink field={primaryButton.link}>
+            <PrismicLink
+              field={primaryButton.link}
+              className={getCurrentPathname(`/${primaryButton.link.slug}`)}
+            >
               {primaryButton.text}
             </PrismicLink>
           </li>
