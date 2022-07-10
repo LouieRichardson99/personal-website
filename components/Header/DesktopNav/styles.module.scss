@@ -56,31 +56,36 @@
 }
 
 .phoneIcon {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: $color-white;
   align-items: center;
   display: flex;
 
-  &:hover {
-    animation: rotate 600ms ease-in-out;
+  & svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: $color-white;
   }
 
-  @keyframes rotate {
-    0% {
-      rotate: 0deg;
+  @media (hover) {
+    &:hover {
+      animation: rotate 600ms ease-in-out;
     }
 
-    33% {
-      rotate: -20deg;
-    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
 
-    66% {
-      rotate: 20deg;
-    }
+      33% {
+        transform: rotate(-20deg);
+      }
 
-    100% {
-      rotate: 0deg;
+      66% {
+        transform: rotate(20deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
     }
   }
 }
