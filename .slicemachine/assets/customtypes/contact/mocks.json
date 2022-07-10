@@ -1,30 +1,28 @@
 {
-  "id": "9413934e-ca64-4057-b46d-be1e4c2ae27e",
-  "uid": "sequi-consequatur-eum",
+  "id": "7b42a1ac-94f0-4a6d-af53-5cb422866ae1",
+  "uid": "sequi-maxime-id",
   "type": "contact",
   "data": {
     "title": [
       {
         "type": "heading1",
-        "text": "Innovate frictionless experiences",
+        "text": "Revolutionize seamless methodologies",
         "spans": []
       }
     ],
     "description": [
       {
         "type": "paragraph",
-        "text": "Reprehenderit culpa dolor cupidatat sit duis duis labore amet qui dolore reprehenderit ad dolor excepteur velit. Quis aliquip do amet minim nulla ipsum ad id sint consectetur magna cupidatat laboris cupidatat pariatur. Ea exercitation ullamco deserunt.",
+        "text": "Nostrud laborum pariatur culpa quis laborum. Nulla reprehenderit minim qui veniam commodo ex ex laborum et labore esse aliqua laboris pariatur est.",
         "spans": []
       }
     ],
     "calendlyLink": {
       "link_type": "Web",
-      "url": "https://slicemachine.dev"
+      "url": "http://google.com"
     },
-    "emailAddress": "monetize robust eyeballs",
-    "phoneNumber": "transform open-source ROI",
-    "metaTitle": "synthesize leading-edge methodologies",
-    "metaDescription": "drive best-of-breed synergies",
+    "metaTitle": "implement turn-key niches",
+    "metaDescription": "recontextualize real-time infomediaries",
     "metaImage": {
       "dimensions": {
         "width": 900,
@@ -32,7 +30,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
     }
   }
 }

@@ -30,20 +30,6 @@
           "placeholder": "",
           "select": null
         }
-      },
-      "emailAddress": {
-        "type": "Text",
-        "config": {
-          "label": "Email Address",
-          "placeholder": ""
-        }
-      },
-      "phoneNumber": {
-        "type": "Text",
-        "config": {
-          "label": "Phone Number",
-          "placeholder": ""
-        }
       }
     },
     "SEO": {

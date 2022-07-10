@@ -21,7 +21,7 @@ const Contact = ({ data, url, lang, ...layout }) => {
       methodNo: "01",
       name: "email",
       text: "Send me an email",
-      link: `mailto:${data?.emailAddress}`,
+      link: `mailto:${layout?.socials?.data?.email}`,
     },
     {
       methodNo: "02",
@@ -33,7 +33,7 @@ const Contact = ({ data, url, lang, ...layout }) => {
       methodNo: "03",
       name: "phone",
       text: "Phone me",
-      link: `tel:${data?.phoneNumber.replaceAll(" ", "")}`,
+      link: `tel:${layout?.socials?.data?.phoneNumber.replaceAll(" ", "")}`,
     },
   ]
 

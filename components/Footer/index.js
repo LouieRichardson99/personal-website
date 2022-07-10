@@ -29,7 +29,7 @@ export const Footer = ({
           </a>
         )}
         {email && (
-          <a className={styles.emailLink} href={email}>
+          <a className={styles.emailLink} href={`mailto:${email}`}>
             <MailIcon />
             {email}
           </a>
