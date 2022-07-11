@@ -6,7 +6,7 @@ export const NavigateToTop = () => {
   const [isShowing, setIsShowing] = useState(false)
 
   const handleScroll = () => {
-    if (document) {
+    if (typeof window === "object") {
       const rootElement = document.getElementById("root")
       const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
 
@@ -25,7 +25,7 @@ export const NavigateToTop = () => {
   }
 
   useEffect(() => {
-    if (window) {
+    if (typeof window === "object") {
       window.addEventListener("scroll", handleScroll)
     }
   }, [])
