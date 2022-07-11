@@ -2,9 +2,11 @@ import { useState } from "react"
 import { Input } from "../Input"
 import styles from "./styles.module.scss"
 import { ChevronRightIcon } from "@heroicons/react/solid"
+import { usePlausible } from "next-plausible"
 
 export const ContactForm = () => {
   const [formResponse, setFormResponse] = useState(null)
+  const plausible = usePlausible()
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -21,6 +23,7 @@ export const ContactForm = () => {
       .then((response) => {
         if (response.ok) {
           setFormResponse("ok")
+          plausible("Contact form submitted")
         } else {
           setFormResponse("err")
         }
