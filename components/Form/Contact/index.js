@@ -24,6 +24,7 @@ export const ContactForm = () => {
         if (response.ok) {
           setFormResponse("ok")
           plausible("Contact form submitted")
+          event.target.reset()
         } else {
           setFormResponse("err")
         }
