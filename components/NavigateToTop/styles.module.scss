@@ -1,0 +1,44 @@
+@use "../../sass/abstracts/" as *;
+
+.button {
+  background-color: $color-medium-carmine;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  z-index: 5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms ease;
+  position: fixed;
+  opacity: 0;
+  bottom: -3rem;
+  right: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  &.show {
+    opacity: 1;
+    bottom: 1rem;
+  }
+
+  & svg {
+    color: $color-white;
+    width: 2rem;
+    height: 2rem;
+    transition: 200ms ease;
+  }
+
+  @media (hover) {
+    &:hover {
+      background-color: $color-burnt-umber;
+
+      & svg {
+        transform: translateY(-0.15rem);
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ export const ContactCard = ({ methodNo, text, link }) => {
 
   useEffect(() => {
     if (typeof window === "object") {
-      setRootElement(document.getElementById("__next"))
+      setRootElement(document.getElementById("root"))
     }
   }, [])
 
