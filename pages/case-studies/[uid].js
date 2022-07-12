@@ -10,16 +10,29 @@ import { components as articleComponents } from "../../slices/blog"
 import { ArticleFooter } from "../../components/ArticleFooter"
 import { ExternalLinkIcon } from "@heroicons/react/outline"
 
-const CaseStudy = ({ data, url, lang, ...layout }) => {
+const CaseStudy = ({
+  data,
+  lang,
+  first_publication_date,
+  last_publication_date,
+  ...layout
+}) => {
   const [postUrl, setPostUrl] = useState(null)
+
+  const url = linkResolver(layout)
 
   const seo = {
     metaTitle: data?.metaTitle,
     metaDescription: data?.metaDescription,
     metaImage: data?.metaImage,
     url,
-    article: true,
     lang,
+    article: true,
+    structuredData: {
+      datePublished: first_publication_date,
+      dateModified: last_publication_date,
+      author: data.author.data.name,
+    },
   }
 
   useEffect(() => {
