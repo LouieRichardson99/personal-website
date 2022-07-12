@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { PrismicRichText, PrismicText, SliceZone } from "@prismicio/react"
+import { PrismicRichText, SliceZone } from "@prismicio/react"
 import * as prismicHelpers from "@prismicio/helpers"
 import { createClient, linkResolver } from "../../prismicio"
 import { Layout } from "../../components/Layout"
@@ -13,17 +13,29 @@ import { PrismicNextImage } from "@prismicio/next"
 import { formatDate } from "../../components/utils/formatDate"
 import { ArticleFooter } from "../../components/ArticleFooter"
 
-const BlogPost = ({ data, url, lang, ...layout }) => {
+const BlogPost = ({
+  data,
+  lang,
+  first_publication_date,
+  last_publication_date,
+  ...layout
+}) => {
   const [postUrl, setPostUrl] = useState(null)
+
+  const url = linkResolver(layout)
 
   const seo = {
     metaTitle: data?.metaTitle,
     metaDescription: data?.metaDescription,
     metaImage: data?.metaImage,
-    structuredData: data?.structuredData,
     url,
-    article: true,
     lang,
+    article: true,
+    structuredData: {
+      datePublished: first_publication_date,
+      dateModified: last_publication_date,
+      author: data.author.data.name,
+    },
   }
 
   useEffect(() => {
@@ -44,8 +56,7 @@ const BlogPost = ({ data, url, lang, ...layout }) => {
             <PrismicRichText field={data?.title} />
           </div>
           <p className={styles.publishDate}>
-            Published{" "}
-            {formatDate(new Date(layout.first_publication_date).getTime())}
+            Published {formatDate(new Date(first_publication_date).getTime())}
           </p>
           <div className={styles.mainImage}>
             <PrismicNextImage field={data?.image} />
