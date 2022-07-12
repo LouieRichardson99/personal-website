@@ -20,10 +20,10 @@ export const Seo = ({
       description: metaDescription,
       images: [
         {
-          url: metaImage.url,
-          alt: metaImage.alt,
-          width: metaImage.dimensions.width,
-          height: metaImage.dimensions.height,
+          url: metaImage?.url || "",
+          alt: metaImage?.url || "",
+          width: metaImage?.dimensions?.width || "",
+          height: metaImage?.dimensions?.height || "",
         },
       ],
       site_name: "Louie Richardson",
