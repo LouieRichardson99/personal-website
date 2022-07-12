@@ -44,14 +44,7 @@ export const Seo = ({
           url={absoluteUrl}
           title={metaTitle}
           description={metaDescription}
-          images={[
-            {
-              url: metaImage.url,
-              alt: metaImage.alt,
-              width: metaImage.dimensions.width,
-              height: metaImage.dimensions.height,
-            },
-          ]}
+          images={[metaImage.url]}
           datePublished={structuredData.datePublished}
           dateModified={structuredData.dateModified}
           authorName={[structuredData.author]}
