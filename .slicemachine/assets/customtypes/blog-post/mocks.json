@@ -1,19 +1,19 @@
 {
-  "id": "6f2b6cc3-2be7-4715-9d85-968415d127e9",
-  "uid": "porro-maxime-reiciendis",
+  "id": "bace6cc3-d863-4860-98d8-c9f034616ab8",
+  "uid": "aperiam-similique-debitis",
   "type": "blog-post",
   "data": {
     "title": [
       {
         "type": "heading1",
-        "text": "Maximize collaborative interfaces",
+        "text": "Revolutionize clicks-and-mortar infrastructures",
         "spans": []
       }
     ],
     "description": [
       {
         "type": "paragraph",
-        "text": "Nisi ex et aliquip. Occaecat anim magna ipsum. Ea exercitation tempor id magna ea adipisicing sit.",
+        "text": "Laborum consequat et eu labore et non aliqua culpa amet fugiat Lorem. Irure mollit anim occaecat ullamco tempor. Sunt ex magna esse nostrud.",
         "spans": []
       }
     ],
@@ -24,21 +24,21 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
     },
     "imageAttribute": [
       {
         "type": "paragraph",
-        "text": "Magna tempor ad eiusmod exercitation elit tempor eiusmod sit deserunt voluptate veniam enim amet non id.",
+        "text": "Ut do duis sunt ex. Dolore culpa aute commodo voluptate aute duis voluptate et et officia nostrud. Dolor irure sunt dolor veniam officia ad irure duis qui.",
         "spans": []
       }
     ],
     "author": {
       "link_type": "Web",
-      "url": "http://twitter.com"
+      "url": "https://prismic.io"
     },
-    "metaTitle": "repurpose clicks-and-mortar supply-chains",
-    "metaDescription": "transition extensible metrics",
+    "metaTitle": "harness efficient applications",
+    "metaDescription": "envisioneer cutting-edge relationships",
     "metaImage": {
       "dimensions": {
         "width": 900,
@@ -46,7 +46,8 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
-    }
+      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+    },
+    "structuredData": "generate rich initiatives"
   }
 }

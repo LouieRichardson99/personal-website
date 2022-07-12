@@ -52,7 +52,9 @@
         "config": {
           "label": "Author",
           "select": "document",
-          "customtypes": ["author"]
+          "customtypes": [
+            "author"
+          ]
         }
       },
       "slices": {
@@ -107,6 +109,13 @@
           "label": "Meta Image",
           "constraint": {},
           "thumbnails": []
+        }
+      },
+      "structuredData": {
+        "type": "Text",
+        "config": {
+          "label": "Structured Data",
+          "placeholder": "JSON-LD Markup"
         }
       }
     }

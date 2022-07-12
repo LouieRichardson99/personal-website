@@ -4,12 +4,19 @@ export const Seo = ({
   metaTitle,
   metaDescription,
   metaImage,
+  structuredData,
   url,
   article,
   author,
   lang,
 }) => {
   const absoluteUrl = `https://louierichardson.com/${url ? url : ""}`
+
+  const addJSONLd = (structuredData) => {
+    return {
+      __html: `${structuredData}`,
+    }
+  }
 
   return (
     <Head>
@@ -35,6 +42,12 @@ export const Seo = ({
       {metaImage && <meta name="twitter:image" content={metaImage.url} />}
       {metaImage && <meta name="twitter:image:alt" content={metaTitle} />}
       <link rel="icon" href="/favicon.png" />
+      {structuredData && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addJSONLd(structuredData)}
+        />
+      )}
     </Head>
   )
 }

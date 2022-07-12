@@ -20,6 +20,7 @@ const BlogPost = ({ data, url, lang, ...layout }) => {
     metaTitle: data?.metaTitle,
     metaDescription: data?.metaDescription,
     metaImage: data?.metaImage,
+    structuredData: data?.structuredData,
     url,
     article: true,
     lang,
