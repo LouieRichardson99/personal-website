@@ -22,9 +22,9 @@ export const WorkFeed = ({ caseStudies }) => {
       {caseStudies.map(({ data, ...caseStudy }, index) => (
         <li key={index} className={styles.caseStudy}>
           <div>
-            <h4 className={styles.title}>
+            <h3 className={styles.title}>
               <PrismicText field={data.title} />
-            </h4>
+            </h3>
             <div
               className={`${styles.image} ${inView && styles.animate}`}
               ref={ref}
@@ -50,8 +50,11 @@ export const WorkFeed = ({ caseStudies }) => {
               <PrismicRichText field={data.description} />
             </div>
             <div className={styles.readMoreLink}>
-              <PrismicLink document={caseStudy}>
-                Read more
+              <PrismicLink
+                aria-label="Read the entire case study"
+                document={caseStudy}
+              >
+                Read the Case Study
                 <ArrowNarrowRightIcon />
               </PrismicLink>
             </div>

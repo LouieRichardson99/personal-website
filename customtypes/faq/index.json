@@ -11,7 +11,7 @@
           "label": "Question",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "heading4,strong,em"
+          "single": "strong,em,heading3"
         }
       },
       "answer": {

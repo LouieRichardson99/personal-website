@@ -34,6 +34,7 @@ export const NavigateToTop = () => {
     <button
       className={`${styles.button} ${isShowing && styles.show}`}
       onClick={scrollToTop}
+      aria-label="Navigate to the top of the page"
     >
       <ChevronUpIcon />
     </button>

@@ -66,18 +66,24 @@ const BlogPost = ({
               <PrismicRichText field={data?.imageAttribute} />
             </div>
             <div className={styles.socialShareFlex}>
-              <button onClick={copyUrl} className={styles.urlLinkButton}>
+              <button
+                onClick={copyUrl}
+                className={styles.urlLinkButton}
+                aria-label="Copy page URL"
+              >
                 <LinkIcon />
               </button>
               <a
                 href={`https://twitter.com/share?url=${postUrl}&text=${data?.title[0].text}`}
                 className={styles.twitterLink}
+                aria-label="Share on Twitter"
               >
                 <TwitterIcon />
               </a>
               <a
                 href={`https://www.facebook.com/sharer.php?u=${postUrl}`}
                 className={styles.facebookLink}
+                aria-label="Share on Facebook"
               >
                 <FacebookIcon />
               </a>
