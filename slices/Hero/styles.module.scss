@@ -118,11 +118,5 @@
   @include mq("large") {
     display: block;
     width: 35rem;
-    opacity: 0;
-    transition: 400ms ease-in;
-
-    &.animate {
-      opacity: 1;
-    }
   }
 }
