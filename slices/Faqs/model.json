@@ -36,9 +36,7 @@
           "config": {
             "label": "FAQ",
             "select": "document",
-            "customtypes": [
-              "faq"
-            ]
+            "customtypes": ["faq"]
           }
         }
       },

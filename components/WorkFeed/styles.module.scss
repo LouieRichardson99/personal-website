@@ -28,6 +28,20 @@
 .image {
   margin-bottom: 0.5rem;
 
+  max-width: 25rem;
+
+  @include mq("medium") {
+    min-width: 17.5rem;
+  }
+
+  @include mq("large") {
+    min-width: 20rem;
+  }
+
+  @include mq("x-large") {
+    min-width: 25rem;
+  }
+
   &.animate {
     & img {
       opacity: 1;
@@ -37,22 +51,9 @@
 
   & img {
     width: 100%;
-    max-width: 25rem;
     opacity: 0;
     transform: translateX(-2.5rem);
     transition: 300ms ease all;
-
-    @include mq("medium") {
-      min-width: 17.5rem;
-    }
-
-    @include mq("large") {
-      min-width: 20rem;
-    }
-
-    @include mq("x-large") {
-      min-width: 25rem;
-    }
   }
 }
 

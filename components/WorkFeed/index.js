@@ -1,15 +1,11 @@
-import {
-  PrismicImage,
-  PrismicLink,
-  PrismicRichText,
-  PrismicText,
-} from "@prismicio/react"
+import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react"
 import {
   ExternalLinkIcon,
   ArrowNarrowRightIcon,
 } from "@heroicons/react/outline"
 import styles from "./styles.module.scss"
 import { useInView } from "react-intersection-observer"
+import { PrismicNextImage } from "@prismicio/next"
 
 export const WorkFeed = ({ caseStudies }) => {
   const { ref, inView } = useInView({
@@ -29,7 +25,7 @@ export const WorkFeed = ({ caseStudies }) => {
               className={`${styles.image} ${inView && styles.animate}`}
               ref={ref}
             >
-              <PrismicImage field={data.image} />
+              <PrismicNextImage field={data.image} layout="responsive" />
             </div>
             <div className={styles.websiteLink}>
               <PrismicLink field={data.websiteLink}>

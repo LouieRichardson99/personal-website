@@ -87,9 +87,7 @@
         "config": {
           "label": "Author",
           "select": "document",
-          "customtypes": [
-            "author"
-          ]
+          "customtypes": ["author"]
         }
       },
       "slices1": {
