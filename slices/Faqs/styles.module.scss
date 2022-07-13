@@ -1,0 +1,21 @@
+@use "../../sass/abstracts/" as *;
+
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  @include mq("large") {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.description {
+  margin-bottom: 5rem;
+}
+
+.accordionsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

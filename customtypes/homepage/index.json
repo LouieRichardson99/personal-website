@@ -27,6 +27,9 @@
             },
             "work": {
               "type": "SharedSlice"
+            },
+            "faqs": {
+              "type": "SharedSlice"
             }
           }
         }

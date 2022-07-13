@@ -1,0 +1,75 @@
+@use "../../sass/abstracts/" as *;
+
+.details {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid $color-mine-shaft;
+  opacity: 0;
+  transition: 300ms ease;
+  transform: translateY(-3rem);
+
+  &.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  & .downIcon {
+    display: block;
+  }
+
+  & .upIcon {
+    display: none;
+  }
+
+  &[open] {
+    & .downIcon {
+      display: none;
+    }
+
+    & .upIcon {
+      display: block;
+    }
+  }
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  cursor: pointer;
+  color: $color-white;
+  user-select: none;
+
+  @media (hover) {
+    &:hover {
+      & svg {
+        color: $color-medium-carmine;
+      }
+    }
+  }
+}
+
+.question {
+  & h4 {
+    font-weight: 600;
+  }
+}
+
+.icon {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    transition: 300ms ease;
+
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.answer {
+  margin-top: 1rem;
+}

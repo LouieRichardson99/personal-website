@@ -110,13 +110,6 @@
           "constraint": {},
           "thumbnails": []
         }
-      },
-      "structuredData": {
-        "type": "Text",
-        "config": {
-          "label": "Structured Data",
-          "placeholder": "JSON-LD Markup"
-        }
       }
     }
   }

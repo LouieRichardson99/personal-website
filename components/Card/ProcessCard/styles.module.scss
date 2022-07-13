@@ -35,19 +35,15 @@
 
   & .processCard {
     transition: 500ms ease-in all;
-    -webkit-transition: 500ms ease-in all;
     position: relative;
     opacity: 0;
     transform: translateX(-2.5rem);
-    -webkit-transform: translateX(-2.5rem);
-    -ms-transform: translateX(-2.5rem);
+
     display: inline-block;
 
     &.animate {
       opacity: 1;
       transform: translateX(0);
-      -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
     }
   }
 }
@@ -78,11 +74,9 @@
 
   & .processCard {
     transition: 500ms ease-in all;
-    -webkit-transition: 500ms ease-in all;
     position: relative;
     opacity: 0;
     transform: translateX(2.5rem);
-    -webkit-transform: translateX(2.5rem);
     display: inline-block;
 
     &.animate {

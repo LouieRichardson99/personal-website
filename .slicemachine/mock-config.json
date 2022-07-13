@@ -89,6 +89,25 @@
         },
         "items": {}
       }
+    },
+    "Faqs": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
+      }
     }
   },
   "slices/blog": {
@@ -187,6 +206,20 @@
         }
       }
     },
-    "case-studies": {}
+    "case-studies": {},
+    "faq": {
+      "question": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "answer": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

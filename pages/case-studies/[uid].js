@@ -67,7 +67,7 @@ const CaseStudy = ({
             </div>
           </div>
         </header>
-        <div className="article-container flow">
+        <div className="narrow-container article flow">
           <SliceZone slices={data?.slices1} components={articleComponents} />
         </div>
         <ArticleFooter

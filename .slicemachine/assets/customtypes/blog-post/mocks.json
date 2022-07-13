@@ -1,19 +1,19 @@
 {
-  "id": "bace6cc3-d863-4860-98d8-c9f034616ab8",
-  "uid": "aperiam-similique-debitis",
+  "id": "ba09b538-ae8b-47aa-9c5f-8967b10b3fdb",
+  "uid": "quo-ut-atque",
   "type": "blog-post",
   "data": {
     "title": [
       {
         "type": "heading1",
-        "text": "Revolutionize clicks-and-mortar infrastructures",
+        "text": "Leverage vertical interfaces",
         "spans": []
       }
     ],
     "description": [
       {
         "type": "paragraph",
-        "text": "Laborum consequat et eu labore et non aliqua culpa amet fugiat Lorem. Irure mollit anim occaecat ullamco tempor. Sunt ex magna esse nostrud.",
+        "text": "Enim esse amet mollit quis ullamco reprehenderit nostrud.",
         "spans": []
       }
     ],
@@ -24,12 +24,12 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
     },
     "imageAttribute": [
       {
         "type": "paragraph",
-        "text": "Ut do duis sunt ex. Dolore culpa aute commodo voluptate aute duis voluptate et et officia nostrud. Dolor irure sunt dolor veniam officia ad irure duis qui.",
+        "text": "Sunt cupidatat exercitation tempor nulla.",
         "spans": []
       }
     ],
@@ -37,8 +37,8 @@
       "link_type": "Web",
       "url": "https://prismic.io"
     },
-    "metaTitle": "harness efficient applications",
-    "metaDescription": "envisioneer cutting-edge relationships",
+    "metaTitle": "repurpose best-of-breed technologies",
+    "metaDescription": "transition holistic supply-chains",
     "metaImage": {
       "dimensions": {
         "width": 900,
@@ -46,8 +46,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
-    },
-    "structuredData": "generate rich initiatives"
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+    }
   }
 }

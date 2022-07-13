@@ -305,6 +305,132 @@
         },
         "screenshotPaths": {}
       },
+      "faqs": {
+        "library": "slices",
+        "id": "faqs",
+        "name": "Faqs",
+        "description": "Faqs",
+        "model": {
+          "id": "faqs",
+          "type": "SharedSlice",
+          "name": "Faqs",
+          "description": "Faqs",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Faqs",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+                  }
+                }
+              },
+              "items": {
+                "faq": {
+                  "type": "Link",
+                  "config": {
+                    "label": "FAQ",
+                    "select": "document",
+                    "customtypes": [
+                      "faq"
+                    ]
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "faqs",
+            "items": [
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              },
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              },
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              },
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                }
+              },
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              },
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Iterate e-business systems",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Ullamco nostrud elit adipisicing esse ipsum consequat est ea proident non. Laboris ea est proident ea velit consectetur adipisicing laboris et culpa officia dolore consectetur est. Cupidatat laborum ex non occaecat proident cupidatat nisi sunt magna Lorem nulla.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/Faqs/default/preview.png",
+            "width": 800,
+            "height": 600
+          }
+        }
+      },
       "footer_links": {
         "library": "slices",
         "id": "footer_links",
