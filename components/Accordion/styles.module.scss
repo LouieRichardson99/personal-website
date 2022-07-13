@@ -39,6 +39,7 @@
   cursor: pointer;
   color: $color-white;
   user-select: none;
+  list-style: none;
 
   @media (hover) {
     &:hover {
@@ -46,6 +47,11 @@
         color: $color-medium-carmine;
       }
     }
+  }
+
+  &::marker, /* Latest Chrome, Edge, Firefox */ 
+  &::-webkit-details-marker /* Safari */ {
+    display: none;
   }
 }
 
