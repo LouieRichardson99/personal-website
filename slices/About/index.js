@@ -39,7 +39,12 @@ const About = ({
       </div>
       <div>
         <div className={styles.image}>
-          <PrismicNextImage field={image} layout="responsive" />
+          <PrismicNextImage
+            field={image}
+            layout="responsive"
+            priority={true}
+            loading="eager"
+          />
         </div>
         <div className={styles.socialIcons}>
           {items.map(({ socialLink, socialIcon }, index) => (
