@@ -4,7 +4,7 @@ import styles from "./styles.module.scss"
 
 export const ProcessCard = ({ number, title, description }) => {
   const { ref, inView } = useInView({
-    threshold: 1,
+    threshold: 0.6,
     triggerOnce: true,
   })
 

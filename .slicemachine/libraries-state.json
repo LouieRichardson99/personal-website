@@ -698,6 +698,130 @@
         },
         "screenshotPaths": {}
       },
+      "logos": {
+        "library": "slices",
+        "id": "logos",
+        "name": "Logos",
+        "description": "Logos",
+        "model": {
+          "id": "logos",
+          "type": "SharedSlice",
+          "name": "Logos",
+          "description": "Logos",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Logos",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,em,hyperlink,strong"
+                  }
+                }
+              },
+              "items": {
+                "logo": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Logo",
+                    "constraint": {
+                      "width": 150,
+                      "height": null
+                    },
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "logos",
+            "items": [
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 150,
+                    "height": null
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=150&h=null&fit=crop"
+                }
+              },
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 150,
+                    "height": null
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=150&h=null&fit=crop"
+                }
+              },
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 150,
+                    "height": null
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=150&h=null&fit=crop"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Integrate cross-media communities",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Sit occaecat sunt exercitation officia officia sunt velit ipsum ut tempor eu commodo non in.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/Logos/default/preview.png",
+            "width": 800,
+            "height": 600
+          }
+        }
+      },
       "nav_links": {
         "library": "slices",
         "id": "nav_links",

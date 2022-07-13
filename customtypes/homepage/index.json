@@ -30,6 +30,9 @@
             },
             "faqs": {
               "type": "SharedSlice"
+            },
+            "logos": {
+              "type": "SharedSlice"
             }
           }
         }

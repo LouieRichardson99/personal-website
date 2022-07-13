@@ -1,0 +1,49 @@
+@use "../../sass/abstracts/" as *;
+
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  @include mq("large") {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 55rem;
+  margin: 3rem auto 0 auto;
+
+  @include mq("small") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include mq("medium") {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.image {
+  width: 7rem;
+  transition: 300ms ease;
+  opacity: 0;
+  transform: translateY(2rem);
+
+  &.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @include mq("x-small") {
+    width: 8rem;
+  }
+
+  @include mq("small") {
+    width: 9rem;
+  }
+}

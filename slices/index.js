@@ -5,6 +5,7 @@ import CallToAction from './CallToAction';
 import Faqs from './Faqs';
 import FooterLinks from './FooterLinks';
 import Hero from './Hero';
+import Logos from './Logos';
 import NavLinks from './NavLinks';
 import Process from './Process';
 import Services from './Services';
@@ -16,6 +17,7 @@ export {
 	Faqs,
 	FooterLinks,
 	Hero,
+	Logos,
 	NavLinks,
 	Process,
 	Services,
@@ -28,6 +30,7 @@ export const components = {
 	faqs: Faqs,
 	footer_links: FooterLinks,
 	hero: Hero,
+	logos: Logos,
 	nav_links: NavLinks,
 	process: Process,
 	services: Services,

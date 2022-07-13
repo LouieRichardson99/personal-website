@@ -1,9 +1,9 @@
 import { PrismicRichText } from "@prismicio/react"
-import { Accordion } from "../../components/Accordion"
 import styles from "./styles.module.scss"
 import formatID from "../../components/utils/formatID"
+import { Logo } from "./Logo"
 
-const Faqs = ({
+const Logos = ({
   slice: {
     primary: { title, description },
     items,
@@ -16,19 +16,15 @@ const Faqs = ({
     <div className="title">
       <PrismicRichText field={title} />
     </div>
-    <div className={`flow ${styles.description}`}>
+    <div>
       <PrismicRichText field={description} />
     </div>
-    <div className={`${styles.accordionsWrapper} narrow-container`}>
-      {items.map(({ faq: { data } }, index) => (
-        <Accordion
-          question={data?.question}
-          answer={data?.answer}
-          key={index}
-        />
+    <div className={styles.logos}>
+      {items.map(({ logo }, index) => (
+        <Logo key={index} image={logo} index={index} />
       ))}
     </div>
   </section>
 )
 
-export default Faqs
+export default Logos
