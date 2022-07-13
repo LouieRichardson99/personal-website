@@ -109,7 +109,7 @@
               {
                 "socialLink": {
                   "link_type": "Web",
-                  "url": "http://google.com"
+                  "url": "https://prismic.io"
                 },
                 "socialIcon": {
                   "dimensions": {
@@ -118,7 +118,7 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
                 }
               },
               {
@@ -133,22 +133,7 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
-                }
-              },
-              {
-                "socialLink": {
-                  "link_type": "Web",
-                  "url": "http://twitter.com"
-                },
-                "socialIcon": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
                 }
               }
             ],
@@ -156,28 +141,28 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Benchmark intuitive e-services",
+                  "text": "Scale web-enabled bandwidth",
                   "spans": []
                 }
               ],
               "subtitle": [
                 {
                   "type": "paragraph",
-                  "text": "Velit sint mollit consequat cupidatat nisi sunt enim. Consectetur quis eiusmod do commodo.",
+                  "text": "Ut eu consectetur exercitation proident irure ea id cupidatat incididunt aliquip laboris id culpa ea et. Quis reprehenderit consequat voluptate pariatur sunt dolore sunt sunt minim aliqua.",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Eu sint in deserunt nostrud tempor veniam. Aliqua adipisicing velit qui irure mollit mollit et elit est occaecat qui deserunt officia eu. Veniam aute commodo ex Lorem aute.",
+                  "text": "Occaecat in aliquip ad. Anim officia cillum aute eu reprehenderit aliqua eu quis mollit sit laboris nisi Lorem proident anim.",
                   "spans": []
                 }
               ],
-              "buttonText": "target next-generation relationships",
+              "buttonText": "scale virtual ROI",
               "buttonLink": {
                 "link_type": "Web",
-                "url": "https://prismic.io"
+                "url": "http://twitter.com"
               },
               "buttonIcon": {
                 "dimensions": {
@@ -186,7 +171,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
               },
               "image": {
                 "dimensions": {
@@ -195,7 +180,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
               }
             }
           }
@@ -204,13 +189,7 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/About/default/preview.png",
-            "width": 800,
-            "height": 440
-          }
-        }
+        "screenshotPaths": {}
       },
       "call_to_action": {
         "library": "slices",
@@ -278,15 +257,15 @@
               "title": [
                 {
                   "type": "heading3",
-                  "text": "Envisioneer leading-edge networks",
+                  "text": "Redefine best-of-breed markets",
                   "spans": []
                 }
               ],
               "link": {
                 "link_type": "Web",
-                "url": "http://google.com"
+                "url": "http://twitter.com"
               },
-              "linkText": "engineer B2C systems",
+              "linkText": "reintermediate seamless markets",
               "linkIcon": {
                 "dimensions": {
                   "width": 900,
@@ -294,7 +273,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
               }
             }
           }
@@ -348,7 +327,9 @@
                   "config": {
                     "label": "FAQ",
                     "select": "document",
-                    "customtypes": ["faq"]
+                    "customtypes": [
+                      "faq"
+                    ]
                   }
                 }
               },
@@ -365,37 +346,31 @@
               {
                 "faq": {
                   "link_type": "Web",
-                  "url": "http://google.com"
-                }
-              },
-              {
-                "faq": {
-                  "link_type": "Web",
-                  "url": "https://slicemachine.dev"
-                }
-              },
-              {
-                "faq": {
-                  "link_type": "Web",
-                  "url": "http://google.com"
-                }
-              },
-              {
-                "faq": {
-                  "link_type": "Web",
                   "url": "http://twitter.com"
                 }
               },
               {
                 "faq": {
                   "link_type": "Web",
-                  "url": "https://slicemachine.dev"
+                  "url": "https://prismic.io"
                 }
               },
               {
                 "faq": {
                   "link_type": "Web",
-                  "url": "http://twitter.com"
+                  "url": "http://google.com"
+                }
+              },
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              },
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
                 }
               }
             ],
@@ -403,14 +378,14 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Iterate e-business systems",
+                  "text": "Reintermediate wireless ROI",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Ullamco nostrud elit adipisicing esse ipsum consequat est ea proident non. Laboris ea est proident ea velit consectetur adipisicing laboris et culpa officia dolore consectetur est. Cupidatat laborum ex non occaecat proident cupidatat nisi sunt magna Lorem nulla.",
+                  "text": "Ut dolore commodo Lorem enim deserunt aute incididunt consectetur ad anim enim esse dolore occaecat laboris. Ullamco minim elit amet. Officia nulla excepteur mollit occaecat exercitation cupidatat magna amet deserunt consectetur reprehenderit nostrud.",
                   "spans": []
                 }
               ]
@@ -421,13 +396,7 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/Faqs/default/preview.png",
-            "width": 800,
-            "height": 600
-          }
-        }
+        "screenshotPaths": {}
       },
       "footer_links": {
         "library": "slices",
@@ -487,30 +456,23 @@
               {
                 "link": {
                   "link_type": "Web",
-                  "url": "http://google.com"
-                },
-                "linkText": "engineer vertical deliverables"
-              },
-              {
-                "link": {
-                  "link_type": "Web",
                   "url": "https://prismic.io"
                 },
-                "linkText": "morph open-source architectures"
+                "linkText": "exploit impactful paradigms"
               },
               {
                 "link": {
                   "link_type": "Web",
                   "url": "http://google.com"
                 },
-                "linkText": "seize frictionless convergence"
+                "linkText": "deliver dot-com channels"
               }
             ],
             "primary": {
               "sectionTitle": [
                 {
                   "type": "heading4",
-                  "text": "Seize best-of-breed architectures",
+                  "text": "Incubate visionary infrastructures",
                   "spans": []
                 }
               ]
@@ -635,22 +597,22 @@
             "slice_type": "hero",
             "items": [],
             "primary": {
-              "availability": true,
+              "availability": false,
               "eyebrow": [
                 {
                   "type": "paragraph",
-                  "text": "Minim sint magna et deserunt duis.",
+                  "text": "Fugiat cillum commodo duis deserunt aliqua. Eiusmod nostrud velit dolore nostrud incididunt deserunt ex ullamco Lorem sunt occaecat excepteur cillum. Voluptate nostrud enim laboris veniam non magna anim ullamco et.",
                   "spans": []
                 }
               ],
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Grow magnetic niches",
+                  "text": "Evolve proactive ROI",
                   "spans": []
                 }
               ],
-              "primaryButtonText": "embrace frictionless systems",
+              "primaryButtonText": "orchestrate front-end solutions",
               "primaryButtonLink": {
                 "link_type": "Web",
                 "url": "https://slicemachine.dev"
@@ -662,12 +624,12 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
               },
-              "secondaryButtonText": "exploit B2B niches",
+              "secondaryButtonText": "mesh killer applications",
               "secondaryButtonLink": {
                 "link_type": "Web",
-                "url": "http://google.com"
+                "url": "https://prismic.io"
               },
               "secondaryButtonIcon": {
                 "dimensions": {
@@ -676,7 +638,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
               },
               "image": {
                 "dimensions": {
@@ -685,7 +647,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
               }
             }
           }
@@ -764,7 +726,7 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=150&h=null&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=150&h=null&fit=crop"
                 }
               },
               {
@@ -775,7 +737,7 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=150&h=null&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=150&h=null&fit=crop"
                 }
               },
               {
@@ -786,7 +748,18 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=150&h=null&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=150&h=null&fit=crop"
+                }
+              },
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 150,
+                    "height": null
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=150&h=null&fit=crop"
                 }
               }
             ],
@@ -794,14 +767,14 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Integrate cross-media communities",
+                  "text": "Cultivate next-generation action-items",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Sit occaecat sunt exercitation officia officia sunt velit ipsum ut tempor eu commodo non in.",
+                  "text": "Tempor dolore aute consequat aute aliquip anim fugiat elit enim officia aute nostrud cillum. Et pariatur dolor id nulla ex sunt Lorem consequat anim magna elit dolor reprehenderit sint.",
                   "spans": []
                 }
               ]
@@ -812,13 +785,7 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/Logos/default/preview.png",
-            "width": 800,
-            "height": 600
-          }
-        }
+        "screenshotPaths": {}
       },
       "nav_links": {
         "library": "slices",
@@ -866,24 +833,38 @@
             "slice_type": "nav_links",
             "items": [
               {
-                "linkText": "optimize bricks-and-clicks channels",
+                "linkText": "utilize proactive synergies",
                 "link": {
                   "link_type": "Web",
-                  "url": "https://prismic.io"
+                  "url": "http://twitter.com"
                 }
               },
               {
-                "linkText": "matrix impactful infomediaries",
+                "linkText": "drive leading-edge action-items",
                 "link": {
                   "link_type": "Web",
                   "url": "http://google.com"
                 }
               },
               {
-                "linkText": "streamline world-class technologies",
+                "linkText": "visualize impactful users",
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                }
+              },
+              {
+                "linkText": "monetize bleeding-edge ROI",
                 "link": {
                   "link_type": "Web",
                   "url": "http://google.com"
+                }
+              },
+              {
+                "linkText": "seize cutting-edge channels",
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
                 }
               }
             ],
@@ -971,86 +952,35 @@
             "slice_type": "process",
             "items": [
               {
-                "processNumber": "aggregate web-enabled action-items",
+                "processNumber": "incentivize web-enabled ROI",
                 "processTitle": [
                   {
                     "type": "heading3",
-                    "text": "Maximize global deliverables",
+                    "text": "Architect B2C e-tailers",
                     "spans": []
                   }
                 ],
                 "processDescription": [
                   {
                     "type": "paragraph",
-                    "text": "Ullamco mollit ad ea et velit nulla amet excepteur nisi non incididunt occaecat dolore quis. Eu adipisicing mollit sint et irure non cillum deserunt. Consectetur reprehenderit sunt tempor excepteur.",
+                    "text": "Irure exercitation reprehenderit exercitation voluptate occaecat sint occaecat ut laboris ullamco aliqua labore nulla.",
                     "spans": []
                   }
                 ]
               },
               {
-                "processNumber": "whiteboard visionary paradigms",
+                "processNumber": "orchestrate killer models",
                 "processTitle": [
                   {
                     "type": "heading3",
-                    "text": "Enable cross-media supply-chains",
+                    "text": "Streamline one-to-one vortals",
                     "spans": []
                   }
                 ],
                 "processDescription": [
                   {
                     "type": "paragraph",
-                    "text": "Eiusmod irure proident deserunt pariatur nostrud eiusmod ad magna exercitation veniam nulla labore duis excepteur. Irure sit adipisicing ut aliquip qui nisi occaecat incididunt aute dolor mollit incididunt laboris.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "processNumber": "redefine next-generation e-markets",
-                "processTitle": [
-                  {
-                    "type": "heading3",
-                    "text": "E-enable one-to-one applications",
-                    "spans": []
-                  }
-                ],
-                "processDescription": [
-                  {
-                    "type": "paragraph",
-                    "text": "Quis velit qui deserunt dolor quis Lorem aute cupidatat qui ex. Magna ex cillum Lorem exercitation adipisicing. Est ea eiusmod occaecat laborum sunt.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "processNumber": "benchmark 24/7 convergence",
-                "processTitle": [
-                  {
-                    "type": "heading3",
-                    "text": "Unleash bleeding-edge networks",
-                    "spans": []
-                  }
-                ],
-                "processDescription": [
-                  {
-                    "type": "paragraph",
-                    "text": "Labore occaecat pariatur nostrud nulla est.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "processNumber": "streamline interactive applications",
-                "processTitle": [
-                  {
-                    "type": "heading3",
-                    "text": "Reintermediate e-business action-items",
-                    "spans": []
-                  }
-                ],
-                "processDescription": [
-                  {
-                    "type": "paragraph",
-                    "text": "Elit amet veniam id deserunt proident tempor nisi mollit. Elit nostrud elit enim est tempor Lorem reprehenderit eu.",
+                    "text": "In nisi ut sunt aliqua consequat sunt Lorem veniam elit ea nulla velit.",
                     "spans": []
                   }
                 ]
@@ -1060,14 +990,14 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Strategize compelling synergies",
+                  "text": "Innovate enterprise experiences",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Adipisicing amet Lorem Lorem.",
+                  "text": "Magna aute occaecat ipsum exercitation ea in exercitation. Sint Lorem amet nostrud sit culpa ad cillum aute incididunt velit aliquip voluptate occaecat. Magna ipsum fugiat consequat eiusmod enim pariatur consequat dolore pariatur sunt veniam sit nisi deserunt magna.",
                   "spans": []
                 }
               ]
@@ -1174,19 +1104,19 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=100&h=100&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=100&h=100&fit=crop"
                 },
                 "serviceName": [
                   {
                     "type": "heading3",
-                    "text": "Enable dot-com interfaces",
+                    "text": "Synthesize rich synergies",
                     "spans": []
                   }
                 ],
                 "serviceDescription": [
                   {
                     "type": "paragraph",
-                    "text": "Mollit aliquip sit proident elit nulla velit in dolore ad aliquip do sunt culpa irure.",
+                    "text": "Est non amet non cillum elit aliquip sint.",
                     "spans": []
                   }
                 ]
@@ -1199,19 +1129,19 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=100&h=100&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=100&h=100&fit=crop"
                 },
                 "serviceName": [
                   {
                     "type": "heading3",
-                    "text": "Deploy impactful ROI",
+                    "text": "Transform compelling blockchains",
                     "spans": []
                   }
                 ],
                 "serviceDescription": [
                   {
                     "type": "paragraph",
-                    "text": "Est reprehenderit officia enim sint amet cupidatat ipsum irure consequat. Eiusmod in dolor ad nulla ea eu irure aute esse ad tempor reprehenderit est. Cupidatat officia velit officia ut aliqua veniam elit officia eiusmod dolore dolore.",
+                    "text": "Excepteur laborum consectetur velit sunt pariatur.",
                     "spans": []
                   }
                 ]
@@ -1224,69 +1154,19 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=100&h=100&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=100&h=100&fit=crop"
                 },
                 "serviceName": [
                   {
                     "type": "heading3",
-                    "text": "Evolve killer channels",
+                    "text": "Disintermediate viral paradigms",
                     "spans": []
                   }
                 ],
                 "serviceDescription": [
                   {
                     "type": "paragraph",
-                    "text": "Cupidatat consequat Lorem dolor pariatur ea cillum cillum minim cillum reprehenderit. Aute dolor ullamco irure fugiat reprehenderit aliqua commodo reprehenderit cupidatat.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "serviceIcon": {
-                  "dimensions": {
-                    "width": 100,
-                    "height": 100
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=100&h=100&fit=crop"
-                },
-                "serviceName": [
-                  {
-                    "type": "heading3",
-                    "text": "Utilize customized eyeballs",
-                    "spans": []
-                  }
-                ],
-                "serviceDescription": [
-                  {
-                    "type": "paragraph",
-                    "text": "Ex est laborum consequat veniam eiusmod irure id duis sunt irure sit minim commodo enim.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "serviceIcon": {
-                  "dimensions": {
-                    "width": 100,
-                    "height": 100
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=100&h=100&fit=crop"
-                },
-                "serviceName": [
-                  {
-                    "type": "heading3",
-                    "text": "Visualize real-time models",
-                    "spans": []
-                  }
-                ],
-                "serviceDescription": [
-                  {
-                    "type": "paragraph",
-                    "text": "Voluptate Lorem sit laborum.",
+                    "text": "Laboris et commodo ipsum sunt duis do in non. Exercitation eiusmod id consequat. Est quis ipsum qui ut Lorem ipsum mollit incididunt sint quis.",
                     "spans": []
                   }
                 ]
@@ -1296,14 +1176,14 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Innovate world-class web services",
+                  "text": "Architect web-enabled vortals",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Commodo pariatur aute proident consectetur mollit. Ex in do laborum ullamco magna ad culpa commodo officia reprehenderit.",
+                  "text": "Ex enim commodo in consequat aliqua. Labore mollit eiusmod velit sit pariatur aute nisi ea commodo nisi.",
                   "spans": []
                 }
               ],
@@ -1314,7 +1194,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
               }
             }
           }
@@ -1323,13 +1203,7 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/Services/default/preview.png",
-            "width": 800,
-            "height": 1252
-          }
-        }
+        "screenshotPaths": {}
       },
       "work": {
         "library": "slices",
@@ -1374,7 +1248,7 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Matrix global paradigms",
+                  "text": "Embrace viral web services",
                   "spans": []
                 }
               ]
@@ -1438,11 +1312,11 @@
             "slice_type": "blockquote",
             "items": [],
             "primary": {
-              "quote": "facilitate robust functionalities",
+              "quote": "transition sticky partnerships",
               "author": [
                 {
                   "type": "paragraph",
-                  "text": "Labore sunt et enim culpa officia magna eu ex. Exercitation amet tempor eu occaecat laborum culpa est elit dolor esse eu aliqua. Sint eu culpa ex laborum.",
+                  "text": "Occaecat ex sunt culpa dolore id nisi culpa tempor.",
                   "spans": []
                 }
               ]
@@ -1453,13 +1327,7 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/louierichardson/Code/Projects/personal-website/.slicemachine/assets/slices/blog/Blockquote/default/preview.png",
-            "width": 800,
-            "height": 24
-          }
-        }
+        "screenshotPaths": {}
       },
       "image": {
         "library": "slices/blog",
@@ -1525,19 +1393,19 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
               },
               "imageAttribute": [
                 {
                   "type": "paragraph",
-                  "text": "Elit exercitation duis nulla fugiat eiusmod aliqua enim reprehenderit.",
+                  "text": "Enim mollit commodo nulla eu ullamco nulla magna.",
                   "spans": []
                 }
               ],
               "imageCaption": [
                 {
                   "type": "paragraph",
-                  "text": "Lorem consequat voluptate commodo cillum. Irure ullamco dolor ex.",
+                  "text": "Lorem Lorem quis proident proident. Voluptate enim exercitation nisi elit adipisicing excepteur dolore velit eu veniam et laborum laborum ex magna. Laboris mollit aliqua velit.",
                   "spans": []
                 }
               ]
@@ -1593,7 +1461,7 @@
               "richText": [
                 {
                   "type": "paragraph",
-                  "text": "Qui amet aliqua voluptate ullamco ad incididunt nisi velit reprehenderit deserunt. Non fugiat amet velit proident ad aliqua. Mollit ullamco ullamco qui irure sunt do ad Lorem adipisicing mollit qui minim.",
+                  "text": "Laboris magna laborum et aliquip.",
                   "spans": []
                 }
               ]

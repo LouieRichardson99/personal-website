@@ -12,7 +12,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=150&h=null&fit=crop"
+          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=150&h=null&fit=crop"
         }
       },
       {
@@ -23,7 +23,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=150&h=null&fit=crop"
+          "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=150&h=null&fit=crop"
         }
       },
       {
@@ -34,7 +34,18 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=150&h=null&fit=crop"
+          "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=150&h=null&fit=crop"
+        }
+      },
+      {
+        "logo": {
+          "dimensions": {
+            "width": 150,
+            "height": null
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=150&h=null&fit=crop"
         }
       }
     ],
@@ -42,14 +53,14 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Integrate cross-media communities",
+          "text": "Cultivate next-generation action-items",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Sit occaecat sunt exercitation officia officia sunt velit ipsum ut tempor eu commodo non in.",
+          "text": "Tempor dolore aute consequat aute aliquip anim fugiat elit enim officia aute nostrud cillum. Et pariatur dolor id nulla ex sunt Lorem consequat anim magna elit dolor reprehenderit sint.",
           "spans": []
         }
       ]

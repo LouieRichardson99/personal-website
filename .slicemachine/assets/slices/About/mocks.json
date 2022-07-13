@@ -7,7 +7,7 @@
       {
         "socialLink": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://prismic.io"
         },
         "socialIcon": {
           "dimensions": {
@@ -16,7 +16,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
         }
       },
       {
@@ -31,22 +31,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "socialLink": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
-        },
-        "socialIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
         }
       }
     ],
@@ -54,28 +39,28 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Benchmark intuitive e-services",
+          "text": "Scale web-enabled bandwidth",
           "spans": []
         }
       ],
       "subtitle": [
         {
           "type": "paragraph",
-          "text": "Velit sint mollit consequat cupidatat nisi sunt enim. Consectetur quis eiusmod do commodo.",
+          "text": "Ut eu consectetur exercitation proident irure ea id cupidatat incididunt aliquip laboris id culpa ea et. Quis reprehenderit consequat voluptate pariatur sunt dolore sunt sunt minim aliqua.",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Eu sint in deserunt nostrud tempor veniam. Aliqua adipisicing velit qui irure mollit mollit et elit est occaecat qui deserunt officia eu. Veniam aute commodo ex Lorem aute.",
+          "text": "Occaecat in aliquip ad. Anim officia cillum aute eu reprehenderit aliqua eu quis mollit sit laboris nisi Lorem proident anim.",
           "spans": []
         }
       ],
-      "buttonText": "target next-generation relationships",
+      "buttonText": "scale virtual ROI",
       "buttonLink": {
         "link_type": "Web",
-        "url": "https://prismic.io"
+        "url": "http://twitter.com"
       },
       "buttonIcon": {
         "dimensions": {
@@ -84,7 +69,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
       },
       "image": {
         "dimensions": {
@@ -93,7 +78,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
       }
     }
   }

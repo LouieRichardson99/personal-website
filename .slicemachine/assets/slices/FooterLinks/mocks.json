@@ -7,30 +7,23 @@
       {
         "link": {
           "link_type": "Web",
-          "url": "http://google.com"
-        },
-        "linkText": "engineer vertical deliverables"
-      },
-      {
-        "link": {
-          "link_type": "Web",
           "url": "https://prismic.io"
         },
-        "linkText": "morph open-source architectures"
+        "linkText": "exploit impactful paradigms"
       },
       {
         "link": {
           "link_type": "Web",
           "url": "http://google.com"
         },
-        "linkText": "seize frictionless convergence"
+        "linkText": "deliver dot-com channels"
       }
     ],
     "primary": {
       "sectionTitle": [
         {
           "type": "heading4",
-          "text": "Seize best-of-breed architectures",
+          "text": "Incubate visionary infrastructures",
           "spans": []
         }
       ]

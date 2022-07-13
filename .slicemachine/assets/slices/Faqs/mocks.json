@@ -7,37 +7,31 @@
       {
         "faq": {
           "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "faq": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "faq": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "faq": {
-          "link_type": "Web",
           "url": "http://twitter.com"
         }
       },
       {
         "faq": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "https://prismic.io"
         }
       },
       {
         "faq": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "http://google.com"
+        }
+      },
+      {
+        "faq": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "faq": {
+          "link_type": "Web",
+          "url": "http://google.com"
         }
       }
     ],
@@ -45,14 +39,14 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Iterate e-business systems",
+          "text": "Reintermediate wireless ROI",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Ullamco nostrud elit adipisicing esse ipsum consequat est ea proident non. Laboris ea est proident ea velit consectetur adipisicing laboris et culpa officia dolore consectetur est. Cupidatat laborum ex non occaecat proident cupidatat nisi sunt magna Lorem nulla.",
+          "text": "Ut dolore commodo Lorem enim deserunt aute incididunt consectetur ad anim enim esse dolore occaecat laboris. Ullamco minim elit amet. Officia nulla excepteur mollit occaecat exercitation cupidatat magna amet deserunt consectetur reprehenderit nostrud.",
           "spans": []
         }
       ]
