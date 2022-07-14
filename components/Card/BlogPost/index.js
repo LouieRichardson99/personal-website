@@ -19,6 +19,7 @@ export const BlogPostCard = ({ image, title, date, description, link }) => {
             field={image}
             layout="fill"
             imgixParams={{ blur: 10 }}
+            priority={true}
           />
         </div>
         <div className={styles.innerCardWrapper}>
