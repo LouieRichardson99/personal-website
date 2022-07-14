@@ -8,7 +8,7 @@ export const DesktopNav = ({ slices, image, primaryButton, phoneNumber }) => (
   <div className={styles.flexWrapper}>
     <div className={styles.nameFlex}>
       <div className={styles.image}>
-        <PrismicNextImage field={image} loading="eager" priority={true} />
+        <PrismicNextImage field={image} priority={true} />
       </div>
       <h4>Louie Richardson</h4>
     </div>
