@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://louierichardson.com
+Host: https://www.louierichardson.com
 
 # Sitemaps
-Sitemap: https://louierichardson.com/sitemap.xml
+Sitemap: https://www.louierichardson.com/sitemap.xml

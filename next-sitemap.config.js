@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: "https://louierichardson.com",
+  siteUrl: "https://www.louierichardson.com",
   generateRobotsTxt: true,
   exclude: "/slice-simulator",
 }
