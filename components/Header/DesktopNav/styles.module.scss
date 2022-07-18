@@ -15,9 +15,18 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
 
-  & * {
-    font-size: 1.125rem;
+.name {
+  font-size: 1.125rem;
+  font-weight: 700;
+
+  & a {
+    color: $color-white;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

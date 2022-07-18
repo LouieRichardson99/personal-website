@@ -5,6 +5,7 @@ import { PrismicLink, SliceZone } from "@prismicio/react"
 import { components } from "../../../slices"
 import { MenuAlt3Icon } from "@heroicons/react/outline"
 import styles from "./styles.module.scss"
+import Link from "next/link"
 
 export const MobileNav = ({ slices, image, primaryButton }) => {
   const [open, setOpen] = useState(false)
@@ -32,7 +33,9 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
         <div className={styles.image}>
           <PrismicNextImage field={image} priority={true} />
         </div>
-        <h4>Louie Richardson</h4>
+        <div className={styles.name}>
+          <Link href="/">Louie Richardson</Link>
+        </div>
       </div>
       <button
         className={`${styles.button} ${open && styles.open}`}

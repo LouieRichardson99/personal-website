@@ -3,6 +3,7 @@ import { PrismicNextImage } from "@prismicio/next"
 import { components } from "../../../slices"
 import styles from "./styles.module.scss"
 import { PhoneIcon } from "@heroicons/react/solid"
+import Link from "next/link"
 
 export const DesktopNav = ({ slices, image, primaryButton, phoneNumber }) => (
   <div className={styles.flexWrapper}>
@@ -10,8 +11,11 @@ export const DesktopNav = ({ slices, image, primaryButton, phoneNumber }) => (
       <div className={styles.image}>
         <PrismicNextImage field={image} priority={true} />
       </div>
-      <h4>Louie Richardson</h4>
+      <div className={styles.name}>
+        <Link href="/">Louie Richardson</Link>
+      </div>
     </div>
+
     <nav className={styles.nav}>
       <ul className={styles.navList}>
         <SliceZone slices={slices} components={components} />

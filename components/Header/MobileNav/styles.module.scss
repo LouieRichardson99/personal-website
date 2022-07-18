@@ -29,11 +29,15 @@
 .nameFlex {
   display: flex;
   align-items: center;
-  color: $color-white;
   gap: 0.75rem;
+}
 
-  & * {
-    font-size: 1.125rem;
+.name {
+  font-size: 1.125rem;
+  font-weight: 700;
+
+  & a {
+    color: $color-white;
   }
 }
 

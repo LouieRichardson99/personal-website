@@ -8,10 +8,6 @@ const NavLinks = ({ slice: { items } }) => {
   const router = useRouter()
 
   const getCurrentPathname = (pathname) => {
-    if (router.asPath === "/" && pathname === "/homepage") {
-      return styles.active
-    }
-
     if (router.asPath === pathname) {
       return styles.active
     }
