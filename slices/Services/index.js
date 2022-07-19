@@ -9,42 +9,44 @@ const Services = ({
     primary: { title, description, image },
     items,
   },
-}) => (
-  <section
-    className={`container ${styles.section}`}
-    id={formatID(title[0].text)}
-  >
-    <div className={styles.flexWrapper}>
-      <div>
-        <div className="title">
-          <PrismicRichText field={title} />
+}) => {
+  console.log(items)
+
+  return (
+    <section
+      className={`container ${styles.section}`}
+      id={formatID(title[0].text)}
+    >
+      <div className={styles.flexWrapper}>
+        <div>
+          <div className="title">
+            <PrismicRichText field={title} />
+          </div>
+          <div className={`${styles.description} flow`}>
+            <PrismicRichText field={description} />
+          </div>
         </div>
-        <div className={`${styles.description} flow`}>
-          <PrismicRichText field={description} />
-        </div>
-      </div>
-      <div>
-        <ul className={styles.serviceList}>
-          {items.map(
-            ({ serviceIcon, serviceName, serviceDescription }, index) => (
+        <div>
+          <ul className={styles.serviceList}>
+            {items.map(({ service }, index) => (
               <ServiceCard
                 key={index}
-                icon={serviceIcon}
-                name={serviceName}
-                description={serviceDescription}
+                icon={service.data.icon}
+                name={service.data.title}
+                description={service.data.description}
                 hasBorder={index + 1 !== items.length}
               />
-            )
-          )}
-        </ul>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-    <div className={styles.imageFlex}>
-      <div className={styles.image}>
-        <PrismicNextImage field={image} loading="lazy" />
+      <div className={styles.imageFlex}>
+        <div className={styles.image}>
+          <PrismicNextImage field={image} loading="lazy" />
+        </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
 
 export default Services

@@ -29,7 +29,13 @@ const Homepage = ({ data, url, lang, caseStudies, ...layout }) => {
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData })
 
-  const fetchLinks = ["faq.question", "faq.answer"]
+  const fetchLinks = [
+    "faq.question",
+    "faq.answer",
+    "service.title",
+    "service.description",
+    "service.icon",
+  ]
 
   const page = await client.getSingle("homepage", { fetchLinks })
   const header = await client.getSingle("header")

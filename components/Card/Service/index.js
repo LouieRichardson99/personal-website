@@ -1,4 +1,4 @@
-import { PrismicImage, PrismicRichText } from "@prismicio/react"
+import { PrismicImage, PrismicRichText, PrismicText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 import { useInView } from "react-intersection-observer"
 
@@ -20,7 +20,9 @@ export const ServiceCard = ({ icon, name, description, hasBorder }) => {
       </div>
       <div>
         <div className={styles.name}>
-          <PrismicRichText field={name} />
+          <h3>
+            <PrismicText field={name} />
+          </h3>
         </div>
         <div className={`${styles.description} flow`}>
           <PrismicRichText field={description} />

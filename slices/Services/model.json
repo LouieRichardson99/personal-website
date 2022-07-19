@@ -39,33 +39,14 @@
         }
       },
       "items": {
-        "serviceIcon": {
-          "type": "Image",
+        "service": {
+          "type": "Link",
           "config": {
-            "label": "Service Icon",
-            "constraint": {
-              "width": 100,
-              "height": 100
-            },
-            "thumbnails": []
-          }
-        },
-        "serviceName": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Service Name",
-            "placeholder": "",
-            "allowTargetBlank": false,
-            "single": "heading3"
-          }
-        },
-        "serviceDescription": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Service Description",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong,em,list-item,o-list-item"
+            "label": "Service",
+            "select": "document",
+            "customtypes": [
+              "service"
+            ]
           }
         }
       },
