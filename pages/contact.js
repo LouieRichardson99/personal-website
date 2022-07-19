@@ -29,12 +29,12 @@ const Contact = ({ data, url, lang, ...layout }) => {
       text: "Book a call",
       link: data?.calendlyLink.url,
     },
-    {
-      methodNo: "03",
-      name: "phone",
-      text: "Phone me",
-      link: `tel:${layout?.socials?.data?.phoneNumber.replaceAll(" ", "")}`,
-    },
+    // {
+    //   methodNo: "03",
+    //   name: "phone",
+    //   text: "Phone me",
+    //   link: `tel:${layout?.socials?.data?.phoneNumber.replaceAll(" ", "")}`,
+    // },
   ]
 
   return (
