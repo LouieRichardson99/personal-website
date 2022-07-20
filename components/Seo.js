@@ -17,6 +17,7 @@ export const Seo = ({
     openGraph: {
       url: absoluteUrl,
       title: metaTitle,
+      type: "website",
       description: metaDescription,
       images: [
         {
