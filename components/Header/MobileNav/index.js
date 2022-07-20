@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import { PrismicNextImage } from "@prismicio/next"
 import { PrismicLink, SliceZone } from "@prismicio/react"
@@ -27,12 +27,26 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
     }
   }
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", () => {
+        setOpen(false)
+
+        if (document.body.style.overflow === "hidden") {
+          document.body.style.overflow = "visible"
+        }
+      })
+    }
+  }, [])
+
   return (
     <div className={styles.flexWrapper}>
       <div className={styles.nameFlex}>
-        <div className={styles.image}>
-          <PrismicNextImage field={image} priority={true} />
-        </div>
+        <Link href="/">
+          <div className={styles.image}>
+            <PrismicNextImage field={image} priority={true} />
+          </div>
+        </Link>
         <div className={styles.name}>
           <Link href="/">Louie Richardson</Link>
         </div>

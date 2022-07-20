@@ -33,9 +33,15 @@
 .image {
   width: 2.5rem;
   height: 2.5rem;
+  transition: 200ms ease;
 
   & img {
     border-radius: 100%;
+  }
+
+  &:hover {
+    scale: 1.05;
+    cursor: pointer;
   }
 }
 
