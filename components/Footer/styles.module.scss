@@ -18,6 +18,14 @@
 .navLinks {
   list-style: none;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include mq("small") {
+    flex-direction: row;
+    gap: 4rem;
+  }
 }
 
 .phoneLink {
