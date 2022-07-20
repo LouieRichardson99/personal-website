@@ -1,8 +1,10 @@
-import { SliceZone } from "@prismicio/react"
+import { PrismicRichText, SliceZone } from "@prismicio/react"
 import * as prismicHelpers from "@prismicio/helpers"
 import { createClient, linkResolver } from "../../prismicio"
 import { Layout } from "../../components/Layout"
 import { components } from "../../slices"
+import { components as articleComponents } from "../../slices/blog"
+import styles from "../../sass/pages/service-page.module.scss"
 
 const ServicePage = ({ data, url, lang, ...layout }) => {
   const seo = {
@@ -16,6 +18,14 @@ const ServicePage = ({ data, url, lang, ...layout }) => {
 
   return (
     <Layout seo={seo} {...layout}>
+      <section className={`container ${styles.headerSection}`}>
+        <div className="title">
+          <PrismicRichText field={data.title} />
+        </div>
+      </section>
+      <div className={`container flow ${styles.contentWrapper}`}>
+        <SliceZone slices={data?.slices2} components={articleComponents} />
+      </div>
       <SliceZone slices={data?.slices} components={components} />
     </Layout>
   )

@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+.headerSection {
+  margin: 3rem auto 2rem auto;
+
+  @include mq("medium") {
+    margin: 5rem auto 3rem auto;
+
+    & h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.contentWrapper {
+  margin-bottom: 3rem;
+
+  @include mq("medium") {
+    margin-bottom: 6rem;
+  }
+}

@@ -48,11 +48,21 @@
             },
             "faqs": {
               "type": "SharedSlice"
-            },
-            "blockquote": {
+            }
+          }
+        }
+      }
+    },
+    "Article": {
+      "slices2": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "text": {
               "type": "SharedSlice"
             },
-            "text": {
+            "blockquote": {
               "type": "SharedSlice"
             },
             "image": {

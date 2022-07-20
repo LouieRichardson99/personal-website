@@ -9,44 +9,41 @@ const Services = ({
     primary: { title, description, image },
     items,
   },
-}) => {
-  console.log(items)
-
-  return (
-    <section
-      className={`container ${styles.section}`}
-      id={formatID(title[0].text)}
-    >
-      <div className={styles.flexWrapper}>
-        <div>
-          <div className="title">
-            <PrismicRichText field={title} />
-          </div>
-          <div className={`${styles.description} flow`}>
-            <PrismicRichText field={description} />
-          </div>
+}) => (
+  <section
+    className={`container ${styles.section}`}
+    id={formatID(title[0].text)}
+  >
+    <div className={styles.flexWrapper}>
+      <div>
+        <div className="title">
+          <PrismicRichText field={title} />
         </div>
-        <div>
-          <ul className={styles.serviceList}>
-            {items.map(({ service }, index) => (
-              <ServiceCard
-                key={index}
-                icon={service.data.icon}
-                name={service.data.title}
-                description={service.data.description}
-                hasBorder={index + 1 !== items.length}
-              />
-            ))}
-          </ul>
+        <div className={`${styles.description} flow`}>
+          <PrismicRichText field={description} />
         </div>
       </div>
-      <div className={styles.imageFlex}>
-        <div className={styles.image}>
-          <PrismicNextImage field={image} loading="lazy" />
-        </div>
+      <div>
+        <ul className={styles.serviceList}>
+          {items.map(({ service }, index) => (
+            <ServiceCard
+              key={index}
+              icon={service.data.icon}
+              name={service.data.title}
+              description={service.data.description}
+              hasBorder={index + 1 !== items.length}
+              link={service}
+            />
+          ))}
+        </ul>
       </div>
-    </section>
-  )
-}
+    </div>
+    <div className={styles.imageFlex}>
+      <div className={styles.image}>
+        <PrismicNextImage field={image} loading="lazy" />
+      </div>
+    </div>
+  </section>
+)
 
 export default Services
