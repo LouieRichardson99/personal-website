@@ -32,7 +32,11 @@
 }
 
 .primaryButton {
-  width: max-content;
+  width: 100%;
+
+  @include mq("x-small") {
+    width: max-content;
+  }
 }
 
 .image {
