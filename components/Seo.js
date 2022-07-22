@@ -48,7 +48,12 @@ export const Seo = ({
           images={[metaImage.url]}
           datePublished={structuredData.datePublished}
           dateModified={structuredData.dateModified}
-          authorName={[structuredData.author]}
+          authorName={[
+            {
+              name: "Louie Richardson",
+              url: "https://louierichardson.com/#about-me",
+            },
+          ]}
           publisherName="Louie Richardson"
           publisherLogo="https://images.prismic.io/louie/47c9c764-8a01-4515-a68c-a00fc91a1dee_holiday-selie.png?auto=compress%2Cformat&fit=max&w=640"
         />
