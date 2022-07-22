@@ -44,9 +44,7 @@
           "config": {
             "label": "Service",
             "select": "document",
-            "customtypes": [
-              "service"
-            ]
+            "customtypes": ["service"]
           }
         }
       },
