@@ -40,7 +40,7 @@ const BlogPost = ({
 
   useEffect(() => {
     if (window) {
-      setPostUrl(window.location.href)
+      setPostUrl(`${window.location.origin}${window.location.pathname}`)
     }
   }, [])
 
