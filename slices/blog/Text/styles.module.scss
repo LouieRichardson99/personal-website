@@ -18,7 +18,6 @@
   @include mq("small") {
     @media (hover) {
       &:hover {
-        text-decoration: underline;
         cursor: pointer;
 
         & .icon {
