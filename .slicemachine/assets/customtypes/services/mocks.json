@@ -1,0 +1,46 @@
+{
+  "id": "260d77fe-98f5-4bf3-95d9-08ac4642c9e5",
+  "uid": "molestiae-occaecati-ut",
+  "type": "services",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Deliver end-to-end action-items",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Pariatur voluptate dolor ea Lorem mollit sit exercitation occaecat consequat aute in quis magna aliquip officia. Consequat adipisicing pariatur laborum ex commodo excepteur nostrud aliquip.",
+        "spans": []
+      }
+    ],
+    "services": [
+      {
+        "service": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "service": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      }
+    ],
+    "metaTitle": "drive B2B communities",
+    "metaDescription": "evolve dot-com applications",
+    "metaImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+    }
+  }
+}

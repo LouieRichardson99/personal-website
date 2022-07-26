@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+
+.headerSection {
+  margin: 3rem auto 2rem auto;
+
+  @include mq("medium") {
+    margin: 5rem auto 2rem auto;
+
+    & h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.description {
+  margin-top: 1.5rem;
+}
+
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  overflow: hidden;
+  margin-top: 4rem;
+  max-width: 40rem;
+
+  @include mq("large") {
+    padding: 0 0.5rem;
+  }
+}
