@@ -4,7 +4,6 @@
   padding-bottom: 2rem;
   color: $color-white;
   opacity: 0;
-  transform: translateX(2rem);
   transition: ease 400ms;
   background-color: $color-mine-shaft;
   border-radius: 10px;
@@ -20,7 +19,6 @@
 
   &.animate {
     opacity: 1;
-    transform: translateX(0);
   }
 }
 

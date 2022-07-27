@@ -14,7 +14,7 @@ export const MinimalServiceCard = ({ name, description, link, index }) => {
 
   useEffect(() => {
     if (inView) {
-      setTimeout(() => setAnimate(true), index * 125)
+      setTimeout(() => setAnimate(true), index * 100)
     }
   }, [inView, index])
 
