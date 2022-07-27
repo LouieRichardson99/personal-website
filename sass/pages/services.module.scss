@@ -23,9 +23,9 @@
   list-style: none;
   overflow: hidden;
   margin-top: 4rem;
-  max-width: 40rem;
 
-  @include mq("large") {
-    padding: 0 0.5rem;
+  @include mq("medium") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

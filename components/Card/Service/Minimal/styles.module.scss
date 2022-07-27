@@ -1,4 +1,4 @@
-@use "../../../sass/abstracts/" as *;
+@use "../../../../sass/abstracts/" as *;
 
 .item {
   padding-bottom: 2rem;
@@ -6,14 +6,16 @@
   opacity: 0;
   transform: translateX(2rem);
   transition: ease 400ms;
+  background-color: $color-mine-shaft;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
 
-  &.border {
-    border-bottom: 1px solid $color-mine-shaft;
-  }
-
-  @include mq("large") {
+  & > div {
+    min-height: 100%;
     display: flex;
-    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &.animate {
@@ -25,37 +27,12 @@
 .name {
   margin-bottom: 0.5rem;
 
-  & h3 {
+  & h2 {
     font-size: 1.5rem;
-    font-weight: 500;
-  }
-}
+    font-weight: 600;
 
-.icon {
-  background-color: $color-mine-shaft;
-  border-radius: 10px;
-  height: max-content;
-  width: max-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 0.75rem;
-  margin-bottom: 0.75rem;
-
-  & img {
-    max-width: 2rem;
-    max-height: 2rem;
-    min-width: 2rem;
-    min-height: 2rem;
-  }
-
-  @include mq("large") {
-    margin-top: 0.5rem;
-    transition: 200ms ease;
-
-    &:hover {
-      transform: scale(1.1);
+    @include mq("medium") {
+      font-size: 1.75rem;
     }
   }
 }

@@ -1,12 +1,8 @@
-import {
-  PrismicImage,
-  PrismicLink,
-  PrismicRichText,
-  PrismicText,
-} from "@prismicio/react"
+import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 import { useInView } from "react-intersection-observer"
 import { ArrowNarrowRightIcon } from "@heroicons/react/outline"
+import { PrismicNextImage } from "@prismicio/next"
 
 export const ServiceCard = ({ icon, name, description, hasBorder, link }) => {
   const { ref, inView } = useInView({
@@ -22,7 +18,7 @@ export const ServiceCard = ({ icon, name, description, hasBorder, link }) => {
       ref={ref}
     >
       <div className={styles.icon}>
-        <PrismicImage field={icon} loading="lazy" />
+        <PrismicNextImage field={icon} loading="lazy" />
       </div>
       <div>
         <div className={styles.name}>

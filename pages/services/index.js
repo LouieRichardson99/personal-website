@@ -3,7 +3,7 @@ import { createClient } from "../../prismicio"
 import { Layout } from "../../components/Layout"
 import { components } from "../../slices"
 import styles from "../../sass/pages/services.module.scss"
-import { ServiceCard } from "../../components/Card/Service"
+import { MinimalServiceCard } from "../../components/Card/Service/Minimal"
 
 const Services = ({ data, url, lang, caseStudies, ...layout }) => {
   const seo = {
@@ -26,13 +26,13 @@ const Services = ({ data, url, lang, caseStudies, ...layout }) => {
         </div>
         <ul className={styles.serviceList}>
           {data?.services.map(({ service }, index) => (
-            <ServiceCard
+            <MinimalServiceCard
               key={index}
               icon={service.data.icon}
               name={service.data.title}
               description={service.data.description}
-              hasBorder={index + 1 !== data?.services.length}
               link={service}
+              index={index}
             />
           ))}
         </ul>
