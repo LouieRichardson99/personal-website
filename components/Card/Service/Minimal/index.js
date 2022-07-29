@@ -33,7 +33,7 @@ export const MinimalServiceCard = ({ name, description, link, index }) => {
         </div>
         <div className={styles.link}>
           <PrismicLink document={link}>
-            Learn about this service
+            Read about this service
             <ArrowNarrowRightIcon />
           </PrismicLink>
         </div>
