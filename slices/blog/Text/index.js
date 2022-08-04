@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 import { LinkIcon } from "@heroicons/react/outline"
+import formatId from "../../../components/utils/formatID"
 
 const Text = ({
   slice: {
@@ -16,12 +17,8 @@ const Text = ({
     }
   }, [])
 
-  const formatAnchor = (header) => {
-    return header.text.replace(/\s/g, "-").toLowerCase()
-  }
-
   const handleAnchorLink = (header) => {
-    const formattedAnchor = formatAnchor(header)
+    const formattedAnchor = formatId(header)
     navigator.clipboard.writeText(`${url}/#${formattedAnchor}`)
   }
 
@@ -29,7 +26,7 @@ const Text = ({
     heading2: ({ node, children }) => (
       <h2
         className={styles.header}
-        id={formatAnchor(node)}
+        id={formatId(node)}
         onClick={() => handleAnchorLink(node)}
       >
         <LinkIcon className={styles.icon} />
@@ -39,7 +36,7 @@ const Text = ({
     heading3: ({ node, children }) => (
       <h3
         className={styles.header}
-        id={formatAnchor(node)}
+        id={formatId(node)}
         onClick={() => handleAnchorLink(node)}
       >
         <LinkIcon className={styles.icon} />
@@ -59,7 +56,7 @@ const Text = ({
     heading5: ({ node, children }) => (
       <h5
         className={styles.header}
-        id={formatAnchor(node)}
+        id={formatId(node)}
         onClick={() => handleAnchorLink(node)}
       >
         <LinkIcon className={styles.icon} />
