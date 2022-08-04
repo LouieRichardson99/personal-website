@@ -5,6 +5,7 @@
   transform: translateY(0.5rem);
   opacity: 0;
   transition: 300ms ease-in all;
+  height: fit-content;
 
   &.animate {
     transform: translateY(0);

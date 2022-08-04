@@ -36,7 +36,9 @@ export async function getStaticProps({ previewData }) {
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")
   const socials = await client.getSingle("socials")
-  const posts = await client.getAllByType("blog-post")
+  const posts = await client.getAllByType("blog-post", {
+    orderings: { field: "document.first_publication_date", direction: "desc" },
+  })
 
   return {
     props: { header, footer, socials, posts, ...page },
