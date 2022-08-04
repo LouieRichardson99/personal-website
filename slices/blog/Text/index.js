@@ -46,7 +46,7 @@ const Text = ({
     heading4: ({ node, children }) => (
       <h4
         className={styles.header}
-        id={formatAnchor(node)}
+        id={formatId(node)}
         onClick={() => handleAnchorLink(node)}
       >
         <LinkIcon className={styles.icon} />
