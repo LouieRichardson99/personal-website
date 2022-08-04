@@ -14,14 +14,11 @@ const Blockquote = ({
         &rdquo;
       </p>
     </blockquote>
-    {author && (
-      <figcaption>
-        <div className={styles.author}>
-          <span>-</span>
-          <PrismicRichText field={author} />
-        </div>
-      </figcaption>
-    )}
+    <figcaption>
+      <div className={styles.author}>
+        <PrismicRichText field={author} />
+      </div>
+    </figcaption>
   </figure>
 )
 
