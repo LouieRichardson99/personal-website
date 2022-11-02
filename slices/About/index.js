@@ -38,9 +38,12 @@ const About = ({
         </PrismicLink>
       </div>
       <div>
-        <div className={styles.image}>
-          <PrismicNextImage field={image} layout="responsive" priority={true} />
-        </div>
+        <PrismicNextImage
+          field={image}
+          priority={true}
+          className={styles.image}
+        />
+
         <div className={styles.socialIcons}>
           {items.map(({ socialLink, socialIcon }, index) => (
             <PrismicLink key={index} field={socialLink}>

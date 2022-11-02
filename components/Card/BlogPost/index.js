@@ -14,14 +14,12 @@ export const BlogPostCard = ({ image, title, date, description, link }) => {
   return (
     <li ref={ref} className={`${styles.card} ${inView && styles.animate}`}>
       <PrismicLink document={link}>
-        <div className={styles.image}>
-          <PrismicNextImage
-            field={image}
-            layout="fill"
-            imgixParams={{ blur: 10 }}
-            priority={true}
-          />
-        </div>
+        <PrismicNextImage
+          field={image}
+          className={styles.image}
+          imgixParams={{ blur: 10 }}
+          priority={true}
+        />
         <div className={styles.innerCardWrapper}>
           <h3 className={styles.title}>
             <PrismicText field={title} />

@@ -19,7 +19,7 @@ export const Logo = ({ image, index }) => {
 
   return (
     <div className={`${styles.image} ${animate && styles.animate}`} ref={ref}>
-      <PrismicNextImage field={image} layout="responsive" loading="lazy" />
+      <PrismicNextImage field={image} />
     </div>
   )
 }

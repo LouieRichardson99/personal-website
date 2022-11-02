@@ -25,11 +25,7 @@ export const WorkFeed = ({ caseStudies }) => {
               className={`${styles.image} ${inView && styles.animate}`}
               ref={ref}
             >
-              <PrismicNextImage
-                field={data.image}
-                layout="responsive"
-                priority={true}
-              />
+              <PrismicNextImage field={data.image} priority={true} />
             </div>
             <div className={styles.websiteLink}>
               <PrismicLink field={data.websiteLink}>
