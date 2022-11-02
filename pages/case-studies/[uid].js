@@ -48,9 +48,12 @@ const CaseStudy = ({
           <div className="title">
             <PrismicRichText field={data?.title} />
           </div>
-          <div className={styles.mainImage}>
-            <PrismicNextImage field={data?.articleImage} />
-          </div>
+
+          <PrismicNextImage
+            field={data?.articleImage}
+            className={styles.mainImage}
+          />
+
           <div className={styles.flexWrapper}>
             <div className={styles.websiteLink}>
               <PrismicLink field={data.websiteLink}>

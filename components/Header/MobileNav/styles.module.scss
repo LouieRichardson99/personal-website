@@ -15,10 +15,7 @@
   width: 2rem;
   height: 2rem;
   z-index: 100;
-
-  & img {
-    border-radius: 100%;
-  }
+  border-radius: 100%;
 
   @include mq("small") {
     width: 2.75rem;

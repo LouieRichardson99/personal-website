@@ -23,9 +23,8 @@ export const ArticleFooter = ({
       </p>
     </div>
     <div className={styles.authorWrapper}>
-      <div className={styles.authorImage}>
-        <PrismicNextImage field={authorImage} />
-      </div>
+      <PrismicNextImage field={authorImage} className={styles.authorImage} />
+
       <p>
         <PrismicText field={authorName} /> -{" "}
         <PrismicText field={authorLocation} />

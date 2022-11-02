@@ -58,9 +58,9 @@ const BlogPost = ({
           <p className={styles.publishDate}>
             Published {formatDate(new Date(first_publication_date).getTime())}
           </p>
-          <div className={styles.mainImage}>
-            <PrismicNextImage field={data?.image} />
-          </div>
+
+          <PrismicNextImage field={data?.image} className={styles.mainImage} />
+
           <div className={styles.flexWrapper}>
             <div className={styles.imageCourtesy}>
               <PrismicRichText field={data?.imageAttribute} />

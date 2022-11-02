@@ -9,9 +9,11 @@ export const DesktopNav = ({ slices, image, primaryButton, phoneNumber }) => (
   <div className={styles.flexWrapper}>
     <div className={styles.nameFlex}>
       <Link href="/">
-        <div className={styles.image}>
-          <PrismicNextImage field={image} priority={true} />
-        </div>
+        <PrismicNextImage
+          field={image}
+          priority={true}
+          className={styles.image}
+        />
       </Link>
       <div className={styles.name}>
         <Link href="/">Louie Richardson</Link>

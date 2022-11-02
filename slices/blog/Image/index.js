@@ -8,7 +8,7 @@ const Image = ({
   },
 }) => (
   <figure className={styles.container}>
-    <PrismicNextImage field={image} />
+    <PrismicNextImage field={image} className={styles.image} />
     <figcaption className={styles.imageCourtesy}>
       <PrismicRichText field={imageAttribute} />
     </figcaption>
