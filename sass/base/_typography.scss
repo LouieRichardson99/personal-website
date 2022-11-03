@@ -119,3 +119,10 @@ ol {
     font-size: var(--fs-500);
   }
 }
+
+.link-reset {
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}

@@ -45,7 +45,7 @@ const Contact = ({ data, url, lang, ...layout }) => {
             <div className="title">
               <PrismicRichText field={data?.title} />
             </div>
-            <div className={`${styles.description} flow`}>
+            <div className={`${styles.description} flow link-reset`}>
               <PrismicRichText field={data?.description} />
             </div>
           </div>
