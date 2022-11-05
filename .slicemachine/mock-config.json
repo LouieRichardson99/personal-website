@@ -28,12 +28,31 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "page": {}
   },
   "slices": {
     "Services": {
       "default": {
         "items": {}
+      }
+    },
+    "Hero": {
+      "minimal": {
+        "primary": {
+          "subtitle": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
       }
     }
   }

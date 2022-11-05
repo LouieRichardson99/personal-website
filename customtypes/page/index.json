@@ -31,6 +31,21 @@
             },
             "hero": {
               "type": "SharedSlice"
+            },
+            "about": {
+              "type": "SharedSlice"
+            },
+            "logos": {
+              "type": "SharedSlice"
+            },
+            "faqs": {
+              "type": "SharedSlice"
+            },
+            "process": {
+              "type": "SharedSlice"
+            },
+            "work": {
+              "type": "SharedSlice"
             }
           }
         }

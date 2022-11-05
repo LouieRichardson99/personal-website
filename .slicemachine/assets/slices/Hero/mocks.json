@@ -1,40 +1,41 @@
 [
   {
     "variation": "default",
-    "name": "Default",
-    "slice_type": "hero",
-    "items": [],
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
     "primary": {
-      "availability": false,
+      "availability": true,
       "eyebrow": [
         {
           "type": "paragraph",
-          "text": "Fugiat cillum commodo duis deserunt aliqua. Eiusmod nostrud velit dolore nostrud incididunt deserunt ex ullamco Lorem sunt occaecat excepteur cillum. Voluptate nostrud enim laboris veniam non magna anim ullamco et.",
+          "text": "Nostrud incididunt excepteur velit ut aliquip dolor voluptate laboris sunt incididunt cillum.",
           "spans": []
         }
       ],
       "title": [
         {
           "type": "heading1",
-          "text": "Evolve proactive ROI",
+          "text": "Would",
           "spans": []
         }
       ],
-      "primaryButtonText": "orchestrate front-end solutions",
+      "primaryButtonText": "shot",
       "primaryButtonLink": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "http://twitter.com"
       },
       "primaryButtonIcon": {
         "dimensions": {
           "width": 900,
           "height": 500
         },
-        "alt": "Placeholder image",
+        "alt": null,
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
       },
-      "secondaryButtonText": "mesh killer applications",
+      "secondaryButtonText": "paper",
       "secondaryButtonLink": {
         "link_type": "Web",
         "url": "https://prismic.io"
@@ -44,19 +45,58 @@
           "width": 900,
           "height": 500
         },
-        "alt": "Placeholder image",
+        "alt": null,
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a"
       },
       "image": {
         "dimensions": {
           "width": 900,
           "height": 500
         },
-        "alt": "Placeholder image",
+        "alt": null,
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88"
       }
-    }
+    },
+    "slice_type": "hero"
+  },
+  {
+    "variation": "minimal",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Tropical",
+          "spans": []
+        }
+      ],
+      "subtitle": [
+        {
+          "type": "paragraph",
+          "text": "Aliqua incididunt dolore consectetur labore excepteur.",
+          "spans": []
+        }
+      ],
+      "primaryButtonIcon": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b"
+      },
+      "primaryButtonText": "former",
+      "primaryButtonLink": {
+        "link_type": "Web",
+        "url": "http://google.com"
+      }
+    },
+    "slice_type": "hero"
   }
 ]

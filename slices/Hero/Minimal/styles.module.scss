@@ -1,0 +1,27 @@
+@use "../../../sass/abstracts/" as *;
+
+.section {
+  margin: 5rem auto;
+  text-align: center;
+
+  @include mq("large") {
+    margin: 7rem auto;
+  }
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: center;
+}
+
+.primaryButton {
+  width: max-content;
+}
