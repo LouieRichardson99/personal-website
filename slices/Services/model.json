@@ -44,7 +44,64 @@
           "config": {
             "label": "Service",
             "select": "document",
-            "customtypes": ["service"]
+            "customtypes": [
+              "service"
+            ]
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "customServiceGrid",
+      "name": "Custom Service Grid",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Services",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "service_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Service Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "service_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Service Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,strong,em"
+          }
+        },
+        "service_icon": {
+          "type": "Image",
+          "config": {
+            "label": "Service Icon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "service_link": {
+          "type": "Link",
+          "config": {
+            "label": "Service Link",
+            "placeholder": "",
+            "select": null
           }
         }
       },

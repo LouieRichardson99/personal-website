@@ -1,0 +1,89 @@
+@use "../../../sass/abstracts/" as *;
+
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  @include mq("large") {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.description {
+  margin-bottom: 1rem;
+}
+
+.serviceList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  list-style: none;
+  overflow: hidden;
+  margin-top: 2rem;
+
+  @include mq("medium") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.icon {
+  background-color: $color-mine-shaft;
+  border-radius: 10px;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+
+  & img {
+    max-width: 2rem;
+    max-height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+  }
+
+  @include mq("large") {
+    margin-top: 0.5rem;
+    transition: 200ms ease;
+  }
+}
+
+.name {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  & h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.link {
+  & a {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: $color-white;
+    font-weight: 500;
+    width: max-content;
+
+    & svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      transition: 300ms ease;
+      color: $color-medium-carmine;
+    }
+
+    &:hover {
+      & svg {
+        transform: translateX(0.5rem);
+      }
+    }
+  }
+}

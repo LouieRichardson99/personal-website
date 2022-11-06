@@ -35,6 +35,23 @@
     "Services": {
       "default": {
         "items": {}
+      },
+      "customServiceGrid": {
+        "primary": {},
+        "items": {
+          "service_title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "service_description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     },
     "Hero": {
