@@ -2,6 +2,7 @@
 
 import About from './About';
 import CallToAction from './CallToAction';
+import Content from './Content';
 import Faqs from './Faqs';
 import FooterLinks from './FooterLinks';
 import Hero from './Hero';
@@ -14,6 +15,7 @@ import Work from './Work';
 export {
 	About,
 	CallToAction,
+	Content,
 	Faqs,
 	FooterLinks,
 	Hero,
@@ -27,6 +29,7 @@ export {
 export const components = {
 	about: About,
 	call_to_action: CallToAction,
+	content: Content,
 	faqs: Faqs,
 	footer_links: FooterLinks,
 	hero: Hero,

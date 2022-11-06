@@ -49,6 +49,9 @@
             },
             "services": {
               "type": "SharedSlice"
+            },
+            "content": {
+              "type": "SharedSlice"
             }
           }
         }
