@@ -2,7 +2,7 @@ import { PrismicNextImage } from "@prismicio/next"
 import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 import formatID from "../../../components/utils/formatID"
-import { ArrowNarrowRightIcon } from "@heroicons/react/outline"
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline"
 
 const Grid = ({ title, description, items }) => (
   <section
@@ -41,7 +41,7 @@ const Grid = ({ title, description, items }) => (
                         <h3>
                           <PrismicText field={service_title} />
                         </h3>
-                        <ArrowNarrowRightIcon />
+                        <ArrowLongRightIcon />
                       </div>
                     </PrismicLink>
                   </div>

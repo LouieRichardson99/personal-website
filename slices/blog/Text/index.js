@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
-import { LinkIcon } from "@heroicons/react/outline"
+import { LinkIcon } from "@heroicons/react/24/outline"
 import formatId from "../../../components/utils/formatID"
 
 const Text = ({

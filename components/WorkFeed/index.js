@@ -1,8 +1,8 @@
 import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react"
 import {
-  ExternalLinkIcon,
-  ArrowNarrowRightIcon,
-} from "@heroicons/react/outline"
+  ArrowTopRightOnSquareIcon,
+  ArrowLongRightIcon,
+} from "@heroicons/react/24/outline"
 import styles from "./styles.module.scss"
 import { useInView } from "react-intersection-observer"
 import { PrismicNextImage } from "@prismicio/next"
@@ -30,7 +30,7 @@ export const WorkFeed = ({ caseStudies }) => {
             <div className={styles.websiteLink}>
               <PrismicLink field={data.websiteLink}>
                 Visit Website
-                <ExternalLinkIcon />
+                <ArrowTopRightOnSquareIcon />
               </PrismicLink>
             </div>
           </div>
@@ -51,7 +51,7 @@ export const WorkFeed = ({ caseStudies }) => {
                 document={caseStudy}
               >
                 Read the Case Study
-                <ArrowNarrowRightIcon />
+                <ArrowLongRightIcon />
               </PrismicLink>
             </div>
           </div>

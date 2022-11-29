@@ -1,6 +1,6 @@
 import { PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
-import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/outline"
+import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline"
 import { useInView } from "react-intersection-observer"
 
 export const Accordion = ({ question, answer }) => {

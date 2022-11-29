@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Input } from "../Input"
 import styles from "./styles.module.scss"
-import { ChevronRightIcon } from "@heroicons/react/solid"
+import { ChevronRightIcon } from "@heroicons/react/24/solid"
 import { usePlausible } from "next-plausible"
 
 export const ContactForm = () => {

@@ -1,7 +1,7 @@
 import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 import { useInView } from "react-intersection-observer"
-import { ArrowNarrowRightIcon } from "@heroicons/react/outline"
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline"
 import { PrismicNextImage } from "@prismicio/next"
 
 export const ServiceCard = ({ icon, name, description, hasBorder, link }) => {
@@ -32,7 +32,7 @@ export const ServiceCard = ({ icon, name, description, hasBorder, link }) => {
         <div className={styles.link}>
           <PrismicLink document={link}>
             Read about this service
-            <ArrowNarrowRightIcon />
+            <ArrowLongRightIcon />
           </PrismicLink>
         </div>
       </div>

@@ -8,7 +8,7 @@ import styles from "../../sass/pages/case-study.module.scss"
 import { PrismicNextImage } from "@prismicio/next"
 import { components as articleComponents } from "../../slices/blog"
 import { ArticleFooter } from "../../components/ArticleFooter"
-import { ExternalLinkIcon } from "@heroicons/react/outline"
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline"
 
 const CaseStudy = ({
   data,
@@ -58,7 +58,7 @@ const CaseStudy = ({
             <div className={styles.websiteLink}>
               <PrismicLink field={data.websiteLink}>
                 Visit Website
-                <ExternalLinkIcon />
+                <ArrowTopRightOnSquareIcon />
               </PrismicLink>
             </div>
             <div className={styles.tags}>

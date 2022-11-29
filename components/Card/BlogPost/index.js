@@ -1,6 +1,6 @@
 import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react"
 import { PrismicNextImage } from "@prismicio/next"
-import { ArrowNarrowRightIcon } from "@heroicons/react/outline"
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline"
 import styles from "./styles.module.scss"
 import { formatDate } from "../../utils/formatDate"
 import { useInView } from "react-intersection-observer"
@@ -31,7 +31,7 @@ export const BlogPostCard = ({ image, title, date, description, link }) => {
             <PrismicRichText field={description} />
           </div>
           <p className={styles.readPost}>
-            Read post <ArrowNarrowRightIcon />
+            Read post <ArrowLongRightIcon />
           </p>
         </div>
       </PrismicLink>

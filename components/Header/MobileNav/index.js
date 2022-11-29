@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 import { PrismicNextImage } from "@prismicio/next"
 import { PrismicLink, SliceZone } from "@prismicio/react"
 import { components } from "../../../slices"
-import { MenuAlt3Icon } from "@heroicons/react/outline"
+import { Bars3Icon } from "@heroicons/react/24/outline"
 import styles from "./styles.module.scss"
 import Link from "next/link"
 
@@ -58,7 +58,7 @@ export const MobileNav = ({ slices, image, primaryButton }) => {
         onClick={handleMenuState}
         aria-label="Open menu"
       >
-        <MenuAlt3Icon />
+        <Bars3Icon />
       </button>
 
       <nav

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import styles from "./styles.module.scss"
-import { ChevronUpIcon } from "@heroicons/react/outline"
+import { ChevronUpIcon } from "@heroicons/react/24/outline"
 
 export const NavigateToTop = () => {
   const [isShowing, setIsShowing] = useState(false)

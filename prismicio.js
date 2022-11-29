@@ -25,6 +25,10 @@ export function linkResolver(doc) {
       return `/services`
     case "service":
       return `/services/${doc.uid}`
+    case "notes":
+      return `/notes`
+    case "note":
+      return `/notes/${doc.uid}`
     default:
       return null
   }

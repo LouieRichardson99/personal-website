@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.article {
+  margin-top: 3rem;
+
+  @include mq("medium") {
+    margin-top: 5rem;
+  }
+}
+
+.header {
+  margin-bottom: 2rem;
+
+  @include mq("medium") {
+    margin-bottom: 4rem;
+  }
+}
+
+.dateAndCategory {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}

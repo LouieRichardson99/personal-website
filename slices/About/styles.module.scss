@@ -64,8 +64,11 @@
 
   & a {
     transition: 200ms;
-    width: 1.5rem;
-    height: 1.5rem;
+
+    & img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
 
     &:hover {
       position: relative;

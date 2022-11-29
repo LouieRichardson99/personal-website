@@ -2,7 +2,7 @@ import { PrismicLink, PrismicRichText, SliceZone } from "@prismicio/react"
 import { PrismicNextImage } from "@prismicio/next"
 import { components } from "../../slices"
 import styles from "./styles.module.scss"
-import { MailIcon, PhoneIcon } from "@heroicons/react/solid"
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid"
 
 export const Footer = ({
   slices,
@@ -30,7 +30,7 @@ export const Footer = ({
         )}
         {email && (
           <a className={styles.emailLink} href={`mailto:${email}`}>
-            <MailIcon />
+            <EnvelopeIcon />
             {email}
           </a>
         )}

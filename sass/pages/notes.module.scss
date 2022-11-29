@@ -1,0 +1,56 @@
+@use "../abstracts/" as *;
+
+.titleContainer {
+  margin-top: 3rem;
+
+  @include mq("medium") {
+    margin-top: 5rem;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style: none;
+
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+
+  @include mq("medium") {
+    margin-top: 4rem;
+  }
+
+  & a {
+    color: $color-white;
+  }
+}
+
+.noteTitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 0.1rem;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #d6d6d6;
+
+  & svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto 0;
+    color: $color-medium-carmine;
+  }
+}
+
+.noteDescription {
+  margin-bottom: 0.5rem;
+}
+
+.noteCategory {
+  font-size: 0.875rem;
+  color: $color-medium-carmine;
+}

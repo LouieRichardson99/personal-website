@@ -2,7 +2,7 @@ import { PrismicLink, SliceZone } from "@prismicio/react"
 import { PrismicNextImage } from "@prismicio/next"
 import { components } from "../../../slices"
 import styles from "./styles.module.scss"
-import { PhoneIcon } from "@heroicons/react/solid"
+import { PhoneIcon } from "@heroicons/react/24/solid"
 import Link from "next/link"
 
 export const DesktopNav = ({ slices, image, primaryButton, phoneNumber }) => (

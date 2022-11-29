@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 import { useInView } from "react-intersection-observer"
-import { ArrowNarrowRightIcon } from "@heroicons/react/outline"
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline"
 
 export const MinimalServiceCard = ({ name, description, link, index }) => {
   const [animate, setAnimate] = useState(false)
@@ -34,7 +34,7 @@ export const MinimalServiceCard = ({ name, description, link, index }) => {
         <div className={styles.link}>
           <PrismicLink document={link}>
             Read about this service
-            <ArrowNarrowRightIcon />
+            <ArrowLongRightIcon />
           </PrismicLink>
         </div>
       </div>
