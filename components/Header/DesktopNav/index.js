@@ -35,7 +35,7 @@ export const DesktopNav = ({ slices, image, primaryButton, phoneNumber }) => (
           <PhoneIcon />
         </a>
       )}
-      <PrismicLink className="button primary" field={primaryButton.link}>
+      <PrismicLink className="button secondary" field={primaryButton.link}>
         {primaryButton.text}
       </PrismicLink>
     </div>
